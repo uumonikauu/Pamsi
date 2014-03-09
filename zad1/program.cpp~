@@ -6,7 +6,7 @@
 #include <string>
 using namespace std;  
 /*!
-\brief wczytuje tablicę 
+\brief Definicja klasy przechowującej tablice
 */
 int wczytaj(tab& Tab, string NazwaPliku) {
   int x;

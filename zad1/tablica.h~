@@ -15,7 +15,9 @@ public:
 \brief Definicja wymiaru
 */
   int wymiar() {return wym;};
-
+/*!
+\brief Definicja klasy przechowującej tablice
+*/
   tab(int wymiar=0);
 /*!
 \brief Zamienia miejscami i, j 
