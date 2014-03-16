@@ -69,14 +69,14 @@ timespec diff(timespec start, timespec end) {
 */
 int main() {
 struct timespec time1, time2;
-StosT<int> S;
+StosL<int> S; //zmienilem StosT na StosL, edit: zmienione StosL na kolejka, edit2: wszytko działa poprawnie.
 
 //wczytaj(Tab1, "1.txt");
 //wczytaj(Tab2, "2.txt");
 
 clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &time1); // start zegar
 
-for (int i=0;i<10;i++) {
+for (int i=0;i<10000;i++) {
   S.push(i);
 }
 
@@ -84,7 +84,7 @@ clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &time2); // zatrzymanie zegara
 
 cout << ((double)diff(time1, time2).tv_nsec)/1000000000 << "s" << endl;
 
-for (int i=0;i<100;i++) {
+for (int i=0;i<10000;i++) {
   cout << S.pop() << " ";
 }
   cout << endl;  
