@@ -69,7 +69,7 @@ timespec diff(timespec start, timespec end) {
 */
 int main() {
 struct timespec time1, time2;
-StosL<int> S; //zmienilem StosT na StosL, edit: zmienione StosL na kolejka, edit2: wszytko działa poprawnie.
+StosL<int> S; 
 
 //wczytaj(Tab1, "1.txt");
 //wczytaj(Tab2, "2.txt");
