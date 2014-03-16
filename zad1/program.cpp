@@ -1,14 +1,16 @@
 #include <iostream>
 #include <ctime> 
 #include <fstream>
-#include "tablica.h"
+//#include "tablica.h"
+#include "Stos.h"
 #include <limits>
 #include <string>
 using namespace std;  
 /*!
 \brief wczytuje tablicę 
 */
-int wczytaj(tab& Tab, string NazwaPliku) {
+template <class T>
+int wczytaj(tab<T>& Tab, string NazwaPliku) {
   int x;
   ifstream StrmWe;
   StrmWe.open(NazwaPliku.c_str());
@@ -35,14 +37,16 @@ while(!StrmWe.eof()) {
 /*!
 \brief Wyświetla tablicę
 */
-void wyswietl(tab Tab) {
+template <class T>
+void wyswietl(tab<T> Tab) {
 	for(int i = 0; i < Tab.wymiar(); i++ ) 
         cout << Tab[ i ] << endl;   
 }
 /*!
 \brief Mnoży przez 2 tablicę
 */
-void pomnoz(tab& Tab) {
+template <class T>
+void pomnoz(tab<T>& Tab) {
 	for(int i = 0; i < Tab.wymiar(); i++ ) 
 	Tab[i]=Tab[i]*2;  
 }
@@ -65,20 +69,24 @@ timespec diff(timespec start, timespec end) {
 */
 int main() {
 struct timespec time1, time2;
-tab Tab1, Tab2;
+kolejka<int> S; //zmienilem StosT na StosL, edit: zmienione StosL na kolejka, edit2: wszytko działa poprawnie.
 
-wczytaj(Tab1, "1.txt");
-wczytaj(Tab2, "2.txt");
+//wczytaj(Tab1, "1.txt");
+//wczytaj(Tab2, "2.txt");
 
 clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &time1); // start zegar
 
-pomnoz(Tab1);
+for (int i=0;i<100;i++) {
+  S.push(i);
+}
 
 clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &time2); // zatrzymanie zegara
 
-if (Tab1==Tab2) {
-cout << Tab1.wymiar() << ",1," << ((double)diff(time1, time2).tv_nsec)/1000000000 << "s" << endl;
+cout << ((double)diff(time1, time2).tv_nsec)/1000000000 << "s" << endl;
+
+for (int i=0;i<100;i++) {
+  cout << S.pop() << " ";
 }
-else cout << "Tablice sa rozne" << endl;  
+  cout << endl;  
 return 0;
 }

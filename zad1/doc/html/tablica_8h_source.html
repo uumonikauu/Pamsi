@@ -82,47 +82,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 <a name="l00003"></a>00003 <span class="preprocessor">#ifndef TABLICA_H</span>
 <a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define TABLICA_H</span>
 <a name="l00005"></a>00005 <span class="preprocessor"></span>
-<a name="l00010"></a><a class="code" href="classtab.html">00010</a> <span class="keyword">class </span><a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> {
+<a name="l00010"></a>00010 <span class="keyword">class </span><a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> {
 <a name="l00011"></a>00011   <span class="keywordtype">int</span> wym;
 <a name="l00012"></a>00012   <span class="keywordtype">int</span>* T;
 <a name="l00013"></a>00013 <span class="keyword">public</span>:
-<a name="l00017"></a><a class="code" href="classtab.html#ae9a39f118e9d520422a702f34a02a6d4">00017</a>   <span class="keywordtype">int</span> <a class="code" href="classtab.html#ae9a39f118e9d520422a702f34a02a6d4" title="Definicja wymiaru.">wymiar</a>() {<span class="keywordflow">return</span> wym;};
+<a name="l00017"></a><a class="code" href="classtab.html#aedffa47955ffaea9876790a5fdbd9562">00017</a>   <span class="keywordtype">int</span> <a class="code" href="classtab.html#aedffa47955ffaea9876790a5fdbd9562" title="Definicja wymiaru.">wymiar</a>() {<span class="keywordflow">return</span> wym;};
 <a name="l00018"></a>00018 
-<a name="l00019"></a>00019   <a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a>(<span class="keywordtype">int</span> <a class="code" href="classtab.html#ae9a39f118e9d520422a702f34a02a6d4" title="Definicja wymiaru.">wymiar</a>=0);
-<a name="l00023"></a>00023   <span class="keywordtype">void</span> <a class="code" href="classtab.html#aa6b0961d15e5ad55f4dc84d5ca0f693b" title="Zamienia miejscami i, j.">zamien</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j);
-<a name="l00027"></a>00027   <span class="keywordtype">void</span> <a class="code" href="classtab.html#ac618d6a3d5e17cd6afb0ba5c225f4416" title="Odwraca tablicę">odwroc</a>();
-<a name="l00031"></a>00031   <span class="keywordtype">void</span> <a class="code" href="classtab.html#ae6e506c6264acf4367f6927624e3fed0" title="Dodaje element.">dodaj</a>(<span class="keywordtype">int</span> e);
+<a name="l00019"></a>00019   <a class="code" href="classtab.html#a36068a968872b0263096a9719a2ad5bb" title="wymiar tablicy">tab</a>(<span class="keywordtype">int</span> <a class="code" href="classtab.html#aedffa47955ffaea9876790a5fdbd9562" title="Definicja wymiaru.">wymiar</a>=0);
+<a name="l00023"></a>00023   <span class="keywordtype">void</span> <a class="code" href="classtab.html#a47d35ab4fd1e07333de71f9eb4b7fab2" title="Zamienia miejscami i, j.">zamien</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j);
+<a name="l00027"></a>00027   <span class="keywordtype">void</span> <a class="code" href="classtab.html#a3892398e71e9d23417c8dce1b1ba852f" title="Odwraca tablicę">odwroc</a>();
+<a name="l00031"></a>00031   <span class="keywordtype">void</span> <a class="code" href="classtab.html#a5abb6bb51a476b922d00f8f3e8615f24" title="Dodaje element.">dodaj</a>(<span class="keywordtype">int</span> e);
 <a name="l00032"></a>00032 
-<a name="l00033"></a>00033   <a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> <a class="code" href="classtab.html#ae6e506c6264acf4367f6927624e3fed0" title="Dodaje element.">dodaj</a>(<a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> B);
-<a name="l00037"></a>00037   <a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> <a class="code" href="classtab.html#a05351f5dbd8a13885d98b3165245e498" title="Operator przypisania.">operator= </a>(<a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> B);
+<a name="l00033"></a>00033   <a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> <a class="code" href="classtab.html#a5abb6bb51a476b922d00f8f3e8615f24" title="Dodaje element.">dodaj</a>(<a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> B);
+<a name="l00037"></a>00037   <a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> <a class="code" href="classtab.html#af186c24050e089bb140bc2980bab8448" title="Operator przypisania.">operator= </a>(<a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> B);
 <a name="l00038"></a>00038 
-<a name="l00039"></a>00039   <span class="keywordtype">bool</span> operator== (<a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> B);
+<a name="l00039"></a>00039   <span class="keywordtype">bool</span> <a class="code" href="classtab.html#a2729682ece1734772085a32ab2a992e5" title="Operator porównania.">operator== </a>(<a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> B);
 <a name="l00040"></a>00040 
-<a name="l00041"></a>00041   <span class="keywordtype">int</span> &amp; operator[](<span class="keywordtype">int</span> ind) {<span class="keywordflow">return</span> T[ind];}
+<a name="l00041"></a>00041   <span class="keywordtype">int</span> &amp; <a class="code" href="classtab.html#a85ddf1710645b9e1ffd36726830a581b" title="Operatory odwołania się do danego pola.">operator[]</a>(<span class="keywordtype">int</span> ind) {<span class="keywordflow">return</span> T[ind];}
 <a name="l00042"></a>00042 
 <a name="l00043"></a>00043 
-<a name="l00044"></a>00044   <span class="keyword">const</span> <span class="keywordtype">int</span> &amp; operator[](<span class="keywordtype">int</span> ind)<span class="keyword"> const </span>{<span class="keywordflow">return</span> T[ind];}
+<a name="l00044"></a>00044   <span class="keyword">const</span> <span class="keywordtype">int</span> &amp; <a class="code" href="classtab.html#a85ddf1710645b9e1ffd36726830a581b" title="Operatory odwołania się do danego pola.">operator[]</a>(<span class="keywordtype">int</span> ind)<span class="keyword"> const </span>{<span class="keywordflow">return</span> T[ind];}
 <a name="l00045"></a>00045 };
 <a name="l00046"></a>00046 
-<a name="l00047"></a>00047 tab::tab(<span class="keywordtype">int</span> w) {
+<a name="l00047"></a>00047 <a class="code" href="classtab.html#a36068a968872b0263096a9719a2ad5bb" title="wymiar tablicy">tab::tab</a>(<span class="keywordtype">int</span> w) {
 <a name="l00048"></a>00048   wym=w;
 <a name="l00049"></a>00049   T = <span class="keyword">new</span> <span class="keywordtype">int</span> [wym];
 <a name="l00050"></a>00050 }
 <a name="l00051"></a>00051 
-<a name="l00052"></a><a class="code" href="classtab.html#aa6b0961d15e5ad55f4dc84d5ca0f693b">00052</a> <span class="keywordtype">void</span> <a class="code" href="classtab.html#aa6b0961d15e5ad55f4dc84d5ca0f693b" title="Zamienia miejscami i, j.">tab::zamien</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j) {
+<a name="l00052"></a><a class="code" href="classtab.html#a10e82358be59b7d217a0eb407609c4c3">00052</a> <span class="keywordtype">void</span> <a class="code" href="classtab.html#a47d35ab4fd1e07333de71f9eb4b7fab2" title="Zamienia miejscami i, j.">tab::zamien</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j) {
 <a name="l00053"></a>00053   <span class="keywordtype">int</span> tmp;
 <a name="l00054"></a>00054   tmp = T[i];
 <a name="l00055"></a>00055   T[i] = T[j];
 <a name="l00056"></a>00056   T[j] = tmp;
 <a name="l00057"></a>00057 }
 <a name="l00058"></a>00058 
-<a name="l00059"></a><a class="code" href="classtab.html#ac618d6a3d5e17cd6afb0ba5c225f4416">00059</a> <span class="keywordtype">void</span> <a class="code" href="classtab.html#ac618d6a3d5e17cd6afb0ba5c225f4416" title="Odwraca tablicę">tab::odwroc</a>() {
+<a name="l00059"></a>00059 <span class="keywordtype">void</span> <a class="code" href="classtab.html#a3892398e71e9d23417c8dce1b1ba852f" title="Odwraca tablicę">tab::odwroc</a>() {
 <a name="l00060"></a>00060   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;(wym/2);i++) {
-<a name="l00061"></a>00061     <a class="code" href="classtab.html#aa6b0961d15e5ad55f4dc84d5ca0f693b" title="Zamienia miejscami i, j.">zamien</a>(i,wym-i-1);
+<a name="l00061"></a>00061     <a class="code" href="classtab.html#a47d35ab4fd1e07333de71f9eb4b7fab2" title="Zamienia miejscami i, j.">zamien</a>(i,wym-i-1);
 <a name="l00062"></a>00062   }
 <a name="l00063"></a>00063 }
 <a name="l00064"></a>00064 
-<a name="l00065"></a><a class="code" href="classtab.html#ae6e506c6264acf4367f6927624e3fed0">00065</a> <span class="keywordtype">void</span> <a class="code" href="classtab.html#ae6e506c6264acf4367f6927624e3fed0" title="Dodaje element.">tab::dodaj</a>(<span class="keywordtype">int</span> e) {
+<a name="l00065"></a><a class="code" href="classtab.html#ac828a8cc3a4a8dee8b64087c84dc0324">00065</a> <span class="keywordtype">void</span> <a class="code" href="classtab.html#a5abb6bb51a476b922d00f8f3e8615f24" title="Dodaje element.">tab::dodaj</a>(<span class="keywordtype">int</span> e) {
 <a name="l00066"></a>00066   wym++;
 <a name="l00067"></a>00067   <span class="keywordtype">int</span>* tmp;
 <a name="l00068"></a>00068   tmp=T;
@@ -134,9 +134,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 <a name="l00074"></a>00074   <span class="keyword">delete</span> [] tmp;
 <a name="l00075"></a>00075 }
 <a name="l00076"></a>00076 
-<a name="l00077"></a>00077 <a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> <a class="code" href="classtab.html#ae6e506c6264acf4367f6927624e3fed0" title="Dodaje element.">tab::dodaj</a>(<a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> B) {
+<a name="l00077"></a>00077 <a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> <a class="code" href="classtab.html#a5abb6bb51a476b922d00f8f3e8615f24" title="Dodaje element.">tab::dodaj</a>(<a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> B) {
 <a name="l00078"></a>00078   <span class="keywordtype">int</span> w;
-<a name="l00079"></a>00079   w=wym+B.<a class="code" href="classtab.html#ae9a39f118e9d520422a702f34a02a6d4" title="Definicja wymiaru.">wymiar</a>();
+<a name="l00079"></a>00079   w=wym+B.<a class="code" href="classtab.html#aedffa47955ffaea9876790a5fdbd9562" title="Definicja wymiaru.">wymiar</a>();
 <a name="l00080"></a>00080   <a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> Tab(w);
 <a name="l00081"></a>00081   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;wym;i++) {
 <a name="l00082"></a>00082     Tab[i]=T[i];
@@ -147,8 +147,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 <a name="l00087"></a>00087   <span class="keywordflow">return</span> Tab;
 <a name="l00088"></a>00088 }
 <a name="l00089"></a>00089 
-<a name="l00090"></a><a class="code" href="classtab.html#a05351f5dbd8a13885d98b3165245e498">00090</a> <a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> <a class="code" href="classtab.html#a05351f5dbd8a13885d98b3165245e498" title="Operator przypisania.">tab::operator= </a>(<a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> B) {
-<a name="l00091"></a>00091   wym=B.<a class="code" href="classtab.html#ae9a39f118e9d520422a702f34a02a6d4" title="Definicja wymiaru.">wymiar</a>();
+<a name="l00090"></a>00090 <a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> <a class="code" href="classtab.html#af186c24050e089bb140bc2980bab8448" title="Operator przypisania.">tab::operator= </a>(<a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> B) {
+<a name="l00091"></a>00091   wym=B.<a class="code" href="classtab.html#aedffa47955ffaea9876790a5fdbd9562" title="Definicja wymiaru.">wymiar</a>();
 <a name="l00092"></a>00092   <span class="keywordtype">int</span>* tmp;
 <a name="l00093"></a>00093   tmp=T;
 <a name="l00094"></a>00094   <span class="keyword">delete</span> [] tmp;
@@ -159,8 +159,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 <a name="l00099"></a>00099   <span class="keywordflow">return</span> *<span class="keyword">this</span>;  
 <a name="l00100"></a>00100 }
 <a name="l00101"></a>00101 
-<a name="l00102"></a>00102 <span class="keywordtype">bool</span> tab::operator== (<a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> B) {
-<a name="l00103"></a>00103   <span class="keywordflow">if</span> (wym != B.<a class="code" href="classtab.html#ae9a39f118e9d520422a702f34a02a6d4" title="Definicja wymiaru.">wymiar</a>()) {
+<a name="l00102"></a>00102 <span class="keywordtype">bool</span> <a class="code" href="classtab.html#a2729682ece1734772085a32ab2a992e5" title="Operator porównania.">tab::operator== </a>(<a class="code" href="classtab.html" title="Definicja klasy przechowującej tablice.">tab</a> B) {
+<a name="l00103"></a>00103   <span class="keywordflow">if</span> (wym != B.<a class="code" href="classtab.html#aedffa47955ffaea9876790a5fdbd9562" title="Definicja wymiaru.">wymiar</a>()) {
 <a name="l00104"></a>00104     <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00105"></a>00105   }
 <a name="l00106"></a>00106   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;wym;i++) {
@@ -190,7 +190,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 
 
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano Sun Mar 9 2014 23:37:08 dla tablice programem &#160;<a href="http://www.doxygen.org/index.html">
+Wygenerowano Sun Mar 16 2014 21:31:17 dla tablice programem &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wymiar',['wymiar',['../classtab.html#ae9a39f118e9d520422a702f34a02a6d4',1,'tab']]]
+  ['wymiar',['wymiar',['../classtab.html#aedffa47955ffaea9876790a5fdbd9562',1,'tab::wymiar()'],['../classtab.html#aedffa47955ffaea9876790a5fdbd9562',1,'tab::wymiar()']]]
 ];
