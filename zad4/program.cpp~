@@ -81,8 +81,8 @@ int tmp;
 
 
 
-for (unsigned long long int i=0;i<10000000;i++) {
-  tmp =( rand() % 10000000 ) + 1;
+for (unsigned long long int i=0;i<1000000;i++) {
+  tmp =( rand() % 1000000 ) + 1;
   //S.dodaj(tmp); //pobieramy dane z klawiatury: dla tablicy - dodaj, dla listy - dodaj_tyl, dla stosów i kolejki - push
   //S.dodaj_tyl(tmp);
   S.push(tmp);
@@ -107,7 +107,7 @@ cout << ((double)diff(time1, time2).tv_nsec)/1000000000 << "s" << endl;
   S.usun_przod();
 }*/
 
-for (unsigned long long int i=0;i<10000000;i++) {
+for (unsigned long long int i=0;i<1000000;i++) {
   cout << S.pop() << " ";
 }
 

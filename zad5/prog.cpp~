@@ -1,0 +1,29 @@
+#include "asocjacyjna.h"
+#include "asocjacyjna.cpp"
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+  ATablica<string,string> T;
+  if (T.czypusta()) {
+    cout << "TAK" << endl;
+  } else {
+    cout << "NIE" << endl;
+  }
+  T.dodaj("Gollnik","Monika");
+  T.dodaj("Kabat","Aleksy");
+  T.dodaj("Kreczmer","Bogdan");
+  cout << T.zliczelementy() << endl;
+  cout << T["Gollnik"] << endl;
+  cout << T["Kabat"] << endl;
+  T.dodaj("Kabat","Oleksy");
+  cout << T["Kabat"] << endl;
+  T.usun("Kabat");
+  cout << T.zliczelementy() << endl;
+  aiter<string,string> it;
+  for (it=T.begin();it!=T.end();it++) {
+    cout << *it << endl;
+  }
+}
