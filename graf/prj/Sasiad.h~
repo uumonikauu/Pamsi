@@ -1,0 +1,12 @@
+#ifndef SASIAD_H
+#define SASIAD_H
+
+template <class T>
+class Sasiad {
+public:
+  int V;//numer wierzcholka(sasiada)
+  T odleglosc;
+  Sasiad(int v, T C);
+};
+
+#endif

@@ -1,0 +1,19 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Graf::dodaj_wierzcholek",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#a40ce58fbf1a20123da855ac6f2fe9fc3",tooltip="Prototyp funkcji dodającej wierzchołek."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Graf::dodaj_krawedz",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#a84371428934edef93a783ee6a8fac0a5",tooltip="Prototyp funkcji dodającej krawedz."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Graf::CzySasiad",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#a01861cca27929e19cff4afa6193dd0be",tooltip="Prototyp funkcji sprawdzajacej czy sa sasiadami."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Graf::Sasiedztwo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#aa76ff60cadbe258042e4c58af1719ad8"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Graf::usun_krawedz",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#a46ddf0b86582f28a5dfa57348799ed9b",tooltip="Prototyp funkcji dousuwającej krawedz."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Graf::usun_wierzcholek",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#a87147813c1c05b9f9cd35a9eb4cef738",tooltip="Prototyp funkcji usuwajacej wierzchołek."];
+}

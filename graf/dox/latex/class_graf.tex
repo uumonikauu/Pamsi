@@ -1,0 +1,169 @@
+\hypertarget{class_graf}{\section{\-Dokumentacja szablonu klasy \-Graf$<$ \-T $>$}
+\label{class_graf}\index{\-Graf$<$ T $>$@{\-Graf$<$ T $>$}}
+}
+
+
+\-Definicja klasy reprezentującej \hyperlink{class_graf}{\-Graf}.  
+
+
+
+
+{\ttfamily \#include $<$graf.\-h$>$}
+
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_graf_a01861cca27929e19cff4afa6193dd0be}{\-Czy\-Sasiad} (int \-V1, int \-V2)
+\begin{DoxyCompactList}\small\item\em \-Prototyp funkcji sprawdzajacej czy sa sasiadami. \end{DoxyCompactList}\item 
+std\-::vector$<$ \hyperlink{class_sasiad}{\-Sasiad}$<$ \-T $>$ $>$ \hyperlink{class_graf_aa76ff60cadbe258042e4c58af1719ad8}{\-Sasiedztwo} (int \-V)
+\item 
+void \hyperlink{class_graf_a40ce58fbf1a20123da855ac6f2fe9fc3}{dodaj\-\_\-wierzcholek} ()
+\begin{DoxyCompactList}\small\item\em \-Prototyp funkcji dodającej wierzchołek. \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_a84371428934edef93a783ee6a8fac0a5}{dodaj\-\_\-krawedz} (int \-V1, int \-V2, \-T \-C)
+\begin{DoxyCompactList}\small\item\em \-Prototyp funkcji dodającej krawedz. \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_a46ddf0b86582f28a5dfa57348799ed9b}{usun\-\_\-krawedz} (int \-V1, int \-V2)
+\begin{DoxyCompactList}\small\item\em \-Prototyp funkcji dousuwającej krawedz. \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_a87147813c1c05b9f9cd35a9eb4cef738}{usun\-\_\-wierzcholek} (int \-V)
+\begin{DoxyCompactList}\small\item\em \-Prototyp funkcji usuwajacej wierzchołek. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ std\-::vector\*
+$<$ \hyperlink{class_sasiad}{\-Sasiad}$<$ \-T $>$ $>$ $>$ \hyperlink{class_graf_a974bf8b9ffcea59e13c6812f479c69af}{\-L}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\subsubsection*{template$<$class \-T$>$class Graf$<$ T $>$}
+
+
+
+\-Definicja w linii 11 pliku graf.\-h.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_graf_a01861cca27929e19cff4afa6193dd0be}{\index{\-Graf@{\-Graf}!\-Czy\-Sasiad@{\-Czy\-Sasiad}}
+\index{\-Czy\-Sasiad@{\-Czy\-Sasiad}!Graf@{\-Graf}}
+\subsubsection[{\-Czy\-Sasiad}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool {\bf \-Graf}$<$ \-T $>$\-::{\bf \-Czy\-Sasiad} (
+\begin{DoxyParamCaption}
+\item[{int}]{\-V1, }
+\item[{int}]{\-V2}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a01861cca27929e19cff4afa6193dd0be}
+\-Sprawdzamy po liscie sasiadow pierwszego wierzcholka czy ktorys z siasiadow nie jest drugim wierzcholkiem.
+
+\-Definicja funkcji sprawdzajacej czy sa sasiadami. sprawdzamy dlugosc listy.
+
+\-Definicja w linii 20 pliku graf.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_graf_a84371428934edef93a783ee6a8fac0a5}{\index{\-Graf@{\-Graf}!dodaj\-\_\-krawedz@{dodaj\-\_\-krawedz}}
+\index{dodaj\-\_\-krawedz@{dodaj\-\_\-krawedz}!Graf@{\-Graf}}
+\subsubsection[{dodaj\-\_\-krawedz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf \-Graf}$<$ \-T $>$\-::{\bf dodaj\-\_\-krawedz} (
+\begin{DoxyParamCaption}
+\item[{int}]{\-V1, }
+\item[{int}]{\-V2, }
+\item[{\-T}]{\-C}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a84371428934edef93a783ee6a8fac0a5}
+\-Definicja funkcji dodajacej krawedz. sprawdzamy dlugosc listy.
+
+\-Definicja w linii 41 pliku graf.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_graf_a40ce58fbf1a20123da855ac6f2fe9fc3}{\index{\-Graf@{\-Graf}!dodaj\-\_\-wierzcholek@{dodaj\-\_\-wierzcholek}}
+\index{dodaj\-\_\-wierzcholek@{dodaj\-\_\-wierzcholek}!Graf@{\-Graf}}
+\subsubsection[{dodaj\-\_\-wierzcholek}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf \-Graf}$<$ \-T $>$\-::{\bf dodaj\-\_\-wierzcholek} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a40ce58fbf1a20123da855ac6f2fe9fc3}
+\-Definicja funkcji dodającej wierzchołek. 
+
+\-Definicja w linii 7 pliku graf.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_graf_aa76ff60cadbe258042e4c58af1719ad8}{\index{\-Graf@{\-Graf}!\-Sasiedztwo@{\-Sasiedztwo}}
+\index{\-Sasiedztwo@{\-Sasiedztwo}!Graf@{\-Graf}}
+\subsubsection[{\-Sasiedztwo}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ std\-::vector$<$ {\bf \-Sasiad}$<$ \-T $>$ $>$ {\bf \-Graf}$<$ \-T $>$\-::{\bf \-Sasiedztwo} (
+\begin{DoxyParamCaption}
+\item[{int}]{\-V}
+\end{DoxyParamCaption}
+)}}\label{class_graf_aa76ff60cadbe258042e4c58af1719ad8}
+sprawdzamy dlugosc listy.
+
+\-Definicja w linii 91 pliku graf.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_graf_a46ddf0b86582f28a5dfa57348799ed9b}{\index{\-Graf@{\-Graf}!usun\-\_\-krawedz@{usun\-\_\-krawedz}}
+\index{usun\-\_\-krawedz@{usun\-\_\-krawedz}!Graf@{\-Graf}}
+\subsubsection[{usun\-\_\-krawedz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf \-Graf}$<$ \-T $>$\-::{\bf usun\-\_\-krawedz} (
+\begin{DoxyParamCaption}
+\item[{int}]{\-V1, }
+\item[{int}]{\-V2}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a46ddf0b86582f28a5dfa57348799ed9b}
+sprawdzamy po liscie sasiadow pierwszego wierzcholka czy ktorys z siasiadow nie jest drugim wierzcholkiem. \-Jesli tak usuwamy go.
+
+\-Definicja funkcji usuwajacej krawedz sprawdzamy dlugosc listy.
+
+sprawdzamy po liscie sasiadow drugiego wierzcholka czy ktorys z siasiadow nie jest pierwszym wierzcholkiem. \-Jesli tak usuwamy go.
+
+\-Definicja w linii 63 pliku graf.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_graf_a87147813c1c05b9f9cd35a9eb4cef738}{\index{\-Graf@{\-Graf}!usun\-\_\-wierzcholek@{usun\-\_\-wierzcholek}}
+\index{usun\-\_\-wierzcholek@{usun\-\_\-wierzcholek}!Graf@{\-Graf}}
+\subsubsection[{usun\-\_\-wierzcholek}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf \-Graf}$<$ \-T $>$\-::{\bf usun\-\_\-wierzcholek} (
+\begin{DoxyParamCaption}
+\item[{int}]{\-V}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a87147813c1c05b9f9cd35a9eb4cef738}
+zwraca liste wszystkich sasiadow usuwanego wierzcholka potem bazujac na tej liscie usuwa ten wierzcholek z listy sasiedztwa swoich sasiadow.
+
+\-Definicja funkcji usuwajacej wierzcholek sprawdzamy dlugosc listy.
+
+\-Definicja w linii 110 pliku graf.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_graf_a974bf8b9ffcea59e13c6812f479c69af}{\index{\-Graf@{\-Graf}!\-L@{\-L}}
+\index{\-L@{\-L}!Graf@{\-Graf}}
+\subsubsection[{\-L}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ std\-::vector$<$std\-::vector $<${\bf \-Sasiad} $<$\-T$>$ $>$ $>$ {\bf \-Graf}$<$ \-T $>$\-::{\bf \-L}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_graf_a974bf8b9ffcea59e13c6812f479c69af}
+
+
+\-Definicja w linii 12 pliku graf.\-h.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{graf_8h}{graf.\-h}\item 
+\hyperlink{graf_8cpp}{graf.\-cpp}\end{DoxyCompactItemize}

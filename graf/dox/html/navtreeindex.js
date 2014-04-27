@@ -1,0 +1,21 @@
+var NAVTREEINDEX =
+{
+"index.html":[],
+"annotated.html":[0,0],
+"class_graf.html":[0,0,0],
+"class_sasiad.html":[0,0,1],
+"classes.html":[0,1],
+"functions.html":[0,2,0],
+"functions_func.html":[0,2,1],
+"functions_vars.html":[0,2,2],
+"files.html":[1,0],
+"graf_8cpp.html":[1,0,0],
+"graf_8h.html":[1,0,1],
+"main_8cpp.html":[1,0,2],
+"_sasiad_8cpp.html":[1,0,3],
+"_sasiad_8h.html":[1,0,4],
+"globals.html":[1,1,0],
+"globals_func.html":[1,1,1],
+"dirs.html":[2],
+"dir_88ccbb1b05c4ea1d70bfb1aba4f6bd1a.html":[2,0]
+};
