@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>My Project: Plik źródłowy /home/monika/Pulpit/nowy/Pamsi/zad4poprawione/prj/inc/pomiary.hh</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Zadanie4</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('pomiary_8hh.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">pomiary.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pomiary_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef POMIARY_HH</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define POMIARY_HH</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;<a class="code" href="pomiary_8hh.html">pomiary.hh</a>&quot;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &quot;<a class="code" href="sortowania_8hh.html">sortowania.hh</a>&quot;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &quot;<a class="code" href="stos_8hh.html">stos.hh</a>&quot;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="main_8hh.html">main.hh</a>&quot;</span>
+<a name="l00011"></a>00011 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00015"></a>00015 <span class="keywordtype">int</span> <a class="code" href="pomiary_8hh.html#a8dd09d2ae11639b0591b5f678f63b438" title="Definicja klasy pomiary.">wczytaj</a>(<a class="code" href="classtab.html">tab&lt;T&gt;</a>&amp; Tab, <span class="keywordtype">string</span> NazwaPliku);
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00021"></a>00021 <span class="keywordtype">void</span> <a class="code" href="pomiary_8hh.html#a84d0295bc97cad9a4f456b25ade31197" title="Prototyp funkcji wyswietlajacej.">wyswietl</a>(<a class="code" href="classtab.html">tab&lt;T&gt;</a> Tab);
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00027"></a>00027 <span class="keywordtype">void</span> <a class="code" href="pomiary_8hh.html#a7eab400b30e2aa2000a05254aba04f0f" title="Prototyp funkcji mnozacej.">pomnoz</a>(<a class="code" href="classtab.html">tab&lt;T&gt;</a>&amp; Tab);
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029 timespec <a class="code" href="pomiary_8hh.html#a5959b2e100c03e81bd1c5049adf30165">diff</a>(timespec start, timespec end);
+<a name="l00033"></a>00033 <span class="keywordtype">void</span> <a class="code" href="pomiary_8hh.html#a41466d87f95931be3de0eccdda4a563f" title="Prototyp funkcji mierzacej czas.">pomiar</a>();
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+</div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="pomiary_8hh.html">pomiary.hh</a>      </li>
+
+    <li class="footer">Wygenerowano Tue Apr 29 2014 15:22:32 dla My Project programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

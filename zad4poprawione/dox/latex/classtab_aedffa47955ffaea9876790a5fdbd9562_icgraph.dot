@@ -1,0 +1,17 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="tab::wymiar",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="wyswietl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pomiary_8cpp.html#a84d0295bc97cad9a4f456b25ade31197",tooltip="Definicja funkcji wyświetlającej tablicę."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="pomnoz",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pomiary_8cpp.html#a7eab400b30e2aa2000a05254aba04f0f",tooltip="Definicja funkcji mnożącej tablicę przez 2."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="tab::dodaj",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtab.html#a39edfcc37ce6fc7d6bd27f0555c2d50b",tooltip="Definicja funkcji dodajacej elementy."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="tab::operator=",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtab.html#af4207a08771650dd947de83cb57bcf27",tooltip="Operator przypisania."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="tab::operator==",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classtab.html#a2729682ece1734772085a32ab2a992e5",tooltip="Operator porównania."];
+}

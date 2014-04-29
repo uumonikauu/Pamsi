@@ -1,0 +1,9 @@
+#include "pomiary.hh"
+#include "sortowania.hh"
+#include "stos.hh"
+#include "main.hh"
+
+int main() {
+pomiar();
+return 0;
+}

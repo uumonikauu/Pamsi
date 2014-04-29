@@ -1,0 +1,213 @@
+\hypertarget{classlista}{\section{\-Dokumentacja szablonu klasy lista$<$ \-T $>$}
+\label{classlista}\index{lista$<$ T $>$@{lista$<$ T $>$}}
+}
+
+
+\-Definicja klasy lista.  
+
+
+
+
+{\ttfamily \#include $<$stos.\-hh$>$}
+
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlista_adfa22c0202d7ac7abfe006dbd3b5a12a}{lista} ()
+\item 
+void \hyperlink{classlista_abfffecd8200714da1c80bb11b9aade5e}{dodaj\-\_\-przod} (\-T dana)
+\begin{DoxyCompactList}\small\item\em \-Prototyp funkcji dodajacej na przod. \end{DoxyCompactList}\item 
+void \hyperlink{classlista_a6998ee006deb26a2e66d6b3df832a469}{usun\-\_\-przod} ()
+\begin{DoxyCompactList}\small\item\em \-Prototyp funkcji usuwajacej element z przodu. \end{DoxyCompactList}\item 
+void \hyperlink{classlista_ad35c120f3285b0a8a5069b540bc178ae}{dodaj\-\_\-tyl} (\-T dana)
+\begin{DoxyCompactList}\small\item\em \-Prototyp funkcji dodajacej element na tyle. \end{DoxyCompactList}\item 
+void \hyperlink{classlista_aa60cc53e042281898cead5bc99fd8fc8}{usun\-\_\-tyl} ()
+\begin{DoxyCompactList}\small\item\em \-Prototyp funkcji usuwajacej element z tylu. \end{DoxyCompactList}\item 
+\-T \hyperlink{classlista_aae75ab30e8130ff72c409ac74588e778}{zobacz\-\_\-przod} ()
+\begin{DoxyCompactList}\small\item\em \-Prototyp funkcji pokazujacej przod. \end{DoxyCompactList}\item 
+\-T \hyperlink{classlista_aee86ec21992502a4cd67f8df38f37886}{zobacz\-\_\-tyl} ()
+\begin{DoxyCompactList}\small\item\em \-Prototyp funkcji pokazujacej tyl. \end{DoxyCompactList}\item 
+int \hyperlink{classlista_a71ac53823aaa5f53d06de4d69910ef9a}{size} ()
+\begin{DoxyCompactList}\small\item\em \-Zmienna przechowujaca rozmiar. \end{DoxyCompactList}\item 
+bool \hyperlink{classlista_a60113cb7fe7aa3bbf0e02e7bc5673adb}{empty} ()
+\begin{DoxyCompactList}\small\item\em \-Sprawdza czy puste. \end{DoxyCompactList}\item 
+void \hyperlink{classlista_a34b6928b48bb770cf37ab65394385637}{operator=} (\hyperlink{classlista}{lista}$<$ \-T $>$ \-L2)
+\begin{DoxyCompactList}\small\item\em ma za zadanie przypisywać jedna liste do drugiej (de facto tworzyć kopie). \end{DoxyCompactList}\item 
+\hyperlink{classel}{el}$<$ \-T $>$ $\ast$ \hyperlink{classlista_af06eae49ae7e3923e2c7c9fbbd46867b}{pocz} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classel}{el}$<$ \-T $>$ $\ast$ \hyperlink{classlista_ad344760a763e8d9818f9b60bc0e48ba6}{glowa}
+\item 
+\hyperlink{classel}{el}$<$ \-T $>$ $\ast$ \hyperlink{classlista_a9767a33d79ab3dbba6c82d74f518fc46}{ogon}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\subsubsection*{template$<$class \-T$>$class lista$<$ T $>$}
+
+
+
+\-Definicja w linii 97 pliku stos.\-hh.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{classlista_adfa22c0202d7ac7abfe006dbd3b5a12a}{\index{lista@{lista}!lista@{lista}}
+\index{lista@{lista}!lista@{lista}}
+\subsubsection[{lista}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ {\bf lista}$<$ \-T $>$\-::{\bf lista} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classlista_adfa22c0202d7ac7abfe006dbd3b5a12a}
+
+
+\-Definicja w linii 101 pliku stos.\-hh.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{classlista_abfffecd8200714da1c80bb11b9aade5e}{\index{lista@{lista}!dodaj\-\_\-przod@{dodaj\-\_\-przod}}
+\index{dodaj\-\_\-przod@{dodaj\-\_\-przod}!lista@{lista}}
+\subsubsection[{dodaj\-\_\-przod}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf lista}$<$ \-T $>$\-::{\bf dodaj\-\_\-przod} (
+\begin{DoxyParamCaption}
+\item[{\-T}]{dana}
+\end{DoxyParamCaption}
+)}}\label{classlista_abfffecd8200714da1c80bb11b9aade5e}
+\-Definicja funkcji dodajacej na przod listy. 
+
+\-Definicja w linii 193 pliku stos.\-cpp.
+
+\hypertarget{classlista_ad35c120f3285b0a8a5069b540bc178ae}{\index{lista@{lista}!dodaj\-\_\-tyl@{dodaj\-\_\-tyl}}
+\index{dodaj\-\_\-tyl@{dodaj\-\_\-tyl}!lista@{lista}}
+\subsubsection[{dodaj\-\_\-tyl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf lista}$<$ \-T $>$\-::{\bf dodaj\-\_\-tyl} (
+\begin{DoxyParamCaption}
+\item[{\-T}]{dana}
+\end{DoxyParamCaption}
+)}}\label{classlista_ad35c120f3285b0a8a5069b540bc178ae}
+\-Definicja funkcji dodajacej na tyl listy. 
+
+\-Definicja w linii 209 pliku stos.\-cpp.
+
+\hypertarget{classlista_a60113cb7fe7aa3bbf0e02e7bc5673adb}{\index{lista@{lista}!empty@{empty}}
+\index{empty@{empty}!lista@{lista}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool {\bf lista}$<$ \-T $>$\-::{\bf empty} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlista_a60113cb7fe7aa3bbf0e02e7bc5673adb}
+\-Definicja funkcji sprawdzajacej czy lista jest pusta. 
+
+\-Definicja w linii 161 pliku stos.\-cpp.
+
+\hypertarget{classlista_a34b6928b48bb770cf37ab65394385637}{\index{lista@{lista}!operator=@{operator=}}
+\index{operator=@{operator=}!lista@{lista}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf lista}$<$ \-T $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf lista}$<$ \-T $>$}]{\-L2}
+\end{DoxyParamCaption}
+)}}\label{classlista_a34b6928b48bb770cf37ab65394385637}
+usuwa 'stara' listę \-L kopiuje 'nowa' liste \-L2 na \-L
+
+\-Definicja w linii 278 pliku stos.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+\hypertarget{classlista_af06eae49ae7e3923e2c7c9fbbd46867b}{\index{lista@{lista}!pocz@{pocz}}
+\index{pocz@{pocz}!lista@{lista}}
+\subsubsection[{pocz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ {\bf el}$<$\-T$>$$\ast$ {\bf lista}$<$ \-T $>$\-::{\bf pocz} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classlista_af06eae49ae7e3923e2c7c9fbbd46867b}
+
+
+\-Definicja w linii 138 pliku stos.\-hh.
+
+\hypertarget{classlista_a71ac53823aaa5f53d06de4d69910ef9a}{\index{lista@{lista}!size@{size}}
+\index{size@{size}!lista@{lista}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ int {\bf lista}$<$ \-T $>$\-::{\bf size} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlista_a71ac53823aaa5f53d06de4d69910ef9a}
+\-Definicja funkcji sprawdzajacej rozmiar listy. zmienna wielkosci.
+
+\-Definicja w linii 174 pliku stos.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{classlista_a6998ee006deb26a2e66d6b3df832a469}{\index{lista@{lista}!usun\-\_\-przod@{usun\-\_\-przod}}
+\index{usun\-\_\-przod@{usun\-\_\-przod}!lista@{lista}}
+\subsubsection[{usun\-\_\-przod}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf lista}$<$ \-T $>$\-::{\bf usun\-\_\-przod} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlista_a6998ee006deb26a2e66d6b3df832a469}
+\-Definicja funkcji usuwajacej element z przodu listy. 
+
+\-Definicja w linii 225 pliku stos.\-cpp.
+
+\hypertarget{classlista_aa60cc53e042281898cead5bc99fd8fc8}{\index{lista@{lista}!usun\-\_\-tyl@{usun\-\_\-tyl}}
+\index{usun\-\_\-tyl@{usun\-\_\-tyl}!lista@{lista}}
+\subsubsection[{usun\-\_\-tyl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf lista}$<$ \-T $>$\-::{\bf usun\-\_\-tyl} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlista_aa60cc53e042281898cead5bc99fd8fc8}
+\-Definicja funkcji usuwajacej element z tylu listy. 
+
+\-Definicja w linii 243 pliku stos.\-cpp.
+
+\hypertarget{classlista_aae75ab30e8130ff72c409ac74588e778}{\index{lista@{lista}!zobacz\-\_\-przod@{zobacz\-\_\-przod}}
+\index{zobacz\-\_\-przod@{zobacz\-\_\-przod}!lista@{lista}}
+\subsubsection[{zobacz\-\_\-przod}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ \-T {\bf lista}$<$ \-T $>$\-::{\bf zobacz\-\_\-przod} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlista_aae75ab30e8130ff72c409ac74588e778}
+\-Definicja funkcji pokazujacej przod listy. 
+
+\-Definicja w linii 262 pliku stos.\-cpp.
+
+\hypertarget{classlista_aee86ec21992502a4cd67f8df38f37886}{\index{lista@{lista}!zobacz\-\_\-tyl@{zobacz\-\_\-tyl}}
+\index{zobacz\-\_\-tyl@{zobacz\-\_\-tyl}!lista@{lista}}
+\subsubsection[{zobacz\-\_\-tyl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ \-T {\bf lista}$<$ \-T $>$\-::{\bf zobacz\-\_\-tyl} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlista_aee86ec21992502a4cd67f8df38f37886}
+\-Definicja funkcji pokazujacej tyl listy. 
+
+\-Definicja w linii 270 pliku stos.\-cpp.
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{classlista_ad344760a763e8d9818f9b60bc0e48ba6}{\index{lista@{lista}!glowa@{glowa}}
+\index{glowa@{glowa}!lista@{lista}}
+\subsubsection[{glowa}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ {\bf el}$<$\-T$>$$\ast$ {\bf lista}$<$ \-T $>$\-::{\bf glowa}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classlista_ad344760a763e8d9818f9b60bc0e48ba6}
+
+
+\-Definicja w linii 98 pliku stos.\-hh.
+
+\hypertarget{classlista_a9767a33d79ab3dbba6c82d74f518fc46}{\index{lista@{lista}!ogon@{ogon}}
+\index{ogon@{ogon}!lista@{lista}}
+\subsubsection[{ogon}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-T$>$ {\bf el}$<$\-T$>$$\ast$ {\bf lista}$<$ \-T $>$\-::{\bf ogon}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classlista_a9767a33d79ab3dbba6c82d74f518fc46}
+
+
+\-Definicja w linii 99 pliku stos.\-hh.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+/home/monika/\-Pulpit/nowy/\-Pamsi/zad4poprawione/prj/inc/\hyperlink{stos_8hh}{stos.\-hh}\item 
+/home/monika/\-Pulpit/nowy/\-Pamsi/zad4poprawione/prj/src/\hyperlink{stos_8cpp}{stos.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,126 @@
+\hypertarget{sortowania_8cpp}{\section{\-Dokumentacja pliku /home/monika/\-Pulpit/nowy/\-Pamsi/zad4poprawione/prj/src/sortowania.cpp}
+\label{sortowania_8cpp}\index{/home/monika/\-Pulpit/nowy/\-Pamsi/zad4poprawione/prj/src/sortowania.\-cpp@{/home/monika/\-Pulpit/nowy/\-Pamsi/zad4poprawione/prj/src/sortowania.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}pomiary.\-hh\char`\"{}}\*
+{\ttfamily \#include \char`\"{}sortowania.\-hh\char`\"{}}\*
+{\ttfamily \#include \char`\"{}stos.\-hh\char`\"{}}\*
+\-Wykres zależności załączania dla sortowania.\-cpp\-:
+\-Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\-:
+\subsection*{\-Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Typ $>$ }\\void \hyperlink{sortowania_8cpp_adfe1e073cd89e08ac3ccef182ee5950a}{merge\-\_\-sort} (\-Typ $\ast$wsk, int size)
+\begin{DoxyCompactList}\small\item\em \-Definicja metody klasy sortowania. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Typ $>$ }\\void \hyperlink{sortowania_8cpp_acafaaefff6693e132727c9558200c364}{merge\-\_\-sort} (\hyperlink{classel}{el}$<$ \-Typ $>$ $\ast$wsk, int size)
+\begin{DoxyCompactList}\small\item\em dla nietablicowych -\/ różni się tylko tym, że zamiast stosować wyrażenie wsk\mbox{[}i\mbox{]} stosuje sie inkrementowanie wskaźników wsk=wsk-\/$>$nxt; \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Typ $>$ }\\void \hyperlink{sortowania_8cpp_a3f56cc7fcc2745ee52c1a3e22a88ddb4}{qsort} (\-Typ $\ast$wsk, int size)
+\begin{DoxyCompactList}\small\item\em \-Z tablicy wybiera się element rozdzielający, po czym tablica jest dzielona na dwa fragmenty\-: do początkowego przenoszone są wszystkie elementy nie większe od rozdzielającego, do końcowego wszystkie większe. \-Potem sortuje się osobno początkową i końcową część tablicy. \-Rekursja kończy się, gdy kolejny fragment uzyskany z podziału zawiera pojedynczy element, jako że jednoelementowa tablica nie wymaga sortowania. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Typ $>$ }\\void \hyperlink{sortowania_8cpp_af84c8cbe272c47643c9ad1703b5b6cbd}{qsort} (\hyperlink{classel}{el}$<$ \-Typ $>$ $\ast$wsk, int size)
+\begin{DoxyCompactList}\small\item\em dla nietablicowych -\/ różni się tylko tym, że zamiast stosować wyrażenie wsk\mbox{[}i\mbox{]} stosuje sie inkrementowanie wskaźników wsk=wsk-\/$>$nxt; \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Dokumentacja funkcji}
+\hypertarget{sortowania_8cpp_adfe1e073cd89e08ac3ccef182ee5950a}{\index{sortowania.\-cpp@{sortowania.\-cpp}!merge\-\_\-sort@{merge\-\_\-sort}}
+\index{merge\-\_\-sort@{merge\-\_\-sort}!sortowania.cpp@{sortowania.\-cpp}}
+\subsubsection[{merge\-\_\-sort}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Typ $>$ void {\bf merge\-\_\-sort} (
+\begin{DoxyParamCaption}
+\item[{\-Typ $\ast$}]{wsk, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}}\label{sortowania_8cpp_adfe1e073cd89e08ac3ccef182ee5950a}
+\-Definicje klasy sortowania.
+
+\-Definicja sortowania merge \-Dzieli tablice
+
+\-Dzieli tablice
+
+\-Zmienne pomocnicze
+
+\-Definicja w linii 11 pliku sortowania.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{sortowania_8cpp_acafaaefff6693e132727c9558200c364}{\index{sortowania.\-cpp@{sortowania.\-cpp}!merge\-\_\-sort@{merge\-\_\-sort}}
+\index{merge\-\_\-sort@{merge\-\_\-sort}!sortowania.cpp@{sortowania.\-cpp}}
+\subsubsection[{merge\-\_\-sort}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Typ $>$ void {\bf merge\-\_\-sort} (
+\begin{DoxyParamCaption}
+\item[{{\bf el}$<$ \-Typ $>$ $\ast$}]{wsk, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}}\label{sortowania_8cpp_acafaaefff6693e132727c9558200c364}
+\-Prototyp funkcji sortowania merge.
+
+\-Definicja sortowania merge \-Dzieli tablice.
+
+dzieli tablice
+
+\-Zmienne pomocnicze.
+
+\-Definicja w linii 64 pliku sortowania.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+\hypertarget{sortowania_8cpp_a3f56cc7fcc2745ee52c1a3e22a88ddb4}{\index{sortowania.\-cpp@{sortowania.\-cpp}!qsort@{qsort}}
+\index{qsort@{qsort}!sortowania.cpp@{sortowania.\-cpp}}
+\subsubsection[{qsort}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Typ $>$ void {\bf qsort} (
+\begin{DoxyParamCaption}
+\item[{\-Typ $\ast$}]{wsk, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}}\label{sortowania_8cpp_a3f56cc7fcc2745ee52c1a3e22a88ddb4}
+\-Prototyp funkcji sortowania szybkiego.
+
+\-Definicja sortowania szybkiego \-Zmienna sl1.
+
+\-Zmienna sl2..
+
+podzial na podtablice
+
+powrot do tablicy macierzystej
+
+\-Definicja w linii 129 pliku sortowania.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{sortowania_8cpp_af84c8cbe272c47643c9ad1703b5b6cbd}{\index{sortowania.\-cpp@{sortowania.\-cpp}!qsort@{qsort}}
+\index{qsort@{qsort}!sortowania.cpp@{sortowania.\-cpp}}
+\subsubsection[{qsort}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Typ $>$ void {\bf qsort} (
+\begin{DoxyParamCaption}
+\item[{{\bf el}$<$ \-Typ $>$ $\ast$}]{wsk, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}}\label{sortowania_8cpp_af84c8cbe272c47643c9ad1703b5b6cbd}
+\-Prototyp funkcji sortowania szybkiego.
+
+\-Definicja sortowania szybkiego \-Zmienna sl1.
+
+\-Zmienna sl2.
+
+podzial na podtablice
+
+\-Definicja w linii 184 pliku sortowania.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+

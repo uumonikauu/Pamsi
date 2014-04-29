@@ -1,0 +1,232 @@
+\hypertarget{classtab}{\section{\-Dokumentacja szablonu klasy tab$<$ \-Typ $>$}
+\label{classtab}\index{tab$<$ Typ $>$@{tab$<$ Typ $>$}}
+}
+
+
+\-Definicja klasy tablica.  
+
+
+
+
+{\ttfamily \#include $<$stos.\-hh$>$}
+
+
+
+\-Diagram dziedziczenia dla tab$<$ \-Typ $>$
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classtab_aedffa47955ffaea9876790a5fdbd9562}{wymiar} ()
+\begin{DoxyCompactList}\small\item\em \-Prototyp funkcji przedstawiajacej wymiar. \end{DoxyCompactList}\item 
+\hyperlink{classtab_a36068a968872b0263096a9719a2ad5bb}{tab} (int \hyperlink{classtab_aedffa47955ffaea9876790a5fdbd9562}{wymiar}=0)
+\begin{DoxyCompactList}\small\item\em \-Definicja metod klasy stos. \end{DoxyCompactList}\item 
+void \hyperlink{classtab_a47d35ab4fd1e07333de71f9eb4b7fab2}{zamien} (\-Typ i, \-Typ j)
+\begin{DoxyCompactList}\small\item\em \-Prototyp funkcji zamieniajacej miejscami i, j. \end{DoxyCompactList}\item 
+void \hyperlink{classtab_a3892398e71e9d23417c8dce1b1ba852f}{odwroc} ()
+\begin{DoxyCompactList}\small\item\em \-Prototyp funkcji odwracajacej tablicę. \end{DoxyCompactList}\item 
+void \hyperlink{classtab_a5abb6bb51a476b922d00f8f3e8615f24}{dodaj} (\-Typ e)
+\begin{DoxyCompactList}\small\item\em \-Prototyp funkcji dodajacej elementy. \end{DoxyCompactList}\item 
+\hyperlink{classtab}{tab} \hyperlink{classtab_a39edfcc37ce6fc7d6bd27f0555c2d50b}{dodaj} (\hyperlink{classtab}{tab} \-B)
+\begin{DoxyCompactList}\small\item\em \-Definicja funkcji dodajacej elementy. \end{DoxyCompactList}\item 
+void \hyperlink{classtab_a2bf843dc30ad51922a85f676f978dd47}{usun} (int ind)
+\begin{DoxyCompactList}\small\item\em \-Prototyp funkcji usuwajacej elementy. \end{DoxyCompactList}\item 
+\hyperlink{classtab}{tab} \hyperlink{classtab_af4207a08771650dd947de83cb57bcf27}{operator=} (\hyperlink{classtab}{tab} \-B)
+\begin{DoxyCompactList}\small\item\em \-Operator przypisania. \end{DoxyCompactList}\item 
+bool \hyperlink{classtab_a2729682ece1734772085a32ab2a992e5}{operator==} (\hyperlink{classtab}{tab} \-B)
+\begin{DoxyCompactList}\small\item\em \-Operator porównania. \end{DoxyCompactList}\item 
+\-Typ \& \hyperlink{classtab_a85ddf1710645b9e1ffd36726830a581b}{operator\mbox{[}$\,$\mbox{]}} (int ind)
+\begin{DoxyCompactList}\small\item\em \-Operatory odwołania się do danego pola. \end{DoxyCompactList}\item 
+const \-Typ \& \hyperlink{classtab_a7896ca836d17e0636804124889c742dc}{operator\mbox{[}$\,$\mbox{]}} (int ind) const 
+\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classtab_a3bb4a59327034c236f8fe9c0c35b90a7}{wym}
+\begin{DoxyCompactList}\small\item\em \-Zmienna przechowujaca wymiar. \end{DoxyCompactList}\item 
+\-Typ $\ast$ \hyperlink{classtab_a97745f07acefb042ad21811141f51afb}{\-T}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\subsubsection*{template$<$class \-Typ$>$class tab$<$ Typ $>$}
+
+
+
+\-Definicja w linii 9 pliku stos.\-hh.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{classtab_a36068a968872b0263096a9719a2ad5bb}{\index{tab@{tab}!tab@{tab}}
+\index{tab@{tab}!tab@{tab}}
+\subsubsection[{tab}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Typ $>$ {\bf tab}$<$ \-Typ $>$\-::{\bf tab} (
+\begin{DoxyParamCaption}
+\item[{int}]{w = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classtab_a36068a968872b0263096a9719a2ad5bb}
+\-Definicja funkcji wyswietlajacej tablice. 
+
+\-Definicja w linii 9 pliku stos.\-cpp.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{classtab_a5abb6bb51a476b922d00f8f3e8615f24}{\index{tab@{tab}!dodaj@{dodaj}}
+\index{dodaj@{dodaj}!tab@{tab}}
+\subsubsection[{dodaj}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-Typ$>$ void {\bf tab}$<$ \-Typ $>$\-::{\bf dodaj} (
+\begin{DoxyParamCaption}
+\item[{\-Typ}]{e}
+\end{DoxyParamCaption}
+)}}\label{classtab_a5abb6bb51a476b922d00f8f3e8615f24}
+\-Definicja funkcji dodajacej elementy. 
+
+\-Definicja w linii 39 pliku stos.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{classtab_a39edfcc37ce6fc7d6bd27f0555c2d50b}{\index{tab@{tab}!dodaj@{dodaj}}
+\index{dodaj@{dodaj}!tab@{tab}}
+\subsubsection[{dodaj}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-Typ$>$ {\bf tab}$<$ \-Typ $>$ {\bf tab}$<$ \-Typ $>$\-::{\bf dodaj} (
+\begin{DoxyParamCaption}
+\item[{{\bf tab}$<$ \-Typ $>$}]{\-B}
+\end{DoxyParamCaption}
+)}}\label{classtab_a39edfcc37ce6fc7d6bd27f0555c2d50b}
+\-Zmienna w.
+
+\-Definicja w linii 54 pliku stos.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+\hypertarget{classtab_a3892398e71e9d23417c8dce1b1ba852f}{\index{tab@{tab}!odwroc@{odwroc}}
+\index{odwroc@{odwroc}!tab@{tab}}
+\subsubsection[{odwroc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Typ $>$ void {\bf tab}$<$ \-Typ $>$\-::{\bf odwroc} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtab_a3892398e71e9d23417c8dce1b1ba852f}
+\-Definicja funkcji odwracajacej tablice. 
+
+\-Definicja w linii 29 pliku stos.\-cpp.
+
+\hypertarget{classtab_af4207a08771650dd947de83cb57bcf27}{\index{tab@{tab}!operator=@{operator=}}
+\index{operator=@{operator=}!tab@{tab}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Typ $>$ {\bf tab}$<$ \-Typ $>$ {\bf tab}$<$ \-Typ $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf tab}$<$ \-Typ $>$}]{\-B}
+\end{DoxyParamCaption}
+)}}\label{classtab_af4207a08771650dd947de83cb57bcf27}
+\-Definicja funkcji porownania. 
+
+\-Definicja w linii 85 pliku stos.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+\hypertarget{classtab_a2729682ece1734772085a32ab2a992e5}{\index{tab@{tab}!operator==@{operator==}}
+\index{operator==@{operator==}!tab@{tab}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Typ $>$ bool {\bf tab}$<$ \-Typ $>$\-::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf tab}$<$ \-Typ $>$}]{\-B}
+\end{DoxyParamCaption}
+)}}\label{classtab_a2729682ece1734772085a32ab2a992e5}
+\-Definicja funkcji przypisania. 
+
+\-Definicja w linii 101 pliku stos.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+\hypertarget{classtab_a85ddf1710645b9e1ffd36726830a581b}{\index{tab@{tab}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!tab@{tab}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-Typ$>$ \-Typ\& {\bf tab}$<$ \-Typ $>$\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{ind}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classtab_a85ddf1710645b9e1ffd36726830a581b}
+
+
+\-Definicja w linii 51 pliku stos.\-hh.
+
+\hypertarget{classtab_a7896ca836d17e0636804124889c742dc}{\index{tab@{tab}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!tab@{tab}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-Typ$>$ const \-Typ\& {\bf tab}$<$ \-Typ $>$\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{ind}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classtab_a7896ca836d17e0636804124889c742dc}
+
+
+\-Definicja w linii 53 pliku stos.\-hh.
+
+\hypertarget{classtab_a2bf843dc30ad51922a85f676f978dd47}{\index{tab@{tab}!usun@{usun}}
+\index{usun@{usun}!tab@{tab}}
+\subsubsection[{usun}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Typ $>$ void {\bf tab}$<$ \-Typ $>$\-::{\bf usun} (
+\begin{DoxyParamCaption}
+\item[{int}]{ind}
+\end{DoxyParamCaption}
+)}}\label{classtab_a2bf843dc30ad51922a85f676f978dd47}
+\-Definicja funkcji usuwajacej. 
+
+\-Definicja w linii 74 pliku stos.\-cpp.
+
+\hypertarget{classtab_aedffa47955ffaea9876790a5fdbd9562}{\index{tab@{tab}!wymiar@{wymiar}}
+\index{wymiar@{wymiar}!tab@{tab}}
+\subsubsection[{wymiar}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-Typ$>$ int {\bf tab}$<$ \-Typ $>$\-::{\bf wymiar} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classtab_aedffa47955ffaea9876790a5fdbd9562}
+
+
+\-Definicja w linii 19 pliku stos.\-hh.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{classtab_a47d35ab4fd1e07333de71f9eb4b7fab2}{\index{tab@{tab}!zamien@{zamien}}
+\index{zamien@{zamien}!tab@{tab}}
+\subsubsection[{zamien}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-Typ$>$ void {\bf tab}$<$ \-Typ $>$\-::{\bf zamien} (
+\begin{DoxyParamCaption}
+\item[{\-Typ}]{i, }
+\item[{\-Typ}]{j}
+\end{DoxyParamCaption}
+)}}\label{classtab_a47d35ab4fd1e07333de71f9eb4b7fab2}
+\-Definicja funkcji zamieniajacej i, j. 
+
+\-Definicja w linii 18 pliku stos.\-cpp.
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{classtab_a97745f07acefb042ad21811141f51afb}{\index{tab@{tab}!\-T@{\-T}}
+\index{\-T@{\-T}!tab@{tab}}
+\subsubsection[{\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-Typ$>$ \-Typ$\ast$ {\bf tab}$<$ \-Typ $>$\-::{\bf \-T}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classtab_a97745f07acefb042ad21811141f51afb}
+
+
+\-Definicja w linii 14 pliku stos.\-hh.
+
+\hypertarget{classtab_a3bb4a59327034c236f8fe9c0c35b90a7}{\index{tab@{tab}!wym@{wym}}
+\index{wym@{wym}!tab@{tab}}
+\subsubsection[{wym}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-Typ$>$ int {\bf tab}$<$ \-Typ $>$\-::{\bf wym}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classtab_a3bb4a59327034c236f8fe9c0c35b90a7}
+
+
+\-Definicja w linii 13 pliku stos.\-hh.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+/home/monika/\-Pulpit/nowy/\-Pamsi/zad4poprawione/prj/inc/\hyperlink{stos_8hh}{stos.\-hh}\item 
+/home/monika/\-Pulpit/nowy/\-Pamsi/zad4poprawione/prj/src/\hyperlink{stos_8cpp}{stos.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,160 @@
+\hypertarget{classkolejka}{\section{\-Dokumentacja szablonu klasy kolejka$<$ \-T $>$}
+\label{classkolejka}\index{kolejka$<$ T $>$@{kolejka$<$ T $>$}}
+}
+
+
+\-Definicja klasy kolejka.  
+
+
+
+
+{\ttfamily \#include $<$stos.\-hh$>$}
+
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classkolejka_a97c873e61c9d08a08ddec5c0a784aaec}{size} ()
+\begin{DoxyCompactList}\small\item\em \-Zmienna przechowujaca rozmiar. \end{DoxyCompactList}\item 
+bool \hyperlink{classkolejka_a2a5984247b91f8d4b96c1104755c14ee}{empty} ()
+\begin{DoxyCompactList}\small\item\em \-Sprawdza czy puste.. \end{DoxyCompactList}\item 
+void \hyperlink{classkolejka_a9ab5091d52ebfe6cb4785bfd4ec2a0b9}{push} (\-T e)
+\begin{DoxyCompactList}\small\item\em \-Dodaje element. \end{DoxyCompactList}\item 
+\-T \hyperlink{classkolejka_aed8feb84d0962f52961325340bd6ee92}{pop} ()
+\begin{DoxyCompactList}\small\item\em \-Definicja funkcji zdejmująca elementy z kolejki. \end{DoxyCompactList}\item 
+\hyperlink{classkolejka_ae1c55bf81416aceaa811879e58263743}{kolejka} ()
+\item 
+void \hyperlink{classkolejka_a3802e595aad03b06e547714f5aa73a1d}{queue} (\hyperlink{classlista}{lista}$<$ \-T $>$ \-L2)
+\begin{DoxyCompactList}\small\item\em \-Dodaje do kolejki. \end{DoxyCompactList}\item 
+\hyperlink{classlista}{lista}$<$ \-T $>$ \hyperlink{classkolejka_a88cae02e37f9f6a7891c45f6490de6d6}{dequeue} ()
+\begin{DoxyCompactList}\small\item\em \-Definicja funkcji usuwajacej element z kolejki. \end{DoxyCompactList}\item 
+\hyperlink{classel}{el}$<$ \-T $>$ $\ast$ \hyperlink{classkolejka_a662375b176addc87e5b6b91f1555ad09}{pocz} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlista}{lista}$<$ \-T $>$ \hyperlink{classkolejka_a44a764feb85099820ffbc022f4755fe0}{\-L}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\subsubsection*{template$<$class T$>$class kolejka$<$ T $>$}
+
+
+
+\-Definicja w linii 170 pliku stos.\-hh.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{classkolejka_ae1c55bf81416aceaa811879e58263743}{\index{kolejka@{kolejka}!kolejka@{kolejka}}
+\index{kolejka@{kolejka}!kolejka@{kolejka}}
+\subsubsection[{kolejka}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf kolejka}$<$ \-T $>$\-::{\bf kolejka} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classkolejka_ae1c55bf81416aceaa811879e58263743}
+
+
+\-Definicja w linii 186 pliku stos.\-hh.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{classkolejka_a88cae02e37f9f6a7891c45f6490de6d6}{\index{kolejka@{kolejka}!dequeue@{dequeue}}
+\index{dequeue@{dequeue}!kolejka@{kolejka}}
+\subsubsection[{dequeue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf lista}$<$ \-T $>$ {\bf kolejka}$<$ \-T $>$\-::{\bf dequeue} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classkolejka_a88cae02e37f9f6a7891c45f6490de6d6}
+
+
+\-Definicja w linii 394 pliku stos.\-cpp.
+
+\hypertarget{classkolejka_a2a5984247b91f8d4b96c1104755c14ee}{\index{kolejka@{kolejka}!empty@{empty}}
+\index{empty@{empty}!kolejka@{kolejka}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool {\bf kolejka}$<$ \-T $>$\-::{\bf empty} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classkolejka_a2a5984247b91f8d4b96c1104755c14ee}
+\-Definicja funkcji sprawdzającej czy kolejka jest \char`\"{}pusta\char`\"{}. 
+
+\-Definicja w linii 355 pliku stos.\-cpp.
+
+\hypertarget{classkolejka_a662375b176addc87e5b6b91f1555ad09}{\index{kolejka@{kolejka}!pocz@{pocz}}
+\index{pocz@{pocz}!kolejka@{kolejka}}
+\subsubsection[{pocz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf el}$<$\-T$>$$\ast$ {\bf kolejka}$<$ \-T $>$\-::{\bf pocz} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classkolejka_a662375b176addc87e5b6b91f1555ad09}
+
+
+\-Definicja w linii 192 pliku stos.\-hh.
+
+\hypertarget{classkolejka_aed8feb84d0962f52961325340bd6ee92}{\index{kolejka@{kolejka}!pop@{pop}}
+\index{pop@{pop}!kolejka@{kolejka}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ \-T {\bf kolejka}$<$ \-T $>$\-::{\bf pop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classkolejka_aed8feb84d0962f52961325340bd6ee92}
+
+
+\-Definicja w linii 374 pliku stos.\-cpp.
+
+\hypertarget{classkolejka_a9ab5091d52ebfe6cb4785bfd4ec2a0b9}{\index{kolejka@{kolejka}!push@{push}}
+\index{push@{push}!kolejka@{kolejka}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf kolejka}$<$ \-T $>$\-::{\bf push} (
+\begin{DoxyParamCaption}
+\item[{\-T}]{e}
+\end{DoxyParamCaption}
+)}}\label{classkolejka_a9ab5091d52ebfe6cb4785bfd4ec2a0b9}
+\-Definicja funkcji wrzucająca elemnty na kolejke. 
+
+\-Definicja w linii 366 pliku stos.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{classkolejka_a3802e595aad03b06e547714f5aa73a1d}{\index{kolejka@{kolejka}!queue@{queue}}
+\index{queue@{queue}!kolejka@{kolejka}}
+\subsubsection[{queue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf kolejka}$<$ \-T $>$\-::{\bf queue} (
+\begin{DoxyParamCaption}
+\item[{{\bf lista}$<$ \-T $>$}]{\-L2}
+\end{DoxyParamCaption}
+)}}\label{classkolejka_a3802e595aad03b06e547714f5aa73a1d}
+\-Definicja funkcji ustawiającej elemty w kolejce. 
+
+\-Definicja w linii 386 pliku stos.\-cpp.
+
+\hypertarget{classkolejka_a97c873e61c9d08a08ddec5c0a784aaec}{\index{kolejka@{kolejka}!size@{size}}
+\index{size@{size}!kolejka@{kolejka}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ int {\bf kolejka}$<$ \-T $>$\-::{\bf size} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classkolejka_a97c873e61c9d08a08ddec5c0a784aaec}
+\-Definicja funkcji sprawdzajacej rozmiar kolejki. 
+
+\-Definicja w linii 347 pliku stos.\-cpp.
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{classkolejka_a44a764feb85099820ffbc022f4755fe0}{\index{kolejka@{kolejka}!\-L@{\-L}}
+\index{\-L@{\-L}!kolejka@{kolejka}}
+\subsubsection[{\-L}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf lista}$<$\-T$>$ {\bf kolejka}$<$ \-T $>$\-::{\bf \-L}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classkolejka_a44a764feb85099820ffbc022f4755fe0}
+
+
+\-Definicja w linii 171 pliku stos.\-hh.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+/home/monika/\-Pulpit/nowy/\-Pamsi/zad4poprawione/prj/inc/\hyperlink{stos_8hh}{stos.\-hh}\item 
+/home/monika/\-Pulpit/nowy/\-Pamsi/zad4poprawione/prj/src/\hyperlink{stos_8cpp}{stos.\-cpp}\end{DoxyCompactItemize}

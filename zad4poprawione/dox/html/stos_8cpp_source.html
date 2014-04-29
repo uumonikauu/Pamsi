@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>My Project: Plik źródłowy /home/monika/Pulpit/nowy/Pamsi/zad4poprawione/prj/src/stos.cpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Zadanie4</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('stos_8cpp.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">stos.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="stos_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#include &quot;<a class="code" href="stos_8hh.html">stos.hh</a>&quot;</span>
+<a name="l00005"></a>00005 <span class="keyword">template</span> &lt;<span class="keyword">class</span> Typ&gt;
+<a name="l00009"></a><a class="code" href="classtab.html#a36068a968872b0263096a9719a2ad5bb">00009</a> <a class="code" href="classtab.html#a36068a968872b0263096a9719a2ad5bb" title="Definicja metod klasy stos.">tab&lt;Typ&gt;::tab</a>(<span class="keywordtype">int</span> w) {
+<a name="l00010"></a>00010   wym=w;
+<a name="l00011"></a>00011   T = <span class="keyword">new</span> <span class="keywordtype">int</span> [wym];
+<a name="l00012"></a>00012 }
+<a name="l00013"></a>00013 
+<a name="l00014"></a>00014 <span class="keyword">template</span> &lt;<span class="keyword">class</span> Typ&gt;
+<a name="l00018"></a><a class="code" href="classtab.html#a47d35ab4fd1e07333de71f9eb4b7fab2">00018</a> <span class="keywordtype">void</span> <a class="code" href="classtab.html#a47d35ab4fd1e07333de71f9eb4b7fab2" title="Prototyp funkcji zamieniajacej miejscami i, j.">tab&lt;Typ&gt;::zamien</a>(Typ i, Typ j) {
+<a name="l00019"></a>00019   Typ tmp;
+<a name="l00020"></a>00020   tmp = T[i];
+<a name="l00021"></a>00021   T[i] = T[j];
+<a name="l00022"></a>00022   T[j] = tmp;
+<a name="l00023"></a>00023 }
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025 <span class="keyword">template</span> &lt;<span class="keyword">class</span> Typ&gt;
+<a name="l00029"></a><a class="code" href="classtab.html#a3892398e71e9d23417c8dce1b1ba852f">00029</a> <span class="keywordtype">void</span> <a class="code" href="classtab.html#a3892398e71e9d23417c8dce1b1ba852f" title="Prototyp funkcji odwracajacej tablicę.">tab&lt;Typ&gt;::odwroc</a>() {
+<a name="l00030"></a>00030   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;(wym/2);i++) {
+<a name="l00031"></a>00031     zamien(i,wym-i-1);
+<a name="l00032"></a>00032   }
+<a name="l00033"></a>00033 }
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 <span class="keyword">template</span> &lt;<span class="keyword">class</span> Typ&gt;
+<a name="l00039"></a><a class="code" href="classtab.html#a5abb6bb51a476b922d00f8f3e8615f24">00039</a> <span class="keywordtype">void</span> <a class="code" href="classtab.html#a5abb6bb51a476b922d00f8f3e8615f24" title="Prototyp funkcji dodajacej elementy.">tab&lt;Typ&gt;::dodaj</a>(Typ e) {
+<a name="l00040"></a>00040   wym++;
+<a name="l00041"></a>00041   Typ* tmp;
+<a name="l00042"></a>00042   tmp=T;
+<a name="l00043"></a>00043   T = <span class="keyword">new</span> Typ [wym];
+<a name="l00044"></a>00044   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;wym-1;i++) {
+<a name="l00045"></a>00045     T[i]=tmp[i];
+<a name="l00046"></a>00046   }
+<a name="l00047"></a>00047   T[wym-1]=e;
+<a name="l00048"></a>00048   <span class="keyword">delete</span> [] tmp;
+<a name="l00049"></a>00049 }
+<a name="l00050"></a>00050 <span class="keyword">template</span> &lt;<span class="keyword">class</span> Typ&gt;
+<a name="l00054"></a><a class="code" href="classtab.html#a39edfcc37ce6fc7d6bd27f0555c2d50b">00054</a> <a class="code" href="classtab.html" title="Definicja klasy tablica.">tab&lt;Typ&gt;</a> <a class="code" href="classtab.html#a5abb6bb51a476b922d00f8f3e8615f24" title="Prototyp funkcji dodajacej elementy.">tab&lt;Typ&gt;::dodaj</a>(<a class="code" href="classtab.html" title="Definicja klasy tablica.">tab</a> B) {
+<a name="l00058"></a>00058   <span class="keywordtype">int</span> w;
+<a name="l00059"></a>00059   w=wym+B.<a class="code" href="classtab.html#aedffa47955ffaea9876790a5fdbd9562" title="Prototyp funkcji przedstawiajacej wymiar.">wymiar</a>();
+<a name="l00060"></a>00060   <a class="code" href="classtab.html" title="Definicja klasy tablica.">tab</a> Tab(w);
+<a name="l00061"></a>00061   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;wym;i++) {
+<a name="l00062"></a>00062     Tab[i]=T[i];
+<a name="l00063"></a>00063   }
+<a name="l00064"></a>00064   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;B.<a class="code" href="classtab.html#a3bb4a59327034c236f8fe9c0c35b90a7" title="Zmienna przechowujaca wymiar.">wym</a>;i++) {
+<a name="l00065"></a>00065     Tab[wym+i]=B[i];
+<a name="l00066"></a>00066   }
+<a name="l00067"></a>00067   <span class="keywordflow">return</span> Tab;
+<a name="l00068"></a>00068 }
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070 <span class="keyword">template</span> &lt;<span class="keyword">class</span> Typ&gt;
+<a name="l00074"></a><a class="code" href="classtab.html#a2bf843dc30ad51922a85f676f978dd47">00074</a> <span class="keywordtype">void</span> <a class="code" href="classtab.html#a2bf843dc30ad51922a85f676f978dd47" title="Prototyp funkcji usuwajacej elementy.">tab&lt;Typ&gt;::usun</a>(<span class="keywordtype">int</span> ind) {
+<a name="l00075"></a>00075   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=ind;i&lt;wym-1;i++) {
+<a name="l00076"></a>00076     T[i]=T[i+1];
+<a name="l00077"></a>00077   }
+<a name="l00078"></a>00078   wym--;
+<a name="l00079"></a>00079 }
+<a name="l00080"></a>00080 
+<a name="l00081"></a>00081 <span class="keyword">template</span> &lt;<span class="keyword">class</span> Typ&gt;
+<a name="l00085"></a><a class="code" href="classtab.html#af4207a08771650dd947de83cb57bcf27">00085</a> <a class="code" href="classtab.html" title="Definicja klasy tablica.">tab&lt;Typ&gt;</a> <a class="code" href="classtab.html#af4207a08771650dd947de83cb57bcf27" title="Operator przypisania.">tab&lt;Typ&gt;::operator= </a>(<a class="code" href="classtab.html" title="Definicja klasy tablica.">tab</a> B) {
+<a name="l00086"></a>00086   wym=B.<a class="code" href="classtab.html#aedffa47955ffaea9876790a5fdbd9562" title="Prototyp funkcji przedstawiajacej wymiar.">wymiar</a>();
+<a name="l00087"></a>00087   Typ* tmp;
+<a name="l00088"></a>00088   tmp=T;
+<a name="l00089"></a>00089   <span class="keyword">delete</span> [] tmp;
+<a name="l00090"></a>00090   T = <span class="keyword">new</span> Typ [wym];
+<a name="l00091"></a>00091   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;wym;i++) {
+<a name="l00092"></a>00092     T[i]=B[i];
+<a name="l00093"></a>00093   }
+<a name="l00094"></a>00094   <span class="keywordflow">return</span> *<span class="keyword">this</span>;  
+<a name="l00095"></a>00095 }
+<a name="l00096"></a>00096 
+<a name="l00097"></a>00097 <span class="keyword">template</span> &lt;<span class="keyword">class</span> Typ&gt;
+<a name="l00101"></a><a class="code" href="classtab.html#a2729682ece1734772085a32ab2a992e5">00101</a> <span class="keywordtype">bool</span> <a class="code" href="classtab.html#a2729682ece1734772085a32ab2a992e5" title="Operator porównania.">tab&lt;Typ&gt;::operator== </a>(<a class="code" href="classtab.html" title="Definicja klasy tablica.">tab</a> B) {
+<a name="l00102"></a>00102   <span class="keywordflow">if</span> (wym != B.<a class="code" href="classtab.html#aedffa47955ffaea9876790a5fdbd9562" title="Prototyp funkcji przedstawiajacej wymiar.">wymiar</a>()) {
+<a name="l00103"></a>00103     <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00104"></a>00104   }
+<a name="l00105"></a>00105   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;wym;i++) {
+<a name="l00106"></a>00106     <span class="keywordflow">if</span> (T[i] != B[i]) {
+<a name="l00107"></a>00107       <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00108"></a>00108     }
+<a name="l00109"></a>00109   }
+<a name="l00110"></a>00110   <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00111"></a>00111 }
+<a name="l00112"></a>00112 
+<a name="l00113"></a>00113 
+<a name="l00114"></a>00114 <span class="comment">/********************************************************/</span>
+<a name="l00115"></a>00115 
+<a name="l00116"></a>00116 
+<a name="l00117"></a>00117 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00121"></a><a class="code" href="class_stos_t.html#a5e3e0a5bb07ae2cecbff86705c6e7710">00121</a> <span class="keywordtype">int</span> <a class="code" href="class_stos_t.html#a5e3e0a5bb07ae2cecbff86705c6e7710" title="Zmienna przechowujaca rozmiar.">StosT&lt;T&gt;::size</a>() {
+<a name="l00122"></a>00122   <span class="keywordflow">return</span> Tab.wymiar();
+<a name="l00123"></a>00123 }
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00129"></a><a class="code" href="class_stos_t.html#afb1cd36b9ec9dd8c9aa5b832b09bff9e">00129</a> <span class="keywordtype">bool</span> <a class="code" href="class_stos_t.html#afb1cd36b9ec9dd8c9aa5b832b09bff9e" title="Sprawdza czy puste.">StosT&lt;T&gt;::empty</a>() {
+<a name="l00130"></a>00130   <span class="keywordflow">if</span> (Tab.wymiar() == 0)
+<a name="l00131"></a>00131     <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00132"></a>00132   <span class="keywordflow">else</span>
+<a name="l00133"></a>00133     <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00134"></a>00134 }
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00140"></a><a class="code" href="class_stos_t.html#a55f36558cb39bded28a1ed3c37cbcee6">00140</a> <span class="keywordtype">void</span> <a class="code" href="class_stos_t.html#a55f36558cb39bded28a1ed3c37cbcee6" title="dodaje element.">StosT&lt;T&gt;::push</a>(T e) {
+<a name="l00141"></a>00141   Tab.dodaj(e);
+<a name="l00142"></a>00142 }
+<a name="l00143"></a>00143 
+<a name="l00144"></a>00144 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00148"></a><a class="code" href="class_stos_t.html#a3024f48043bfdbca81df37c11af4db87">00148</a> T <a class="code" href="class_stos_t.html#a3024f48043bfdbca81df37c11af4db87" title="Definicja funkcji sciagajacej ze stosu.">StosT&lt;T&gt;::pop</a>() {
+<a name="l00149"></a>00149   T tmp;
+<a name="l00150"></a>00150   tmp=Tab[Tab.wymiar()-1];
+<a name="l00151"></a>00151   Tab.usun(Tab.wymiar()-1);
+<a name="l00152"></a>00152   <span class="keywordflow">return</span> tmp;
+<a name="l00153"></a>00153 }
+<a name="l00154"></a>00154 <span class="comment">/*************************************/</span>
+<a name="l00155"></a>00155 
+<a name="l00156"></a>00156 
+<a name="l00157"></a>00157 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00161"></a><a class="code" href="classlista.html#a60113cb7fe7aa3bbf0e02e7bc5673adb">00161</a> <span class="keywordtype">bool</span> <a class="code" href="classlista.html#a60113cb7fe7aa3bbf0e02e7bc5673adb" title="Sprawdza czy puste.">lista&lt;T&gt;::empty</a>() {
+<a name="l00162"></a>00162   <span class="keywordflow">if</span> (glowa==NULL) {
+<a name="l00163"></a>00163     <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00164"></a>00164   }
+<a name="l00165"></a>00165   <span class="keywordflow">else</span> {
+<a name="l00166"></a>00166     <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00167"></a>00167   }
+<a name="l00168"></a>00168 }
+<a name="l00169"></a>00169 
+<a name="l00170"></a>00170 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00174"></a><a class="code" href="classlista.html#a71ac53823aaa5f53d06de4d69910ef9a">00174</a> <span class="keywordtype">int</span> <a class="code" href="classlista.html#a71ac53823aaa5f53d06de4d69910ef9a" title="Zmienna przechowujaca rozmiar.">lista&lt;T&gt;::size</a>() {
+<a name="l00175"></a>00175   <span class="keywordflow">if</span> (empty())
+<a name="l00176"></a>00176     <span class="keywordflow">return</span> 0;
+<a name="l00177"></a>00177   <a class="code" href="classel.html" title="Definicja klasy elementu.">el&lt;T&gt;</a>* wsk=glowa;
+<a name="l00181"></a>00181   <span class="keywordtype">int</span> wielkosc=0;
+<a name="l00182"></a>00182   <span class="keywordflow">while</span> (wsk!=NULL) {
+<a name="l00183"></a>00183     wielkosc++;
+<a name="l00184"></a>00184     wsk=wsk-&gt;<a class="code" href="classel.html#aa1eac5dfc1ae72aa97ac92db49b4bc05">nxt</a>;
+<a name="l00185"></a>00185   }
+<a name="l00186"></a>00186   <span class="keywordflow">return</span> wielkosc;
+<a name="l00187"></a>00187 }
+<a name="l00188"></a>00188 
+<a name="l00189"></a>00189 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00193"></a><a class="code" href="classlista.html#abfffecd8200714da1c80bb11b9aade5e">00193</a> <span class="keywordtype">void</span> <a class="code" href="classlista.html#abfffecd8200714da1c80bb11b9aade5e" title="Prototyp funkcji dodajacej na przod.">lista&lt;T&gt;::dodaj_przod</a>(T dana) {
+<a name="l00194"></a>00194   <a class="code" href="classel.html" title="Definicja klasy elementu.">el&lt;T&gt;</a>* tmp= <span class="keyword">new</span> <a class="code" href="classel.html" title="Definicja klasy elementu.">el&lt;T&gt;</a>(dana);
+<a name="l00195"></a>00195   <span class="keywordflow">if</span> (glowa==NULL) {
+<a name="l00196"></a>00196     glowa=tmp;
+<a name="l00197"></a>00197     ogon=tmp;
+<a name="l00198"></a>00198   } <span class="keywordflow">else</span> {
+<a name="l00199"></a>00199     tmp-&gt;<a class="code" href="classel.html#aa1eac5dfc1ae72aa97ac92db49b4bc05">nxt</a>=glowa;
+<a name="l00200"></a>00200     glowa=tmp;
+<a name="l00201"></a>00201     tmp-&gt;<a class="code" href="classel.html#aa1eac5dfc1ae72aa97ac92db49b4bc05">nxt</a>-&gt;<a class="code" href="classel.html#a69d8939dbcd5c7fbb8467263f7000696">prv</a>=tmp;    
+<a name="l00202"></a>00202   }  
+<a name="l00203"></a>00203 }
+<a name="l00204"></a>00204 
+<a name="l00205"></a>00205 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00209"></a><a class="code" href="classlista.html#ad35c120f3285b0a8a5069b540bc178ae">00209</a> <span class="keywordtype">void</span> <a class="code" href="classlista.html#ad35c120f3285b0a8a5069b540bc178ae" title="Prototyp funkcji dodajacej element na tyle.">lista&lt;T&gt;::dodaj_tyl</a>(T dana) {
+<a name="l00210"></a>00210   <a class="code" href="classel.html" title="Definicja klasy elementu.">el&lt;T&gt;</a>* tmp= <span class="keyword">new</span> <a class="code" href="classel.html" title="Definicja klasy elementu.">el&lt;T&gt;</a>(dana);
+<a name="l00211"></a>00211   <span class="keywordflow">if</span> (glowa==NULL) {
+<a name="l00212"></a>00212     glowa=tmp;
+<a name="l00213"></a>00213     ogon=tmp;
+<a name="l00214"></a>00214   } <span class="keywordflow">else</span> {
+<a name="l00215"></a>00215     tmp-&gt;<a class="code" href="classel.html#a69d8939dbcd5c7fbb8467263f7000696">prv</a>=ogon;
+<a name="l00216"></a>00216     ogon=tmp;
+<a name="l00217"></a>00217     tmp-&gt;<a class="code" href="classel.html#a69d8939dbcd5c7fbb8467263f7000696">prv</a>-&gt;<a class="code" href="classel.html#aa1eac5dfc1ae72aa97ac92db49b4bc05">nxt</a>=tmp;    
+<a name="l00218"></a>00218   }  
+<a name="l00219"></a>00219 }
+<a name="l00220"></a>00220 
+<a name="l00221"></a>00221 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00225"></a><a class="code" href="classlista.html#a6998ee006deb26a2e66d6b3df832a469">00225</a> <span class="keywordtype">void</span> <a class="code" href="classlista.html#a6998ee006deb26a2e66d6b3df832a469" title="Prototyp funkcji usuwajacej element z przodu.">lista&lt;T&gt;::usun_przod</a>() {
+<a name="l00226"></a>00226   <a class="code" href="classel.html" title="Definicja klasy elementu.">el&lt;T&gt;</a>* tmp;
+<a name="l00227"></a>00227   <span class="keywordflow">if</span> (glowa==NULL) {
+<a name="l00228"></a>00228     <span class="keywordflow">return</span>;
+<a name="l00229"></a>00229   } <span class="keywordflow">else</span> {
+<a name="l00230"></a>00230     tmp=glowa;
+<a name="l00231"></a>00231     glowa=tmp-&gt;<a class="code" href="classel.html#aa1eac5dfc1ae72aa97ac92db49b4bc05">nxt</a>;
+<a name="l00232"></a>00232     <span class="keywordflow">if</span> (glowa != NULL) { 
+<a name="l00233"></a>00233       tmp-&gt;<a class="code" href="classel.html#aa1eac5dfc1ae72aa97ac92db49b4bc05">nxt</a>-&gt;<a class="code" href="classel.html#a69d8939dbcd5c7fbb8467263f7000696">prv</a>=NULL;
+<a name="l00234"></a>00234     }
+<a name="l00235"></a>00235     <span class="keyword">delete</span> tmp;
+<a name="l00236"></a>00236   }  
+<a name="l00237"></a>00237 }
+<a name="l00238"></a>00238 
+<a name="l00239"></a>00239 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00243"></a><a class="code" href="classlista.html#aa60cc53e042281898cead5bc99fd8fc8">00243</a> <span class="keywordtype">void</span> <a class="code" href="classlista.html#aa60cc53e042281898cead5bc99fd8fc8" title="Prototyp funkcji usuwajacej element z tylu.">lista&lt;T&gt;::usun_tyl</a>() {
+<a name="l00244"></a>00244   <a class="code" href="classel.html" title="Definicja klasy elementu.">el&lt;T&gt;</a>* tmp;
+<a name="l00245"></a>00245   <span class="keywordflow">if</span> (glowa==NULL) {
+<a name="l00246"></a>00246     <span class="keywordflow">return</span>;
+<a name="l00247"></a>00247   } <span class="keywordflow">else</span> {
+<a name="l00248"></a>00248     tmp=ogon;
+<a name="l00249"></a>00249 
+<a name="l00250"></a>00250     ogon=tmp-&gt;<a class="code" href="classel.html#a69d8939dbcd5c7fbb8467263f7000696">prv</a>;<span class="comment">//zamiana pop na prv </span>
+<a name="l00251"></a>00251     <span class="keywordflow">if</span> (ogon != NULL ) {<span class="comment">//analogicznie do sytuacji przerobionej w funkcji wyżej.</span>
+<a name="l00252"></a>00252       tmp-&gt;<a class="code" href="classel.html#a69d8939dbcd5c7fbb8467263f7000696">prv</a>-&gt;<a class="code" href="classel.html#aa1eac5dfc1ae72aa97ac92db49b4bc05">nxt</a>=NULL; <span class="comment">//to co wyżej</span>
+<a name="l00253"></a>00253     }
+<a name="l00254"></a>00254     <span class="keyword">delete</span> tmp;
+<a name="l00255"></a>00255   }  
+<a name="l00256"></a>00256 }
+<a name="l00257"></a>00257 
+<a name="l00258"></a>00258 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00262"></a><a class="code" href="classlista.html#aae75ab30e8130ff72c409ac74588e778">00262</a> T <a class="code" href="classlista.html#aae75ab30e8130ff72c409ac74588e778" title="Prototyp funkcji pokazujacej przod.">lista&lt;T&gt;::zobacz_przod</a>() {
+<a name="l00263"></a>00263   <span class="keywordflow">return</span> glowa-&gt;dana; 
+<a name="l00264"></a>00264 }
+<a name="l00265"></a>00265 
+<a name="l00266"></a>00266 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00270"></a><a class="code" href="classlista.html#aee86ec21992502a4cd67f8df38f37886">00270</a> T <a class="code" href="classlista.html#aee86ec21992502a4cd67f8df38f37886" title="Prototyp funkcji pokazujacej tyl.">lista&lt;T&gt;::zobacz_tyl</a>() {
+<a name="l00271"></a>00271   <span class="keywordflow">return</span> ogon-&gt;dana; 
+<a name="l00272"></a>00272 }
+<a name="l00273"></a>00273 
+<a name="l00274"></a>00274 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00278"></a><a class="code" href="classlista.html#a34b6928b48bb770cf37ab65394385637">00278</a> <span class="keywordtype">void</span> <a class="code" href="classlista.html#a34b6928b48bb770cf37ab65394385637" title="ma za zadanie przypisywać jedna liste do drugiej (de facto tworzyć kopie).">lista&lt;T&gt;::operator=</a>(<a class="code" href="classlista.html" title="Definicja klasy lista.">lista&lt;T&gt;</a> L2) {
+<a name="l00279"></a>00279   <a class="code" href="classel.html" title="Definicja klasy elementu.">el&lt;T&gt;</a>* E1,E2,E3;
+<a name="l00280"></a>00280   E1=glowa;
+<a name="l00281"></a>00281   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;size();i++) { 
+<a name="l00282"></a>00282     E2=E1;
+<a name="l00283"></a>00283     E1=E1-&gt;<a class="code" href="classel.html#aa1eac5dfc1ae72aa97ac92db49b4bc05">nxt</a>;
+<a name="l00284"></a>00284     <span class="keyword">delete</span> E2;
+<a name="l00285"></a>00285   }
+<a name="l00286"></a>00286   this.glowa=NULL;
+<a name="l00287"></a>00287   this.ogon=NULL;
+<a name="l00288"></a>00288   E1=L2.<a class="code" href="classlista.html#ad344760a763e8d9818f9b60bc0e48ba6">glowa</a>;
+<a name="l00292"></a>00292   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;L2.<a class="code" href="classlista.html#a71ac53823aaa5f53d06de4d69910ef9a" title="Zmienna przechowujaca rozmiar.">size</a>();i++) { 
+<a name="l00293"></a>00293     this.dodaj_tyl(E1-&gt;<a class="code" href="classel.html#aced2827a8e030b5b9d5f857b8f202582">dana</a>);
+<a name="l00294"></a>00294     E1=E1-&gt;<a class="code" href="classel.html#aa1eac5dfc1ae72aa97ac92db49b4bc05">nxt</a>;
+<a name="l00295"></a>00295   }
+<a name="l00296"></a>00296 }
+<a name="l00297"></a>00297 
+<a name="l00298"></a>00298 <span class="comment">/************************************************************/</span>
+<a name="l00299"></a>00299 
+<a name="l00300"></a>00300 
+<a name="l00301"></a>00301 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00305"></a><a class="code" href="class_stos_l.html#aa33a51cb0ca3dbf005df8765586ce964">00305</a> <span class="keywordtype">int</span> <a class="code" href="class_stos_l.html#aa33a51cb0ca3dbf005df8765586ce964" title="Zmienna przechowujaca rozmiar.">StosL&lt;T&gt;::size</a>() {
+<a name="l00306"></a>00306   <span class="keywordflow">return</span> L.size();
+<a name="l00307"></a>00307 }
+<a name="l00308"></a>00308 
+<a name="l00309"></a>00309 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00313"></a><a class="code" href="class_stos_l.html#a6ea23455139de8753792dc8682890055">00313</a> <span class="keywordtype">bool</span> <a class="code" href="class_stos_l.html#a6ea23455139de8753792dc8682890055" title="Sprawdza czy puste.">StosL&lt;T&gt;::empty</a>() {
+<a name="l00314"></a>00314   <span class="keywordflow">if</span> (L.size() == 0)
+<a name="l00315"></a>00315     <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00316"></a>00316   <span class="keywordflow">else</span>
+<a name="l00317"></a>00317     <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00318"></a>00318 }
+<a name="l00319"></a>00319 
+<a name="l00320"></a>00320 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00324"></a><a class="code" href="class_stos_l.html#af72c5941f1f181fc6b76570d978986d9">00324</a> <span class="keywordtype">void</span> <a class="code" href="class_stos_l.html#af72c5941f1f181fc6b76570d978986d9" title="Dodaje element.">StosL&lt;T&gt;::push</a>(T e) {
+<a name="l00325"></a>00325   L.dodaj_tyl(e);
+<a name="l00326"></a>00326 }
+<a name="l00327"></a>00327 
+<a name="l00328"></a>00328 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00332"></a><a class="code" href="class_stos_l.html#a0430ba75c3c71ed85362cbbe8e8dc2bd">00332</a> T <a class="code" href="class_stos_l.html#a0430ba75c3c71ed85362cbbe8e8dc2bd" title="Definicja funkcji usuwajacej element.">StosL&lt;T&gt;::pop</a>() {
+<a name="l00333"></a>00333   T tmp;
+<a name="l00334"></a>00334   tmp=L.zobacz_tyl();
+<a name="l00335"></a>00335   L.usun_tyl();
+<a name="l00336"></a>00336   <span class="keywordflow">return</span> tmp;
+<a name="l00337"></a>00337 }
+<a name="l00338"></a>00338 
+<a name="l00339"></a>00339 
+<a name="l00340"></a>00340 <span class="comment">/****************************************************/</span>
+<a name="l00341"></a>00341 
+<a name="l00342"></a>00342 
+<a name="l00343"></a>00343 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00347"></a><a class="code" href="classkolejka.html#a97c873e61c9d08a08ddec5c0a784aaec">00347</a> <span class="keywordtype">int</span> <a class="code" href="classkolejka.html#a97c873e61c9d08a08ddec5c0a784aaec" title="Zmienna przechowujaca rozmiar.">kolejka&lt;T&gt;::size</a>() {
+<a name="l00348"></a>00348   <span class="keywordflow">return</span> L.size();
+<a name="l00349"></a>00349 }
+<a name="l00350"></a>00350 
+<a name="l00351"></a>00351 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00355"></a><a class="code" href="classkolejka.html#a2a5984247b91f8d4b96c1104755c14ee">00355</a> <span class="keywordtype">bool</span> <a class="code" href="classkolejka.html#a2a5984247b91f8d4b96c1104755c14ee" title="Sprawdza czy puste..">kolejka&lt;T&gt;::empty</a>() {
+<a name="l00356"></a>00356   <span class="keywordflow">if</span> (L.size() == 0)
+<a name="l00357"></a>00357     <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00358"></a>00358   <span class="keywordflow">else</span>
+<a name="l00359"></a>00359     <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00360"></a>00360 }
+<a name="l00361"></a>00361 
+<a name="l00362"></a>00362 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00366"></a><a class="code" href="classkolejka.html#a9ab5091d52ebfe6cb4785bfd4ec2a0b9">00366</a> <span class="keywordtype">void</span> <a class="code" href="classkolejka.html#a9ab5091d52ebfe6cb4785bfd4ec2a0b9" title="Dodaje element.">kolejka&lt;T&gt;::push</a>(T e) {
+<a name="l00367"></a>00367   L.dodaj_tyl(e);
+<a name="l00368"></a>00368 }
+<a name="l00369"></a>00369 
+<a name="l00370"></a>00370 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00374"></a><a class="code" href="classkolejka.html#aed8feb84d0962f52961325340bd6ee92">00374</a> T <a class="code" href="classkolejka.html#aed8feb84d0962f52961325340bd6ee92" title="Definicja funkcji zdejmująca elementy z kolejki.">kolejka&lt;T&gt;::pop</a>() {
+<a name="l00375"></a>00375   T tmp;
+<a name="l00376"></a>00376   tmp=L.zobacz_przod();
+<a name="l00377"></a>00377   L.usun_przod();
+<a name="l00378"></a>00378   <span class="keywordflow">return</span> tmp;
+<a name="l00379"></a>00379 }
+<a name="l00380"></a>00380 
+<a name="l00381"></a>00381 
+<a name="l00382"></a>00382 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00386"></a><a class="code" href="classkolejka.html#a3802e595aad03b06e547714f5aa73a1d">00386</a> <span class="keywordtype">void</span> <a class="code" href="classkolejka.html#a3802e595aad03b06e547714f5aa73a1d" title="Dodaje do kolejki.">kolejka&lt;T&gt;::queue</a>(<a class="code" href="classlista.html" title="Definicja klasy lista.">lista&lt;T&gt;</a> L2) {
+<a name="l00387"></a>00387   L=L2;
+<a name="l00388"></a>00388 }
+<a name="l00389"></a>00389 
+<a name="l00390"></a>00390 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00394"></a><a class="code" href="classkolejka.html#a88cae02e37f9f6a7891c45f6490de6d6">00394</a> <a class="code" href="classlista.html" title="Definicja klasy lista.">lista&lt;T&gt;</a> <a class="code" href="classkolejka.html#a88cae02e37f9f6a7891c45f6490de6d6" title="Definicja funkcji usuwajacej element z kolejki.">kolejka&lt;T&gt;::dequeue</a>() {
+<a name="l00395"></a>00395   <span class="keywordflow">return</span> L;
+<a name="l00396"></a>00396 }
+</pre></div></div><!-- contents -->
+</div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="stos_8cpp.html">stos.cpp</a>      </li>
+
+    <li class="footer">Wygenerowano Tue Apr 29 2014 15:22:32 dla My Project programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

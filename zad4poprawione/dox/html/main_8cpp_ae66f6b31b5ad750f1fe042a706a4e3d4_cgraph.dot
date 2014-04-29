@@ -1,0 +1,16 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="pomiar",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pomiary_8hh.html#a41466d87f95931be3de0eccdda4a563f",tooltip="Prototyp funkcji mierzacej czas."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="kolejka::push",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classkolejka.html#a9ab5091d52ebfe6cb4785bfd4ec2a0b9",tooltip="Dodaje element."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="qsort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sortowania_8hh.html#a3f56cc7fcc2745ee52c1a3e22a88ddb4",tooltip="Prototyp funkcji sortowania szybkiego."];
+  Node4 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="diff",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pomiary_8hh.html#a5959b2e100c03e81bd1c5049adf30165"];
+}

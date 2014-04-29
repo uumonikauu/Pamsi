@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>My Project: Plik źródłowy /home/monika/Pulpit/nowy/Pamsi/zad4poprawione/prj/src/pomiary.cpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Zadanie4</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('pomiary_8cpp.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">pomiary.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pomiary_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#include &quot;<a class="code" href="pomiary_8hh.html">pomiary.hh</a>&quot;</span>
+<a name="l00002"></a>00002 <span class="preprocessor">#include &quot;<a class="code" href="sortowania_8hh.html">sortowania.hh</a>&quot;</span>
+<a name="l00003"></a>00003 <span class="preprocessor">#include &quot;<a class="code" href="stos_8hh.html">stos.hh</a>&quot;</span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;<a class="code" href="stos_8cpp.html">stos.cpp</a>&quot;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &quot;<a class="code" href="sortowania_8cpp.html">sortowania.cpp</a>&quot;</span>
+<a name="l00006"></a>00006 
+<a name="l00010"></a>00010 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00014"></a><a class="code" href="pomiary_8cpp.html#a8dd09d2ae11639b0591b5f678f63b438">00014</a> <span class="keywordtype">int</span> <a class="code" href="pomiary_8hh.html#a8dd09d2ae11639b0591b5f678f63b438" title="Definicja klasy pomiary.">wczytaj</a>(<a class="code" href="classtab.html">tab&lt;T&gt;</a>&amp; Tab, <span class="keywordtype">string</span> NazwaPliku) {
+<a name="l00018"></a>00018   <span class="keywordtype">int</span> x;
+<a name="l00019"></a>00019   ifstream StrmWe;
+<a name="l00020"></a>00020   StrmWe.open(NazwaPliku.c_str());
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022   <span class="keywordflow">if</span>(!StrmWe.is_open()) {
+<a name="l00023"></a>00023     cerr &lt;&lt; <span class="stringliteral">&quot; Plik nie zostal otwarty&quot;</span> &lt;&lt; endl; 
+<a name="l00024"></a>00024     <span class="keywordflow">return</span> 1;
+<a name="l00025"></a>00025   }
+<a name="l00026"></a>00026   StrmWe&gt;&gt;x;
+<a name="l00027"></a>00027 <span class="keywordflow">while</span>(!StrmWe.eof()) {
+<a name="l00028"></a>00028   StrmWe&gt;&gt;x;
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030   <span class="keywordflow">if</span> (StrmWe.fail()) {
+<a name="l00031"></a>00031       StrmWe.clear();
+<a name="l00032"></a>00032       StrmWe.ignore(numeric_limits&lt;int&gt;::max( ),<span class="charliteral">&#39;\n&#39;</span>);
+<a name="l00033"></a>00033     } 
+<a name="l00034"></a>00034     <span class="keywordflow">else</span> { 
+<a name="l00035"></a>00035       Tab.<a class="code" href="classtab.html#a5abb6bb51a476b922d00f8f3e8615f24" title="Prototyp funkcji dodajacej elementy.">dodaj</a>( x );
+<a name="l00036"></a>00036     }
+<a name="l00037"></a>00037   }
+<a name="l00038"></a>00038   StrmWe.close(); 
+<a name="l00039"></a>00039 }
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00046"></a><a class="code" href="pomiary_8cpp.html#a84d0295bc97cad9a4f456b25ade31197">00046</a> <span class="keywordtype">void</span> <a class="code" href="pomiary_8hh.html#a84d0295bc97cad9a4f456b25ade31197" title="Prototyp funkcji wyswietlajacej.">wyswietl</a>(<a class="code" href="classtab.html">tab&lt;T&gt;</a> Tab) {
+<a name="l00047"></a>00047         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Tab.<a class="code" href="classtab.html#aedffa47955ffaea9876790a5fdbd9562" title="Prototyp funkcji przedstawiajacej wymiar.">wymiar</a>(); i++ ) 
+<a name="l00048"></a>00048         cout &lt;&lt; Tab[ i ] &lt;&lt; endl;   
+<a name="l00049"></a>00049 }
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00056"></a><a class="code" href="pomiary_8cpp.html#a7eab400b30e2aa2000a05254aba04f0f">00056</a> <span class="keywordtype">void</span> <a class="code" href="pomiary_8hh.html#a7eab400b30e2aa2000a05254aba04f0f" title="Prototyp funkcji mnozacej.">pomnoz</a>(<a class="code" href="classtab.html">tab&lt;T&gt;</a>&amp; Tab) {
+<a name="l00057"></a>00057         <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> i = 0; i &lt; Tab.<a class="code" href="classtab.html#aedffa47955ffaea9876790a5fdbd9562" title="Prototyp funkcji przedstawiajacej wymiar.">wymiar</a>(); i++ ) 
+<a name="l00058"></a>00058         Tab[i]=Tab[i]*2;  
+<a name="l00059"></a>00059 }
+<a name="l00060"></a>00060 
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062 
+<a name="l00063"></a><a class="code" href="pomiary_8cpp.html#a5959b2e100c03e81bd1c5049adf30165">00063</a> timespec <a class="code" href="pomiary_8hh.html#a5959b2e100c03e81bd1c5049adf30165">diff</a>(timespec start, timespec end) {
+<a name="l00064"></a>00064     timespec temp;
+<a name="l00065"></a>00065     <span class="keywordflow">if</span>((end.tv_nsec - start.tv_nsec) &lt; 0) {
+<a name="l00066"></a>00066         temp.tv_sec = end.tv_sec - start.tv_sec - 1;
+<a name="l00067"></a>00067         temp.tv_nsec = 1000000000 + end.tv_nsec - start.tv_nsec;
+<a name="l00068"></a>00068     } <span class="keywordflow">else</span> {
+<a name="l00069"></a>00069         temp.tv_sec = end.tv_sec - start.tv_sec;
+<a name="l00070"></a>00070         temp.tv_nsec = end.tv_nsec - start.tv_nsec;    
+<a name="l00071"></a>00071     }   
+<a name="l00072"></a>00072     <span class="keywordflow">return</span> temp;
+<a name="l00073"></a>00073 }  
+<a name="l00077"></a><a class="code" href="pomiary_8cpp.html#a41466d87f95931be3de0eccdda4a563f">00077</a> <span class="keywordtype">void</span> <a class="code" href="pomiary_8hh.html#a41466d87f95931be3de0eccdda4a563f" title="Prototyp funkcji mierzacej czas.">pomiar</a>() {
+<a name="l00078"></a>00078 <span class="keyword">struct </span>timespec time1, time2;
+<a name="l00079"></a>00079 <span class="comment">//tab&lt;int&gt; S; //wybieramy jaki typ danych odkomentowywujac</span>
+<a name="l00080"></a>00080 <span class="comment">//lista&lt;int&gt; S; </span>
+<a name="l00081"></a>00081 <span class="comment">//StosT&lt;int&gt; S;</span>
+<a name="l00082"></a>00082 <span class="comment">//StosL&lt;int&gt; S;</span>
+<a name="l00083"></a>00083 <a class="code" href="classkolejka.html" title="Definicja klasy kolejka.">kolejka&lt;int&gt;</a> S;
+<a name="l00088"></a>00088 <span class="keywordtype">int</span> tmp;
+<a name="l00089"></a>00089 
+<a name="l00090"></a>00090 
+<a name="l00091"></a>00091 
+<a name="l00092"></a>00092 <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> i=0;i&lt;1000;i++) {
+<a name="l00093"></a>00093   tmp =( rand() % 1000 ) + 1;
+<a name="l00094"></a>00094   <span class="comment">//S.dodaj(tmp); //pobieramy dane z klawiatury: dla tablicy - dodaj, dla listy - dodaj_tyl, dla stosów i kolejki - push</span>
+<a name="l00095"></a>00095   <span class="comment">//S.dodaj_tyl(tmp);</span>
+<a name="l00096"></a>00096   S.<a class="code" href="classkolejka.html#a9ab5091d52ebfe6cb4785bfd4ec2a0b9" title="Dodaje element.">push</a>(tmp);
+<a name="l00097"></a>00097 }
+<a name="l00098"></a>00098 cout &lt;&lt; endl;
+<a name="l00099"></a>00099 
+<a name="l00100"></a>00100 <span class="comment">//merge_sort(&amp;S[0],S.wymiar()); //wywolywanie sortowania przez scalanie lub szybkiego: dla tablicy (&amp;S[0],S.wymiar() dla reszty (S.pocz(),S.size())</span>
+<a name="l00101"></a>00101 <span class="comment">//merge_sort(S.pocz(),S.size());</span>
+<a name="l00102"></a>00102 <span class="comment">//qsort(&amp;S[0],S.wymiar());</span>
+<a name="l00103"></a>00103 clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &amp;time1); <span class="comment">// start zegar</span>
+<a name="l00104"></a>00104 <a class="code" href="sortowania_8hh.html#a3f56cc7fcc2745ee52c1a3e22a88ddb4" title="Prototyp funkcji sortowania szybkiego.">qsort</a>(S.pocz(),S.size());
+<a name="l00105"></a>00105 clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &amp;time2); <span class="comment">// zatrzymanie zegara</span>
+<a name="l00106"></a>00106 
+<a name="l00107"></a>00107 cout &lt;&lt; ((double)<a class="code" href="pomiary_8hh.html#a5959b2e100c03e81bd1c5049adf30165">diff</a>(time1, time2).tv_nsec)/1000000000 &lt;&lt; <span class="stringliteral">&quot;s&quot;</span> &lt;&lt; endl;
+<a name="l00108"></a>00108 
+<a name="l00109"></a>00109 <span class="comment">/*for (int i=0;i&lt;10;i++) { //wyrzucanie danych posortowanych na ekran: dla tablicy S[i} dla listy S.zobacz_przod() dla stosow i kolejki S.pop()</span>
+<a name="l00110"></a>00110 <span class="comment">  cout &lt;&lt; S[i] &lt;&lt; &quot; &quot;;</span>
+<a name="l00111"></a>00111 <span class="comment">}*/</span>
+<a name="l00112"></a>00112 
+<a name="l00113"></a>00113 <span class="comment">/*for (int i=0;i&lt;10;i++) {</span>
+<a name="l00114"></a>00114 <span class="comment">  cout &lt;&lt; S.zobacz_przod() &lt;&lt; &quot; &quot;;</span>
+<a name="l00115"></a>00115 <span class="comment">  S.usun_przod();</span>
+<a name="l00116"></a>00116 <span class="comment">}*/</span>
+<a name="l00117"></a>00117 
+<a name="l00118"></a>00118 <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> i=0;i&lt;1000;i++) {
+<a name="l00119"></a>00119   cout &lt;&lt; S.pop() &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;
+<a name="l00120"></a>00120 }
+<a name="l00121"></a>00121 
+<a name="l00122"></a>00122   cout &lt;&lt; endl;  
+<a name="l00123"></a>00123 }
+</pre></div></div><!-- contents -->
+</div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="pomiary_8cpp.html">pomiary.cpp</a>      </li>
+
+    <li class="footer">Wygenerowano Tue Apr 29 2014 15:22:32 dla My Project programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>My Project: Plik źródłowy /home/monika/Pulpit/nowy/Pamsi/zad4poprawione/prj/inc/stos.hh</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Zadanie4</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('stos_8hh.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">stos.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="stos_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef STOS_HH</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define STOS_HH</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;<a class="code" href="main_8hh.html">main.hh</a>&quot;</span>
+<a name="l00008"></a>00008 <span class="keyword">template</span> &lt;<span class="keyword">class</span> Typ&gt;
+<a name="l00009"></a><a class="code" href="classtab.html">00009</a> <span class="keyword">class </span><a class="code" href="classtab.html" title="Definicja klasy tablica.">tab</a> {
+<a name="l00013"></a><a class="code" href="classtab.html#a3bb4a59327034c236f8fe9c0c35b90a7">00013</a>   <span class="keywordtype">int</span> <a class="code" href="classtab.html#a3bb4a59327034c236f8fe9c0c35b90a7" title="Zmienna przechowujaca wymiar.">wym</a>;
+<a name="l00014"></a><a class="code" href="classtab.html#a97745f07acefb042ad21811141f51afb">00014</a>   Typ* <a class="code" href="classtab.html#a97745f07acefb042ad21811141f51afb">T</a>;
+<a name="l00015"></a>00015 <span class="keyword">public</span>:
+<a name="l00019"></a><a class="code" href="classtab.html#aedffa47955ffaea9876790a5fdbd9562">00019</a>   <span class="keywordtype">int</span> <a class="code" href="classtab.html#aedffa47955ffaea9876790a5fdbd9562" title="Prototyp funkcji przedstawiajacej wymiar.">wymiar</a>() {<span class="keywordflow">return</span> <a class="code" href="classtab.html#a3bb4a59327034c236f8fe9c0c35b90a7" title="Zmienna przechowujaca wymiar.">wym</a>;};
+<a name="l00020"></a>00020 
+<a name="l00021"></a>00021   <a class="code" href="classtab.html#a36068a968872b0263096a9719a2ad5bb" title="Definicja metod klasy stos.">tab</a>(<span class="keywordtype">int</span> <a class="code" href="classtab.html#aedffa47955ffaea9876790a5fdbd9562" title="Prototyp funkcji przedstawiajacej wymiar.">wymiar</a>=0);
+<a name="l00025"></a>00025   <span class="keywordtype">void</span> <a class="code" href="classtab.html#a47d35ab4fd1e07333de71f9eb4b7fab2" title="Prototyp funkcji zamieniajacej miejscami i, j.">zamien</a>(Typ i, Typ j);
+<a name="l00029"></a>00029   <span class="keywordtype">void</span> <a class="code" href="classtab.html#a3892398e71e9d23417c8dce1b1ba852f" title="Prototyp funkcji odwracajacej tablicę.">odwroc</a>();
+<a name="l00033"></a>00033   <span class="keywordtype">void</span> <a class="code" href="classtab.html#a5abb6bb51a476b922d00f8f3e8615f24" title="Prototyp funkcji dodajacej elementy.">dodaj</a>(Typ e);
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035   <a class="code" href="classtab.html" title="Definicja klasy tablica.">tab</a> <a class="code" href="classtab.html#a5abb6bb51a476b922d00f8f3e8615f24" title="Prototyp funkcji dodajacej elementy.">dodaj</a>(<a class="code" href="classtab.html" title="Definicja klasy tablica.">tab</a> B);
+<a name="l00039"></a>00039   <span class="keywordtype">void</span> <a class="code" href="classtab.html#a2bf843dc30ad51922a85f676f978dd47" title="Prototyp funkcji usuwajacej elementy.">usun</a>(<span class="keywordtype">int</span> ind);
+<a name="l00043"></a>00043   <a class="code" href="classtab.html" title="Definicja klasy tablica.">tab</a> <a class="code" href="classtab.html#af4207a08771650dd947de83cb57bcf27" title="Operator przypisania.">operator= </a>(<a class="code" href="classtab.html" title="Definicja klasy tablica.">tab</a> B);
+<a name="l00047"></a>00047   <span class="keywordtype">bool</span> <a class="code" href="classtab.html#a2729682ece1734772085a32ab2a992e5" title="Operator porównania.">operator== </a>(<a class="code" href="classtab.html" title="Definicja klasy tablica.">tab</a> B);
+<a name="l00051"></a><a class="code" href="classtab.html#a85ddf1710645b9e1ffd36726830a581b">00051</a>   Typ &amp; <a class="code" href="classtab.html#a85ddf1710645b9e1ffd36726830a581b" title="Operatory odwołania się do danego pola.">operator[]</a>(<span class="keywordtype">int</span> ind) {<span class="keywordflow">return</span> <a class="code" href="classtab.html#a97745f07acefb042ad21811141f51afb">T</a>[ind];}
+<a name="l00052"></a>00052 
+<a name="l00053"></a><a class="code" href="classtab.html#a7896ca836d17e0636804124889c742dc">00053</a>   <span class="keyword">const</span> Typ &amp; <a class="code" href="classtab.html#a7896ca836d17e0636804124889c742dc">operator[]</a>(<span class="keywordtype">int</span> ind)<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="classtab.html#a97745f07acefb042ad21811141f51afb">T</a>[ind];}
+<a name="l00054"></a>00054   
+<a name="l00055"></a>00055 };
+<a name="l00056"></a>00056 
+<a name="l00060"></a>00060 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00061"></a><a class="code" href="class_stos_t.html">00061</a> <span class="keyword">class </span><a class="code" href="class_stos_t.html" title="Definicja klasy stos na tablicy.">StosT</a> {
+<a name="l00062"></a>00062 <span class="keyword">private</span>:
+<a name="l00063"></a><a class="code" href="class_stos_t.html#a81a86528f33fe2688b586fdf7eb0db4b">00063</a>   <a class="code" href="classtab.html">tab&lt;T&gt;</a> <a class="code" href="class_stos_t.html#a81a86528f33fe2688b586fdf7eb0db4b">Tab</a>;
+<a name="l00064"></a>00064 <span class="keyword">public</span>:
+<a name="l00068"></a>00068   <span class="keywordtype">int</span> <a class="code" href="class_stos_t.html#a5e3e0a5bb07ae2cecbff86705c6e7710" title="Zmienna przechowujaca rozmiar.">size</a>();
+<a name="l00072"></a>00072   <span class="keywordtype">bool</span> <a class="code" href="class_stos_t.html#afb1cd36b9ec9dd8c9aa5b832b09bff9e" title="Sprawdza czy puste.">empty</a>();
+<a name="l00076"></a>00076   <span class="keywordtype">void</span> <a class="code" href="class_stos_t.html#a55f36558cb39bded28a1ed3c37cbcee6" title="dodaje element.">push</a>(T e);
+<a name="l00077"></a>00077   T <a class="code" href="class_stos_t.html#a3024f48043bfdbca81df37c11af4db87" title="Definicja funkcji sciagajacej ze stosu.">pop</a>();
+<a name="l00078"></a><a class="code" href="class_stos_t.html#ab41a68addc4429c2cb94488938cb5673">00078</a>   <a class="code" href="class_stos_t.html#ab41a68addc4429c2cb94488938cb5673">StosT</a>() {};
+<a name="l00079"></a><a class="code" href="class_stos_t.html#a02a6620a75da4bc9d324475c2b8e1d3a">00079</a>   T* <a class="code" href="class_stos_t.html#a02a6620a75da4bc9d324475c2b8e1d3a">pocz</a>() {<span class="keywordflow">return</span> &amp;<a class="code" href="class_stos_t.html#a81a86528f33fe2688b586fdf7eb0db4b">Tab</a>[0];}
+<a name="l00080"></a>00080 };
+<a name="l00084"></a>00084 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00085"></a><a class="code" href="classel.html">00085</a> <span class="keyword">class </span><a class="code" href="classel.html" title="Definicja klasy elementu.">el</a> {
+<a name="l00086"></a>00086 <span class="keyword">public</span>:
+<a name="l00087"></a><a class="code" href="classel.html#aced2827a8e030b5b9d5f857b8f202582">00087</a>   T <a class="code" href="classel.html#aced2827a8e030b5b9d5f857b8f202582">dana</a>;
+<a name="l00088"></a><a class="code" href="classel.html#a69d8939dbcd5c7fbb8467263f7000696">00088</a>   <a class="code" href="classel.html" title="Definicja klasy elementu.">el</a>* <a class="code" href="classel.html#a69d8939dbcd5c7fbb8467263f7000696">prv</a>;
+<a name="l00089"></a><a class="code" href="classel.html#aa1eac5dfc1ae72aa97ac92db49b4bc05">00089</a>   <a class="code" href="classel.html" title="Definicja klasy elementu.">el</a>* <a class="code" href="classel.html#aa1eac5dfc1ae72aa97ac92db49b4bc05">nxt</a>;
+<a name="l00090"></a><a class="code" href="classel.html#aa3e5b1b1e8674023f92ad9694c41ae2b">00090</a>   <a class="code" href="classel.html#aa3e5b1b1e8674023f92ad9694c41ae2b">el</a>(T d) {<a class="code" href="classel.html#aced2827a8e030b5b9d5f857b8f202582">dana</a>=d;<a class="code" href="classel.html#a69d8939dbcd5c7fbb8467263f7000696">prv</a>=NULL;<a class="code" href="classel.html#aa1eac5dfc1ae72aa97ac92db49b4bc05">nxt</a>=NULL;}
+<a name="l00091"></a><a class="code" href="classel.html#a4b262fcbc2545d96a48dc14ac0e69e99">00091</a>   <span class="keywordtype">bool</span> operator&lt;(el&lt;T&gt; B) {<span class="keywordflow">return</span> (<a class="code" href="classel.html#aced2827a8e030b5b9d5f857b8f202582">dana</a> &lt; B.dana);}
+<a name="l00092"></a>00092 };
+<a name="l00096"></a>00096 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00097"></a><a class="code" href="classlista.html">00097</a> <span class="keyword">class </span><a class="code" href="classlista.html" title="Definicja klasy lista.">lista</a> {
+<a name="l00098"></a><a class="code" href="classlista.html#ad344760a763e8d9818f9b60bc0e48ba6">00098</a>   <a class="code" href="classel.html" title="Definicja klasy elementu.">el&lt;T&gt;</a>* <a class="code" href="classlista.html#ad344760a763e8d9818f9b60bc0e48ba6">glowa</a>;
+<a name="l00099"></a><a class="code" href="classlista.html#a9767a33d79ab3dbba6c82d74f518fc46">00099</a>   <a class="code" href="classel.html" title="Definicja klasy elementu.">el&lt;T&gt;</a>* <a class="code" href="classlista.html#a9767a33d79ab3dbba6c82d74f518fc46">ogon</a>;
+<a name="l00100"></a>00100 <span class="keyword">public</span>:
+<a name="l00101"></a><a class="code" href="classlista.html#adfa22c0202d7ac7abfe006dbd3b5a12a">00101</a>   <a class="code" href="classlista.html#adfa22c0202d7ac7abfe006dbd3b5a12a">lista</a>() {<a class="code" href="classlista.html#ad344760a763e8d9818f9b60bc0e48ba6">glowa</a>=NULL;<a class="code" href="classlista.html#a9767a33d79ab3dbba6c82d74f518fc46">ogon</a>=NULL;}
+<a name="l00105"></a>00105   <span class="keywordtype">void</span> <a class="code" href="classlista.html#abfffecd8200714da1c80bb11b9aade5e" title="Prototyp funkcji dodajacej na przod.">dodaj_przod</a>(T dana);
+<a name="l00109"></a>00109   <span class="keywordtype">void</span> <a class="code" href="classlista.html#a6998ee006deb26a2e66d6b3df832a469" title="Prototyp funkcji usuwajacej element z przodu.">usun_przod</a>();
+<a name="l00113"></a>00113   <span class="keywordtype">void</span> <a class="code" href="classlista.html#ad35c120f3285b0a8a5069b540bc178ae" title="Prototyp funkcji dodajacej element na tyle.">dodaj_tyl</a>(T dana);
+<a name="l00117"></a>00117   <span class="keywordtype">void</span> <a class="code" href="classlista.html#aa60cc53e042281898cead5bc99fd8fc8" title="Prototyp funkcji usuwajacej element z tylu.">usun_tyl</a>();
+<a name="l00121"></a>00121   T <a class="code" href="classlista.html#aae75ab30e8130ff72c409ac74588e778" title="Prototyp funkcji pokazujacej przod.">zobacz_przod</a>();
+<a name="l00125"></a>00125   T <a class="code" href="classlista.html#aee86ec21992502a4cd67f8df38f37886" title="Prototyp funkcji pokazujacej tyl.">zobacz_tyl</a>();
+<a name="l00129"></a>00129   <span class="keywordtype">int</span> <a class="code" href="classlista.html#a71ac53823aaa5f53d06de4d69910ef9a" title="Zmienna przechowujaca rozmiar.">size</a>();
+<a name="l00133"></a>00133   <span class="keywordtype">bool</span> <a class="code" href="classlista.html#a60113cb7fe7aa3bbf0e02e7bc5673adb" title="Sprawdza czy puste.">empty</a>();
+<a name="l00137"></a>00137   <span class="keywordtype">void</span> <a class="code" href="classlista.html#a34b6928b48bb770cf37ab65394385637" title="ma za zadanie przypisywać jedna liste do drugiej (de facto tworzyć kopie).">operator=</a>(<a class="code" href="classlista.html" title="Definicja klasy lista.">lista&lt;T&gt;</a> L2); 
+<a name="l00138"></a><a class="code" href="classlista.html#af06eae49ae7e3923e2c7c9fbbd46867b">00138</a>   <a class="code" href="classel.html" title="Definicja klasy elementu.">el&lt;T&gt;</a>* <a class="code" href="classlista.html#af06eae49ae7e3923e2c7c9fbbd46867b">pocz</a>() {<span class="keywordflow">return</span> <a class="code" href="classlista.html#ad344760a763e8d9818f9b60bc0e48ba6">glowa</a>;}
+<a name="l00139"></a>00139 };
+<a name="l00140"></a>00140 
+<a name="l00144"></a>00144 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00145"></a><a class="code" href="class_stos_l.html">00145</a> <span class="keyword">class </span><a class="code" href="class_stos_l.html" title="Definicja klasy stos na liscie.">StosL</a> {
+<a name="l00146"></a>00146 <span class="keyword">private</span>:
+<a name="l00147"></a><a class="code" href="class_stos_l.html#ac18d4c73355b3e6a9ad47aedae6a77ca">00147</a>   <a class="code" href="classlista.html" title="Definicja klasy lista.">lista&lt;T&gt;</a> <a class="code" href="class_stos_l.html#ac18d4c73355b3e6a9ad47aedae6a77ca">L</a>;
+<a name="l00148"></a>00148 <span class="keyword">public</span>:
+<a name="l00152"></a>00152   <span class="keywordtype">int</span> <a class="code" href="class_stos_l.html#aa33a51cb0ca3dbf005df8765586ce964" title="Zmienna przechowujaca rozmiar.">size</a>();
+<a name="l00156"></a>00156   <span class="keywordtype">bool</span> <a class="code" href="class_stos_l.html#a6ea23455139de8753792dc8682890055" title="Sprawdza czy puste.">empty</a>();
+<a name="l00160"></a>00160   <span class="keywordtype">void</span> <a class="code" href="class_stos_l.html#af72c5941f1f181fc6b76570d978986d9" title="Dodaje element.">push</a>(T e);
+<a name="l00161"></a>00161   T <a class="code" href="class_stos_l.html#a0430ba75c3c71ed85362cbbe8e8dc2bd" title="Definicja funkcji usuwajacej element.">pop</a>();
+<a name="l00162"></a><a class="code" href="class_stos_l.html#a83b21e73af5cc36dc0ea91a03be324b4">00162</a>   <a class="code" href="class_stos_l.html#a83b21e73af5cc36dc0ea91a03be324b4">StosL</a>() {};
+<a name="l00163"></a><a class="code" href="class_stos_l.html#a48f686406573e0b16b3ab1e1ece8989b">00163</a>   <a class="code" href="classel.html" title="Definicja klasy elementu.">el&lt;T&gt;</a>* <a class="code" href="class_stos_l.html#a48f686406573e0b16b3ab1e1ece8989b">pocz</a>() {<span class="keywordflow">return</span> <a class="code" href="class_stos_l.html#ac18d4c73355b3e6a9ad47aedae6a77ca">L</a>.pocz();}
+<a name="l00164"></a>00164 };
+<a name="l00165"></a>00165 
+<a name="l00169"></a>00169 <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;
+<a name="l00170"></a><a class="code" href="classkolejka.html">00170</a> <span class="keyword">class </span><a class="code" href="classkolejka.html" title="Definicja klasy kolejka.">kolejka</a> {
+<a name="l00171"></a><a class="code" href="classkolejka.html#a44a764feb85099820ffbc022f4755fe0">00171</a>   <a class="code" href="classlista.html" title="Definicja klasy lista.">lista&lt;T&gt;</a> <a class="code" href="classkolejka.html#a44a764feb85099820ffbc022f4755fe0">L</a>;
+<a name="l00172"></a>00172 <span class="keyword">public</span>:
+<a name="l00176"></a>00176   <span class="keywordtype">int</span> <a class="code" href="classkolejka.html#a97c873e61c9d08a08ddec5c0a784aaec" title="Zmienna przechowujaca rozmiar.">size</a>();
+<a name="l00180"></a>00180   <span class="keywordtype">bool</span> <a class="code" href="classkolejka.html#a2a5984247b91f8d4b96c1104755c14ee" title="Sprawdza czy puste..">empty</a>();
+<a name="l00184"></a>00184   <span class="keywordtype">void</span> <a class="code" href="classkolejka.html#a9ab5091d52ebfe6cb4785bfd4ec2a0b9" title="Dodaje element.">push</a>(T e);
+<a name="l00185"></a>00185   T <a class="code" href="classkolejka.html#aed8feb84d0962f52961325340bd6ee92" title="Definicja funkcji zdejmująca elementy z kolejki.">pop</a>();
+<a name="l00186"></a><a class="code" href="classkolejka.html#ae1c55bf81416aceaa811879e58263743">00186</a>   <a class="code" href="classkolejka.html#ae1c55bf81416aceaa811879e58263743">kolejka</a>() {};
+<a name="l00190"></a>00190   <span class="keywordtype">void</span> <a class="code" href="classkolejka.html#a3802e595aad03b06e547714f5aa73a1d" title="Dodaje do kolejki.">queue</a>(<a class="code" href="classlista.html" title="Definicja klasy lista.">lista&lt;T&gt;</a> L2);
+<a name="l00191"></a>00191   <a class="code" href="classlista.html" title="Definicja klasy lista.">lista&lt;T&gt;</a> <a class="code" href="classkolejka.html#a88cae02e37f9f6a7891c45f6490de6d6" title="Definicja funkcji usuwajacej element z kolejki.">dequeue</a>();
+<a name="l00192"></a><a class="code" href="classkolejka.html#a662375b176addc87e5b6b91f1555ad09">00192</a>   <a class="code" href="classel.html" title="Definicja klasy elementu.">el&lt;T&gt;</a>* <a class="code" href="classkolejka.html#a662375b176addc87e5b6b91f1555ad09">pocz</a>() {<span class="keywordflow">return</span> <a class="code" href="classkolejka.html#a44a764feb85099820ffbc022f4755fe0">L</a>.pocz();}
+<a name="l00193"></a>00193 };
+<a name="l00194"></a>00194 
+<a name="l00195"></a>00195 <span class="preprocessor">#endif</span>
+<a name="l00196"></a>00196 <span class="preprocessor"></span>
+<a name="l00197"></a>00197 
+</pre></div></div><!-- contents -->
+</div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="stos_8hh.html">stos.hh</a>      </li>
+
+    <li class="footer">Wygenerowano Tue Apr 29 2014 15:22:32 dla My Project programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>
