@@ -1,0 +1,172 @@
+\hypertarget{class_asocjacyjna}{\section{\-Dokumentacja szablonu klasy \-Asocjacyjna$<$ \-T $>$}
+\label{class_asocjacyjna}\index{\-Asocjacyjna$<$ T $>$@{\-Asocjacyjna$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$haszujaca.\-hh$>$}
+
+
+
+\-Diagram współpracy dla \-Asocjacyjna$<$ \-T $>$\-:
+\subsection*{\-Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_asocjacyjna_1_1item}{item}
+\begin{DoxyCompactList}\small\item\em \-Struktura tworzaca tablice asocjacyjna. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_asocjacyjna_a0824d169fa70e63f11ef599771b77a4c}{\-Asocjacyjna} ()
+\item 
+bool \hyperlink{class_asocjacyjna_a0ffdfd5c19349dcbc2b0e7b88d7ff0eb}{\-Dodaj\-\_\-\-Element} (string nazwa, \-T data)
+\begin{DoxyCompactList}\small\item\em \-Metoda pozwalajaca na dodawanie nowego elementu do tablicy. \end{DoxyCompactList}\item 
+bool \hyperlink{class_asocjacyjna_ad0942ec050a1066e594d19807afc1a2e}{\-Czy\-\_\-\-Pusty} ()
+\begin{DoxyCompactList}\small\item\em \-Metoda pozwalajaca na sprawdzenie czy tablica jest pusta. \end{DoxyCompactList}\item 
+bool \hyperlink{class_asocjacyjna_a30c921591e105752225828d2e68d635a}{\-Wyswietl\-Tablice} ()
+\begin{DoxyCompactList}\small\item\em \-Metoda pozwalajaca na wyswietlenie elementow tablicy. \end{DoxyCompactList}\item 
+int \hyperlink{class_asocjacyjna_a2013aece90d2fdf0e1958ad80727fabe}{haszujaca} (string klucz)
+\begin{DoxyCompactList}\small\item\em \-Metoda odpowiedzialna za haszowanie elementów tablicy. \end{DoxyCompactList}\item 
+int \hyperlink{class_asocjacyjna_abb11a873d0e231a8a9c4f3e169145c2d}{\-Zlicz\-Elementy} (int indeks)
+\begin{DoxyCompactList}\small\item\em \-Metoda odpowiedzialna za zliczanie elementow pod danym indeksem. \end{DoxyCompactList}\item 
+\-T \hyperlink{class_asocjacyjna_ad661deb3efee94cd2162a920ad965be5}{\-Wyszukaj\-Wartosc} (string nazwa)
+\begin{DoxyCompactList}\small\item\em \-Metoda pozwalajaca wyszukac element w tablicy na podstawie klucza. \end{DoxyCompactList}\item 
+bool \hyperlink{class_asocjacyjna_ae87421b446ef9cf77f4b60fecb1d925a}{\-Zanajdz\-Klucz} (\-T data)
+\begin{DoxyCompactList}\small\item\em \-Metoda pozwalajaca wyszukac klucz w tablicy na podstawie podanej wartosci. \end{DoxyCompactList}\item 
+bool \hyperlink{class_asocjacyjna_a50e66159f76857efa3428eb62e360ad9}{\-Usun\-Element} (string nazwa)
+\begin{DoxyCompactList}\small\item\em \-Metoda pozwalajaca na usuwanie elementu z tablicy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_asocjacyjna_1_1item}{item} $\ast$ \hyperlink{class_asocjacyjna_a56634919446aafebc824fbf86c10307e}{\-Tablica\-Haszujaca} \mbox{[}rozmiartablicy\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\subsubsection*{template$<$class T$>$class Asocjacyjna$<$ T $>$}
+
+
+
+\-Definicja w linii 19 pliku haszujaca.\-hh.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_asocjacyjna_a0824d169fa70e63f11ef599771b77a4c}{\index{\-Asocjacyjna@{\-Asocjacyjna}!\-Asocjacyjna@{\-Asocjacyjna}}
+\index{\-Asocjacyjna@{\-Asocjacyjna}!Asocjacyjna@{\-Asocjacyjna}}
+\subsubsection[{\-Asocjacyjna}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf \-Asocjacyjna}$<$ \-T $>$\-::{\bf \-Asocjacyjna} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_asocjacyjna_a0824d169fa70e63f11ef599771b77a4c}
+
+
+\-Definicja w linii 13 pliku haszujaca.\-cpp.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_asocjacyjna_ad0942ec050a1066e594d19807afc1a2e}{\index{\-Asocjacyjna@{\-Asocjacyjna}!\-Czy\-\_\-\-Pusty@{\-Czy\-\_\-\-Pusty}}
+\index{\-Czy\-\_\-\-Pusty@{\-Czy\-\_\-\-Pusty}!Asocjacyjna@{\-Asocjacyjna}}
+\subsubsection[{\-Czy\-\_\-\-Pusty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool {\bf \-Asocjacyjna}$<$ \-T $>$\-::{\bf \-Czy\-\_\-\-Pusty} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_asocjacyjna_ad0942ec050a1066e594d19807afc1a2e}
+
+
+\-Definicja w linii 60 pliku haszujaca.\-cpp.
+
+\hypertarget{class_asocjacyjna_a0ffdfd5c19349dcbc2b0e7b88d7ff0eb}{\index{\-Asocjacyjna@{\-Asocjacyjna}!\-Dodaj\-\_\-\-Element@{\-Dodaj\-\_\-\-Element}}
+\index{\-Dodaj\-\_\-\-Element@{\-Dodaj\-\_\-\-Element}!Asocjacyjna@{\-Asocjacyjna}}
+\subsubsection[{\-Dodaj\-\_\-\-Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool {\bf \-Asocjacyjna}$<$ \-T $>$\-::{\bf \-Dodaj\-\_\-\-Element} (
+\begin{DoxyParamCaption}
+\item[{string}]{nazwa, }
+\item[{\-T}]{data}
+\end{DoxyParamCaption}
+)}}\label{class_asocjacyjna_a0ffdfd5c19349dcbc2b0e7b88d7ff0eb}
+
+
+\-Definicja w linii 29 pliku haszujaca.\-cpp.
+
+\hypertarget{class_asocjacyjna_a2013aece90d2fdf0e1958ad80727fabe}{\index{\-Asocjacyjna@{\-Asocjacyjna}!haszujaca@{haszujaca}}
+\index{haszujaca@{haszujaca}!Asocjacyjna@{\-Asocjacyjna}}
+\subsubsection[{haszujaca}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ int {\bf \-Asocjacyjna}$<$ \-T $>$\-::{\bf haszujaca} (
+\begin{DoxyParamCaption}
+\item[{string}]{klucz}
+\end{DoxyParamCaption}
+)}}\label{class_asocjacyjna_a2013aece90d2fdf0e1958ad80727fabe}
+
+
+\-Definicja w linii 95 pliku haszujaca.\-cpp.
+
+\hypertarget{class_asocjacyjna_a50e66159f76857efa3428eb62e360ad9}{\index{\-Asocjacyjna@{\-Asocjacyjna}!\-Usun\-Element@{\-Usun\-Element}}
+\index{\-Usun\-Element@{\-Usun\-Element}!Asocjacyjna@{\-Asocjacyjna}}
+\subsubsection[{\-Usun\-Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool {\bf \-Asocjacyjna}$<$ \-T $>$\-::{\bf \-Usun\-Element} (
+\begin{DoxyParamCaption}
+\item[{string}]{nazwa}
+\end{DoxyParamCaption}
+)}}\label{class_asocjacyjna_a50e66159f76857efa3428eb62e360ad9}
+
+
+\-Definicja w linii 187 pliku haszujaca.\-cpp.
+
+\hypertarget{class_asocjacyjna_a30c921591e105752225828d2e68d635a}{\index{\-Asocjacyjna@{\-Asocjacyjna}!\-Wyswietl\-Tablice@{\-Wyswietl\-Tablice}}
+\index{\-Wyswietl\-Tablice@{\-Wyswietl\-Tablice}!Asocjacyjna@{\-Asocjacyjna}}
+\subsubsection[{\-Wyswietl\-Tablice}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool {\bf \-Asocjacyjna}$<$ \-T $>$\-::{\bf \-Wyswietl\-Tablice} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_asocjacyjna_a30c921591e105752225828d2e68d635a}
+
+
+\-Definicja w linii 71 pliku haszujaca.\-cpp.
+
+\hypertarget{class_asocjacyjna_ad661deb3efee94cd2162a920ad965be5}{\index{\-Asocjacyjna@{\-Asocjacyjna}!\-Wyszukaj\-Wartosc@{\-Wyszukaj\-Wartosc}}
+\index{\-Wyszukaj\-Wartosc@{\-Wyszukaj\-Wartosc}!Asocjacyjna@{\-Asocjacyjna}}
+\subsubsection[{\-Wyszukaj\-Wartosc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ \-T {\bf \-Asocjacyjna}$<$ \-T $>$\-::{\bf \-Wyszukaj\-Wartosc} (
+\begin{DoxyParamCaption}
+\item[{string}]{nazwa}
+\end{DoxyParamCaption}
+)}}\label{class_asocjacyjna_ad661deb3efee94cd2162a920ad965be5}
+
+
+\-Definicja w linii 132 pliku haszujaca.\-cpp.
+
+\hypertarget{class_asocjacyjna_ae87421b446ef9cf77f4b60fecb1d925a}{\index{\-Asocjacyjna@{\-Asocjacyjna}!\-Zanajdz\-Klucz@{\-Zanajdz\-Klucz}}
+\index{\-Zanajdz\-Klucz@{\-Zanajdz\-Klucz}!Asocjacyjna@{\-Asocjacyjna}}
+\subsubsection[{\-Zanajdz\-Klucz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool {\bf \-Asocjacyjna}$<$ \-T $>$\-::{\bf \-Zanajdz\-Klucz} (
+\begin{DoxyParamCaption}
+\item[{\-T}]{data}
+\end{DoxyParamCaption}
+)}}\label{class_asocjacyjna_ae87421b446ef9cf77f4b60fecb1d925a}
+
+
+\-Definicja w linii 159 pliku haszujaca.\-cpp.
+
+\hypertarget{class_asocjacyjna_abb11a873d0e231a8a9c4f3e169145c2d}{\index{\-Asocjacyjna@{\-Asocjacyjna}!\-Zlicz\-Elementy@{\-Zlicz\-Elementy}}
+\index{\-Zlicz\-Elementy@{\-Zlicz\-Elementy}!Asocjacyjna@{\-Asocjacyjna}}
+\subsubsection[{\-Zlicz\-Elementy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ int {\bf \-Asocjacyjna}$<$ \-T $>$\-::{\bf \-Zlicz\-Elementy} (
+\begin{DoxyParamCaption}
+\item[{int}]{indeks}
+\end{DoxyParamCaption}
+)}}\label{class_asocjacyjna_abb11a873d0e231a8a9c4f3e169145c2d}
+
+
+\-Definicja w linii 111 pliku haszujaca.\-cpp.
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_asocjacyjna_a56634919446aafebc824fbf86c10307e}{\index{\-Asocjacyjna@{\-Asocjacyjna}!\-Tablica\-Haszujaca@{\-Tablica\-Haszujaca}}
+\index{\-Tablica\-Haszujaca@{\-Tablica\-Haszujaca}!Asocjacyjna@{\-Asocjacyjna}}
+\subsubsection[{\-Tablica\-Haszujaca}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf item}$\ast$ {\bf \-Asocjacyjna}$<$ \-T $>$\-::{\bf \-Tablica\-Haszujaca}\mbox{[}rozmiartablicy\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_asocjacyjna_a56634919446aafebc824fbf86c10307e}
+
+
+\-Definicja w linii 35 pliku haszujaca.\-hh.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{haszujaca_8hh}{haszujaca.\-hh}\item 
+\hyperlink{haszujaca_8cpp}{haszujaca.\-cpp}\end{DoxyCompactItemize}
