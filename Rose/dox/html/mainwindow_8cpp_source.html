@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>SZACHY: Plik źródłowy mainwindow.cpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SZACHY
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Monika Gollnik</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('mainwindow_8cpp.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mainwindow.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mainwindow_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#include &quot;<a class="code" href="mainwindow_8h.html">mainwindow.h</a>&quot;</span>
+<a name="l00002"></a>00002 <span class="preprocessor">#include &quot;ui_mainwindow.h&quot;</span>
+<a name="l00003"></a>00003 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00004"></a>00004 
+<a name="l00005"></a><a class="code" href="class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db">00005</a> <a class="code" href="class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db">MainWindow::MainWindow</a>(QWidget *parent) :
+<a name="l00006"></a>00006     QMainWindow(parent),
+<a name="l00007"></a>00007     end(0),
+<a name="l00008"></a>00008     start(0,0),
+<a name="l00009"></a>00009     cel(0,0),
+<a name="l00010"></a>00010    ui(new Ui::<a class="code" href="class_main_window.html">MainWindow</a>)
+<a name="l00011"></a>00011 {
+<a name="l00012"></a>00012     QString nazwa;
+<a name="l00013"></a>00013     <a class="code" href="class_main_window.html#a35466a70ed47252a0191168126a352a5">ui</a>-&gt;setupUi(<span class="keyword">this</span>);
+<a name="l00014"></a>00014     this-&gt;setGeometry(0,0,1300,700);
+<a name="l00015"></a>00015     <a class="code" href="class_main_window.html#a9ef49c25c7693c691076e6b46b45db76">pole</a> = <span class="keyword">new</span> QPushButton**[8];
+<a name="l00016"></a>00016     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;8;i++) {
+<a name="l00017"></a>00017         <a class="code" href="class_main_window.html#a9ef49c25c7693c691076e6b46b45db76">pole</a>[i] = <span class="keyword">new</span> QPushButton*[8];
+<a name="l00018"></a>00018         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0;j&lt;8;j++) {
+<a name="l00019"></a>00019             <a class="code" href="class_main_window.html#a9ef49c25c7693c691076e6b46b45db76">pole</a>[i][j] = <span class="keyword">new</span> QPushButton(<span class="keyword">this</span>);
+<a name="l00020"></a>00020             <a class="code" href="class_main_window.html#a9ef49c25c7693c691076e6b46b45db76">pole</a>[i][j]-&gt;setGeometry(15+<a class="code" href="class_main_window.html#adbea6fe4608b0ced586b96bfcd4456ce">pole_wymiar</a>*i,<a class="code" href="class_main_window.html#adbea6fe4608b0ced586b96bfcd4456ce">pole_wymiar</a>*7+15-<a class="code" href="class_main_window.html#adbea6fe4608b0ced586b96bfcd4456ce">pole_wymiar</a>*j,<a class="code" href="class_main_window.html#adbea6fe4608b0ced586b96bfcd4456ce">pole_wymiar</a>,<a class="code" href="class_main_window.html#adbea6fe4608b0ced586b96bfcd4456ce">pole_wymiar</a>);
+<a name="l00021"></a>00021             <a class="code" href="class_main_window.html#a9ef49c25c7693c691076e6b46b45db76">pole</a>[i][j]-&gt;setIconSize(QSize(<a class="code" href="class_main_window.html#adbea6fe4608b0ced586b96bfcd4456ce">pole_wymiar</a>,<a class="code" href="class_main_window.html#adbea6fe4608b0ced586b96bfcd4456ce">pole_wymiar</a>));
+<a name="l00022"></a>00022             nazwa=(i+65);
+<a name="l00023"></a>00023             nazwa+=(j+49);
+<a name="l00024"></a>00024             <a class="code" href="class_main_window.html#a9ef49c25c7693c691076e6b46b45db76">pole</a>[i][j]-&gt;setObjectName(nazwa);
+<a name="l00025"></a>00025             connect(<a class="code" href="class_main_window.html#a9ef49c25c7693c691076e6b46b45db76">pole</a>[i][j],SIGNAL(clicked()),<span class="keyword">this</span>,SLOT(<a class="code" href="class_main_window.html#ad3e1191b4be0b343cdb2e246c9d11249" title="Definicja funkcji reprezentująca wykonywane ruchy przez figury.">qruch</a>()));
+<a name="l00026"></a>00026         }
+<a name="l00027"></a>00027     }
+<a name="l00028"></a>00028     <a class="code" href="class_main_window.html#ade2329ceab4efd7401816607726fb57f">awans</a> = <span class="keyword">new</span> QPushButton(<span class="keyword">this</span>);
+<a name="l00029"></a>00029     <a class="code" href="class_main_window.html#ade2329ceab4efd7401816607726fb57f">awans</a>-&gt;setGeometry(100+8*<a class="code" href="class_main_window.html#adbea6fe4608b0ced586b96bfcd4456ce">pole_wymiar</a>,15+4*<a class="code" href="class_main_window.html#adbea6fe4608b0ced586b96bfcd4456ce">pole_wymiar</a>,<a class="code" href="class_main_window.html#adbea6fe4608b0ced586b96bfcd4456ce">pole_wymiar</a>,<a class="code" href="class_main_window.html#adbea6fe4608b0ced586b96bfcd4456ce">pole_wymiar</a>);
+<a name="l00030"></a>00030     <a class="code" href="class_main_window.html#ade2329ceab4efd7401816607726fb57f">awans</a>-&gt;setIconSize((QSize(<a class="code" href="class_main_window.html#adbea6fe4608b0ced586b96bfcd4456ce">pole_wymiar</a>,<a class="code" href="class_main_window.html#adbea6fe4608b0ced586b96bfcd4456ce">pole_wymiar</a>)));
+<a name="l00031"></a>00031     connect(<a class="code" href="class_main_window.html#ade2329ceab4efd7401816607726fb57f">awans</a>,SIGNAL(clicked()),<span class="keyword">this</span>,SLOT(<a class="code" href="class_main_window.html#a4488c49a6f9427c44df99c10e2cbe17f" title="Definicja funkcji reprezentująca wygląd figur.">tawans</a>()));
+<a name="l00032"></a>00032     <a class="code" href="class_main_window.html#aca8da845b050d554d5e6f335c6f143c7">log</a> = <span class="keyword">new</span> QTextBrowser(<span class="keyword">this</span>);
+<a name="l00033"></a>00033     <a class="code" href="class_main_window.html#aca8da845b050d554d5e6f335c6f143c7">log</a>-&gt;setGeometry(100+8*<a class="code" href="class_main_window.html#adbea6fe4608b0ced586b96bfcd4456ce">pole_wymiar</a>,15,300,300);
+<a name="l00034"></a>00034     <a class="code" href="class_main_window.html#aca8da845b050d554d5e6f335c6f143c7">log</a>-&gt;setStyleSheet(<span class="stringliteral">&quot;background-color: white; border: 3px solid grey&quot;</span>);
+<a name="l00035"></a>00035     <a class="code" href="class_main_window.html#aca8da845b050d554d5e6f335c6f143c7">log</a>-&gt;isReadOnly();
+<a name="l00036"></a>00036     <a class="code" href="class_main_window.html#a292626aba88863b28c3a44c6f8fff0c8" title="Prototyp funkcji odpowiedzialny za wyglad szachownicy.">szachownica</a>();
+<a name="l00037"></a>00037     <a class="code" href="class_main_window.html#a4488c49a6f9427c44df99c10e2cbe17f" title="Definicja funkcji reprezentująca wygląd figur.">tawans</a>();
+<a name="l00038"></a>00038 }
+<a name="l00039"></a>00039 
+<a name="l00040"></a><a class="code" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">00040</a> <a class="code" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">MainWindow::~MainWindow</a>()
+<a name="l00041"></a>00041 {
+<a name="l00042"></a>00042     <span class="keyword">delete</span> <a class="code" href="class_main_window.html#a35466a70ed47252a0191168126a352a5">ui</a>;
+<a name="l00043"></a>00043 }
+<a name="l00049"></a><a class="code" href="class_main_window.html#a292626aba88863b28c3a44c6f8fff0c8">00049</a> <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a292626aba88863b28c3a44c6f8fff0c8" title="Prototyp funkcji odpowiedzialny za wyglad szachownicy.">MainWindow::szachownica</a>() {
+<a name="l00050"></a>00050     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;8;i++) {
+<a name="l00051"></a>00051         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0;j&lt;8;j++) {
+<a name="l00052"></a>00052             <span class="keywordflow">if</span> ((i+j)%2) {
+<a name="l00053"></a>00053                 <a class="code" href="class_main_window.html#a9ef49c25c7693c691076e6b46b45db76">pole</a>[i][j]-&gt;setStyleSheet(<span class="stringliteral">&quot;background-color: white; border: none&quot;</span>);
+<a name="l00054"></a>00054             }
+<a name="l00055"></a>00055             <span class="keywordflow">else</span> {
+<a name="l00056"></a>00056                 <a class="code" href="class_main_window.html#a9ef49c25c7693c691076e6b46b45db76">pole</a>[i][j]-&gt;setStyleSheet(<span class="stringliteral">&quot;background-color: green; border: none&quot;</span>);
+<a name="l00057"></a>00057             }
+<a name="l00058"></a>00058         }
+<a name="l00059"></a>00059     }
+<a name="l00060"></a>00060 }
+<a name="l00066"></a><a class="code" href="class_main_window.html#af63fa081a58f836dd71406b416e44036">00066</a> <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a292626aba88863b28c3a44c6f8fff0c8" title="Prototyp funkcji odpowiedzialny za wyglad szachownicy.">MainWindow::szachownica</a>(std::vector&lt;Pole&gt; light) {
+<a name="l00067"></a>00067     <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;light.size();i++)
+<a name="l00068"></a>00068         <span class="keywordflow">if</span> ((light[i].x()+light[i].y())%2)
+<a name="l00069"></a>00069             <a class="code" href="class_main_window.html#a9ef49c25c7693c691076e6b46b45db76">pole</a>[light[i].x()-1][light[i].y()-1]-&gt;setStyleSheet(<span class="stringliteral">&quot;background-color: white; border: 4px solid lightblue&quot;</span>);
+<a name="l00070"></a>00070         <span class="keywordflow">else</span>
+<a name="l00071"></a>00071             <a class="code" href="class_main_window.html#a9ef49c25c7693c691076e6b46b45db76">pole</a>[light[i].x()-1][light[i].y()-1]-&gt;setStyleSheet(<span class="stringliteral">&quot;background-color: green; border: 4px solid lightblue&quot;</span>);
+<a name="l00072"></a>00072 }
+<a name="l00077"></a><a class="code" href="class_main_window.html#a4488c49a6f9427c44df99c10e2cbe17f">00077</a> <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a4488c49a6f9427c44df99c10e2cbe17f" title="Definicja funkcji reprezentująca wygląd figur.">MainWindow::tawans</a>() {
+<a name="l00078"></a>00078     <span class="keywordtype">char</span> i=<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a77dd365868aa43addd6b509a1984fa6c">typ_awans</a>();
+<a name="l00079"></a>00079     i++;
+<a name="l00080"></a>00080     <span class="keywordflow">if</span> (i==6)
+<a name="l00081"></a>00081         i=2;
+<a name="l00082"></a>00082     <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a5b3772697dbb6f97e642107111adb5a9">zmien_awanstyp</a>(i);
+<a name="l00083"></a>00083     <span class="keywordflow">switch</span> (i) {
+<a name="l00084"></a>00084     <span class="keywordflow">case</span> 2: <a class="code" href="class_main_window.html#ade2329ceab4efd7401816607726fb57f">awans</a>-&gt;setIcon(QIcon(<span class="stringliteral">&quot;Graphics/wwieza.svg&quot;</span>));<span class="keywordflow">break</span>;
+<a name="l00085"></a>00085     <span class="keywordflow">case</span> 3: <a class="code" href="class_main_window.html#ade2329ceab4efd7401816607726fb57f">awans</a>-&gt;setIcon(QIcon(<span class="stringliteral">&quot;Graphics/wskoczek.svg&quot;</span>));<span class="keywordflow">break</span>;
+<a name="l00086"></a>00086     <span class="keywordflow">case</span> 4: <a class="code" href="class_main_window.html#ade2329ceab4efd7401816607726fb57f">awans</a>-&gt;setIcon(QIcon(<span class="stringliteral">&quot;Graphics/wgoniec.svg&quot;</span>));<span class="keywordflow">break</span>;
+<a name="l00087"></a>00087     <span class="keywordflow">case</span> 5: <a class="code" href="class_main_window.html#ade2329ceab4efd7401816607726fb57f">awans</a>-&gt;setIcon(QIcon(<span class="stringliteral">&quot;Graphics/whetman.svg&quot;</span>));<span class="keywordflow">break</span>;
+<a name="l00088"></a>00088     <span class="keywordflow">default</span>: assert(<span class="stringliteral">&quot;tu gdzies jest blad&quot;</span>);<span class="keywordflow">break</span>;
+<a name="l00089"></a>00089     }
+<a name="l00090"></a>00090 }
+<a name="l00095"></a><a class="code" href="class_main_window.html#ad3e1191b4be0b343cdb2e246c9d11249">00095</a> <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#ad3e1191b4be0b343cdb2e246c9d11249" title="Definicja funkcji reprezentująca wykonywane ruchy przez figury.">MainWindow::qruch</a>() {
+<a name="l00096"></a>00096     <a class="code" href="class_pole.html">Pole</a> tmp(sender()-&gt;objectName().toStdString());
+<a name="l00097"></a>00097     <span class="keywordflow">if</span> (!<a class="code" href="class_main_window.html#a24823a731fbd97181b314763bd491e50">end</a>) {
+<a name="l00098"></a>00098         <span class="keywordflow">if</span> (<a class="code" href="class_main_window.html#aaaecb46583504233ea801b4ec34e9f29">start</a> == <a class="code" href="class_pole.html">Pole</a>(0,0)) {
+<a name="l00099"></a>00099             <span class="keywordflow">if</span> (<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#aeae1debddab56c1028014402f97eebda">P</a>[tmp.<a class="code" href="class_pole.html#a98c066edfecd654b32bb8de07ad5e881">x</a>()][tmp.<a class="code" href="class_pole.html#ae4c64d84a6102c61466f528ba4c23a15">y</a>()].figtype()!=0) {
+<a name="l00100"></a>00100                 <span class="keywordflow">if</span> (<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#aeae1debddab56c1028014402f97eebda">P</a>[tmp.<a class="code" href="class_pole.html#a98c066edfecd654b32bb8de07ad5e881">x</a>()][tmp.<a class="code" href="class_pole.html#ae4c64d84a6102c61466f528ba4c23a15">y</a>()].kolor() == <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a792971709bdb3b8e29b081e7bcf18cc9">next</a>) {
+<a name="l00101"></a>00101                     <a class="code" href="class_main_window.html#aaaecb46583504233ea801b4ec34e9f29">start</a> = tmp;
+<a name="l00102"></a>00102                     <a class="code" href="class_main_window.html#a9081d2e6cde7089a308fd4c738d722dd">qmozliwe</a> = <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a4ec65bca4344fd3430b20a95b6ae5990">ruchy</a>(<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#aeae1debddab56c1028014402f97eebda">P</a>[tmp.<a class="code" href="class_pole.html#a98c066edfecd654b32bb8de07ad5e881">x</a>()][tmp.<a class="code" href="class_pole.html#ae4c64d84a6102c61466f528ba4c23a15">y</a>()]);
+<a name="l00103"></a>00103                     <a class="code" href="class_main_window.html#a292626aba88863b28c3a44c6f8fff0c8" title="Prototyp funkcji odpowiedzialny za wyglad szachownicy.">szachownica</a>(<a class="code" href="class_main_window.html#a9081d2e6cde7089a308fd4c738d722dd">qmozliwe</a>);
+<a name="l00104"></a>00104                 }
+<a name="l00105"></a>00105             }
+<a name="l00106"></a>00106         }
+<a name="l00107"></a>00107         <span class="keywordflow">else</span> {
+<a name="l00108"></a>00108             <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="class_main_window.html#a9081d2e6cde7089a308fd4c738d722dd">qmozliwe</a>.size();i++) {
+<a name="l00109"></a>00109                 <span class="keywordflow">if</span> (tmp == <a class="code" href="class_main_window.html#a9081d2e6cde7089a308fd4c738d722dd">qmozliwe</a>[i]) {
+<a name="l00110"></a>00110                     <a class="code" href="class_main_window.html#a283ff2015ce02067caf95ef460be3ff9">cel</a> = tmp;
+<a name="l00111"></a>00111                     <span class="keywordflow">break</span>;
+<a name="l00112"></a>00112                 }
+<a name="l00113"></a>00113             }
+<a name="l00114"></a>00114             <span class="keywordflow">if</span> (<a class="code" href="class_main_window.html#a283ff2015ce02067caf95ef460be3ff9">cel</a> != <a class="code" href="class_pole.html">Pole</a>(0,0)) {
+<a name="l00115"></a>00115                 <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#ad60dd1bcf48315390eda98b52f6691d7">ruch</a>(<a class="code" href="class_main_window.html#aaaecb46583504233ea801b4ec34e9f29">start</a>,<a class="code" href="class_main_window.html#a283ff2015ce02067caf95ef460be3ff9">cel</a>);
+<a name="l00116"></a>00116                 <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a9ce747229d6682ddda26e68046174ed5">bulid_one</a>();
+<a name="l00117"></a>00117                 <span class="keywordflow">if</span> (<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a5517c4100004d16c73be0f50a90fa193">wsk</a>.empty()) {
+<a name="l00118"></a>00118                     <span class="keywordflow">if</span> (<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a792971709bdb3b8e29b081e7bcf18cc9">next</a>) {
+<a name="l00119"></a>00119                         <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#ac3b8130edcb63f1f828e6e613a2cc05c">szach</a>(<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a5d791226219e1d9f6b4d7b4a321a217c">bking</a>)) {
+<a name="l00120"></a>00120                             <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#af2a4087f0bf9db16750b40e4d3d74d34">addlog</a>(<a class="code" href="class_main_window.html#aaaecb46583504233ea801b4ec34e9f29">start</a>,<a class="code" href="class_main_window.html#a283ff2015ce02067caf95ef460be3ff9">cel</a>);
+<a name="l00121"></a>00121                             <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#af2a4087f0bf9db16750b40e4d3d74d34">addlog</a>(<span class="stringliteral">&quot;biale mat&quot;</span>);
+<a name="l00122"></a>00122                         }
+<a name="l00123"></a>00123                         <span class="keywordflow">else</span> {
+<a name="l00124"></a>00124                             <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#af2a4087f0bf9db16750b40e4d3d74d34">addlog</a>(<a class="code" href="class_main_window.html#aaaecb46583504233ea801b4ec34e9f29">start</a>,<a class="code" href="class_main_window.html#a283ff2015ce02067caf95ef460be3ff9">cel</a>);
+<a name="l00125"></a>00125                             <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#af2a4087f0bf9db16750b40e4d3d74d34">addlog</a>(<span class="stringliteral">&quot;pat&quot;</span>);
+<a name="l00126"></a>00126                         }
+<a name="l00127"></a>00127                     }
+<a name="l00128"></a>00128                     <span class="keywordflow">else</span> {
+<a name="l00129"></a>00129                         <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#ac3b8130edcb63f1f828e6e613a2cc05c">szach</a>(<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a35556003d852bbed7adfb165a27232f4">wking</a>)) {
+<a name="l00130"></a>00130                             <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#af2a4087f0bf9db16750b40e4d3d74d34">addlog</a>(<a class="code" href="class_main_window.html#aaaecb46583504233ea801b4ec34e9f29">start</a>,<a class="code" href="class_main_window.html#a283ff2015ce02067caf95ef460be3ff9">cel</a>);
+<a name="l00131"></a>00131                             <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#af2a4087f0bf9db16750b40e4d3d74d34">addlog</a>(<span class="stringliteral">&quot;czarne mat&quot;</span>);
+<a name="l00132"></a>00132                         }
+<a name="l00133"></a>00133                         <span class="keywordflow">else</span> {
+<a name="l00134"></a>00134                             <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#af2a4087f0bf9db16750b40e4d3d74d34">addlog</a>(<a class="code" href="class_main_window.html#aaaecb46583504233ea801b4ec34e9f29">start</a>,<a class="code" href="class_main_window.html#a283ff2015ce02067caf95ef460be3ff9">cel</a>);
+<a name="l00135"></a>00135                             <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#af2a4087f0bf9db16750b40e4d3d74d34">addlog</a>(<span class="stringliteral">&quot;pat&quot;</span>);
+<a name="l00136"></a>00136                         }
+<a name="l00137"></a>00137                     }
+<a name="l00138"></a>00138                     <a class="code" href="class_main_window.html#a71ddea5cf91abf6aab0fc21170b7baf3">displog</a>();
+<a name="l00139"></a>00139                     <a class="code" href="class_main_window.html#a0083b949c18ccf71dcbe37f4258007c0" title="Definicja funkcji reprezentująca ustawienie figur na szachownicy.">display</a>();
+<a name="l00140"></a>00140                     <a class="code" href="class_main_window.html#aaaecb46583504233ea801b4ec34e9f29">start</a>=<a class="code" href="class_pole.html">Pole</a>(0,0);
+<a name="l00141"></a>00141                     <a class="code" href="class_main_window.html#a283ff2015ce02067caf95ef460be3ff9">cel</a>=<a class="code" href="class_pole.html">Pole</a>(0,0);
+<a name="l00142"></a>00142                     <a class="code" href="class_main_window.html#a9081d2e6cde7089a308fd4c738d722dd">qmozliwe</a>.clear();
+<a name="l00143"></a>00143                     <a class="code" href="class_main_window.html#a292626aba88863b28c3a44c6f8fff0c8" title="Prototyp funkcji odpowiedzialny za wyglad szachownicy.">szachownica</a>();
+<a name="l00144"></a>00144                     <span class="keywordflow">return</span>;
+<a name="l00145"></a>00145                 }
+<a name="l00146"></a>00146                 <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#af2a4087f0bf9db16750b40e4d3d74d34">addlog</a>(<a class="code" href="class_main_window.html#aaaecb46583504233ea801b4ec34e9f29">start</a>,<a class="code" href="class_main_window.html#a283ff2015ce02067caf95ef460be3ff9">cel</a>);
+<a name="l00147"></a>00147                 <a class="code" href="class_main_window.html#a71ddea5cf91abf6aab0fc21170b7baf3">displog</a>();
+<a name="l00148"></a>00148                 <a class="code" href="class_main_window.html#a0083b949c18ccf71dcbe37f4258007c0" title="Definicja funkcji reprezentująca ustawienie figur na szachownicy.">display</a>();
+<a name="l00149"></a>00149                 <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a24317fb3c62860672c260b68d9726cec">bulid_tree</a>();
+<a name="l00150"></a>00150                 <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a6ea4f58b867e965675a4a7636e7f3214">minmax</a>();
+<a name="l00151"></a>00151                 <a class="code" href="class_pole.html">Pole</a> s=<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a16162d348a75ac115dbf92f4bd7c4a32">wyb</a>-&gt;<a class="code" href="class_rozgrywka.html#ac8e44798bc9896c1bd56f4b07eee07b4">st</a>;
+<a name="l00152"></a>00152                 <a class="code" href="class_pole.html">Pole</a> c=<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a16162d348a75ac115dbf92f4bd7c4a32">wyb</a>-&gt;<a class="code" href="class_rozgrywka.html#ae5873496f515f96320fa604d23708966">cl</a>;
+<a name="l00153"></a>00153                 <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#ad60dd1bcf48315390eda98b52f6691d7">ruch</a>(s,c);
+<a name="l00154"></a>00154                 <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a9ce747229d6682ddda26e68046174ed5">bulid_one</a>();
+<a name="l00155"></a>00155                 <span class="keywordflow">if</span> (<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a5517c4100004d16c73be0f50a90fa193">wsk</a>.empty()) {
+<a name="l00156"></a>00156                     <span class="keywordflow">if</span> (<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a792971709bdb3b8e29b081e7bcf18cc9">next</a>) {
+<a name="l00157"></a>00157                         <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#ac3b8130edcb63f1f828e6e613a2cc05c">szach</a>(<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a5d791226219e1d9f6b4d7b4a321a217c">bking</a>)) {
+<a name="l00158"></a>00158                             <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#af2a4087f0bf9db16750b40e4d3d74d34">addlog</a>(<a class="code" href="class_main_window.html#aaaecb46583504233ea801b4ec34e9f29">start</a>,<a class="code" href="class_main_window.html#a283ff2015ce02067caf95ef460be3ff9">cel</a>);
+<a name="l00159"></a>00159                             <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#af2a4087f0bf9db16750b40e4d3d74d34">addlog</a>(<span class="stringliteral">&quot;biale mat&quot;</span>);
+<a name="l00160"></a>00160                         }
+<a name="l00161"></a>00161                         <span class="keywordflow">else</span> {
+<a name="l00162"></a>00162                             <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#af2a4087f0bf9db16750b40e4d3d74d34">addlog</a>(<a class="code" href="class_main_window.html#aaaecb46583504233ea801b4ec34e9f29">start</a>,<a class="code" href="class_main_window.html#a283ff2015ce02067caf95ef460be3ff9">cel</a>);
+<a name="l00163"></a>00163                             <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#af2a4087f0bf9db16750b40e4d3d74d34">addlog</a>(<span class="stringliteral">&quot;pat&quot;</span>);
+<a name="l00164"></a>00164                         }
+<a name="l00165"></a>00165                     }
+<a name="l00166"></a>00166                     <span class="keywordflow">else</span> {
+<a name="l00167"></a>00167                         <span class="keywordflow">if</span>(<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#ac3b8130edcb63f1f828e6e613a2cc05c">szach</a>(<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a35556003d852bbed7adfb165a27232f4">wking</a>)) {
+<a name="l00168"></a>00168                             <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#af2a4087f0bf9db16750b40e4d3d74d34">addlog</a>(<a class="code" href="class_main_window.html#aaaecb46583504233ea801b4ec34e9f29">start</a>,<a class="code" href="class_main_window.html#a283ff2015ce02067caf95ef460be3ff9">cel</a>);
+<a name="l00169"></a>00169                             <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#af2a4087f0bf9db16750b40e4d3d74d34">addlog</a>(<span class="stringliteral">&quot;czarne mat&quot;</span>);
+<a name="l00170"></a>00170                         }
+<a name="l00171"></a>00171                         <span class="keywordflow">else</span> {
+<a name="l00172"></a>00172                             <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#af2a4087f0bf9db16750b40e4d3d74d34">addlog</a>(<a class="code" href="class_main_window.html#aaaecb46583504233ea801b4ec34e9f29">start</a>,<a class="code" href="class_main_window.html#a283ff2015ce02067caf95ef460be3ff9">cel</a>);
+<a name="l00173"></a>00173                             <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#af2a4087f0bf9db16750b40e4d3d74d34">addlog</a>(<span class="stringliteral">&quot;pat&quot;</span>);
+<a name="l00174"></a>00174                         }
+<a name="l00175"></a>00175                     }
+<a name="l00176"></a>00176                     <a class="code" href="class_main_window.html#a71ddea5cf91abf6aab0fc21170b7baf3">displog</a>();
+<a name="l00177"></a>00177                     <a class="code" href="class_main_window.html#a0083b949c18ccf71dcbe37f4258007c0" title="Definicja funkcji reprezentująca ustawienie figur na szachownicy.">display</a>();
+<a name="l00178"></a>00178                     <a class="code" href="class_main_window.html#aaaecb46583504233ea801b4ec34e9f29">start</a>=<a class="code" href="class_pole.html">Pole</a>(0,0);
+<a name="l00179"></a>00179                     <a class="code" href="class_main_window.html#a283ff2015ce02067caf95ef460be3ff9">cel</a>=<a class="code" href="class_pole.html">Pole</a>(0,0);
+<a name="l00180"></a>00180                     <a class="code" href="class_main_window.html#a9081d2e6cde7089a308fd4c738d722dd">qmozliwe</a>.clear();
+<a name="l00181"></a>00181                     <a class="code" href="class_main_window.html#a292626aba88863b28c3a44c6f8fff0c8" title="Prototyp funkcji odpowiedzialny za wyglad szachownicy.">szachownica</a>();
+<a name="l00182"></a>00182                     <span class="keywordflow">return</span>;
+<a name="l00183"></a>00183                 }
+<a name="l00184"></a>00184                 <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#af2a4087f0bf9db16750b40e4d3d74d34">addlog</a>(s,c);
+<a name="l00185"></a>00185                 <a class="code" href="class_main_window.html#a71ddea5cf91abf6aab0fc21170b7baf3">displog</a>();
+<a name="l00186"></a>00186                 <a class="code" href="class_main_window.html#a0083b949c18ccf71dcbe37f4258007c0" title="Definicja funkcji reprezentująca ustawienie figur na szachownicy.">display</a>();
+<a name="l00187"></a>00187             }
+<a name="l00188"></a>00188             <a class="code" href="class_main_window.html#aaaecb46583504233ea801b4ec34e9f29">start</a>=<a class="code" href="class_pole.html">Pole</a>(0,0);
+<a name="l00189"></a>00189             <a class="code" href="class_main_window.html#a283ff2015ce02067caf95ef460be3ff9">cel</a>=<a class="code" href="class_pole.html">Pole</a>(0,0);
+<a name="l00190"></a>00190             <a class="code" href="class_main_window.html#a9081d2e6cde7089a308fd4c738d722dd">qmozliwe</a>.clear();
+<a name="l00191"></a>00191             <a class="code" href="class_main_window.html#a292626aba88863b28c3a44c6f8fff0c8" title="Prototyp funkcji odpowiedzialny za wyglad szachownicy.">szachownica</a>();
+<a name="l00192"></a>00192             <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a7656a966f40560f3b8850cfcbc6d73d7">Biale</a>.clear();
+<a name="l00193"></a>00193             <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a36ee2fc7f160a08fd58afd0b8c5c297f">Czarne</a>.clear();
+<a name="l00194"></a>00194             <a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a5517c4100004d16c73be0f50a90fa193">wsk</a>.clear();
+<a name="l00195"></a>00195         }
+<a name="l00196"></a>00196     }
+<a name="l00197"></a>00197 }
+<a name="l00202"></a><a class="code" href="class_main_window.html#a0083b949c18ccf71dcbe37f4258007c0">00202</a> <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a0083b949c18ccf71dcbe37f4258007c0" title="Definicja funkcji reprezentująca ustawienie figur na szachownicy.">MainWindow::display</a>() {
+<a name="l00203"></a>00203     QString ikona;
+<a name="l00204"></a>00204     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;8;i++) {
+<a name="l00205"></a>00205         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0;j&lt;8;j++) {
+<a name="l00206"></a>00206             ikona = <span class="stringliteral">&quot;Graphics/&quot;</span>;
+<a name="l00207"></a>00207             <span class="keywordflow">if</span> (<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#aeae1debddab56c1028014402f97eebda">P</a>[i+1][j+1].figtype() == 0) {
+<a name="l00208"></a>00208                 <a class="code" href="class_main_window.html#a9ef49c25c7693c691076e6b46b45db76">pole</a>[i][j]-&gt;setIcon(QIcon());
+<a name="l00209"></a>00209                 <span class="keywordflow">continue</span>;
+<a name="l00210"></a>00210             };
+<a name="l00211"></a>00211             <span class="keywordflow">if</span> (<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#aeae1debddab56c1028014402f97eebda">P</a>[i+1][j+1].kolor())
+<a name="l00212"></a>00212                 ikona += <span class="stringliteral">&quot;b&quot;</span>;
+<a name="l00213"></a>00213             <span class="keywordflow">else</span>
+<a name="l00214"></a>00214                 ikona += <span class="stringliteral">&quot;w&quot;</span>;
+<a name="l00215"></a>00215             <span class="keywordflow">switch</span> (<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#aeae1debddab56c1028014402f97eebda">P</a>[i+1][j+1].figtype()) {
+<a name="l00216"></a>00216                 <span class="keywordflow">case</span> 1: {
+<a name="l00217"></a>00217                 ikona += <span class="stringliteral">&quot;pion.svg&quot;</span>;
+<a name="l00218"></a>00218                 };<span class="keywordflow">break</span>;
+<a name="l00219"></a>00219                 <span class="keywordflow">case</span> 2: {
+<a name="l00220"></a>00220                 ikona += <span class="stringliteral">&quot;wieza.svg&quot;</span>;
+<a name="l00221"></a>00221                 };<span class="keywordflow">break</span>;
+<a name="l00222"></a>00222                 <span class="keywordflow">case</span> 3: {
+<a name="l00223"></a>00223                 ikona += <span class="stringliteral">&quot;skoczek.svg&quot;</span>;
+<a name="l00224"></a>00224                 };<span class="keywordflow">break</span>;
+<a name="l00225"></a>00225                 <span class="keywordflow">case</span> 4: {
+<a name="l00226"></a>00226                 ikona += <span class="stringliteral">&quot;goniec.svg&quot;</span>;
+<a name="l00227"></a>00227                 };<span class="keywordflow">break</span>;
+<a name="l00228"></a>00228                 <span class="keywordflow">case</span> 5: {
+<a name="l00229"></a>00229                 ikona += <span class="stringliteral">&quot;hetman.svg&quot;</span>;
+<a name="l00230"></a>00230                 };<span class="keywordflow">break</span>;
+<a name="l00231"></a>00231                 <span class="keywordflow">case</span> 6: {
+<a name="l00232"></a>00232                 ikona += <span class="stringliteral">&quot;krol.svg&quot;</span>;
+<a name="l00233"></a>00233                 };<span class="keywordflow">break</span>;
+<a name="l00234"></a>00234             }
+<a name="l00235"></a>00235             <a class="code" href="class_main_window.html#a9ef49c25c7693c691076e6b46b45db76">pole</a>[i][j]-&gt;setIcon(QIcon(ikona));
+<a name="l00236"></a>00236         }
+<a name="l00237"></a>00237     }
+<a name="l00238"></a>00238 }
+<a name="l00239"></a>00239 
+<a name="l00240"></a><a class="code" href="class_main_window.html#a71ddea5cf91abf6aab0fc21170b7baf3">00240</a> <span class="keywordtype">void</span> <a class="code" href="class_main_window.html#a71ddea5cf91abf6aab0fc21170b7baf3">MainWindow::displog</a>() {
+<a name="l00241"></a>00241     <a class="code" href="class_main_window.html#aca8da845b050d554d5e6f335c6f143c7">log</a>-&gt;insertPlainText(QString::fromStdString(<a class="code" href="class_main_window.html#a38c1321667bd8650828922d1c779b6ef">R</a>.<a class="code" href="class_rozgrywka.html#a2b399aa340778eab619f889c7efed08d">logtmp</a>));
+<a name="l00242"></a>00242 }
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="mainwindow_8cpp.html">mainwindow.cpp</a>      </li>
+
+    <li class="footer">Wygenerowano Tue Jun 3 2014 23:32:33 dla SZACHY programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

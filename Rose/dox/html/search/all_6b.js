@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['kolor',['kolor',['../class_figura.html#a27f2e3dea90096db8ae8b9a7bd37373e',1,'Figura']]],
+  ['krol',['KROL',['../_szachy_8h.html#a62ed08874dad1b4f75ffcb1e65edb347',1,'Szachy.h']]]
+];

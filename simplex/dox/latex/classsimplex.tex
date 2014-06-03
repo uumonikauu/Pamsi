@@ -1,0 +1,181 @@
+\hypertarget{classsimplex}{\section{\-Dokumentacja klasy simplex}
+\label{classsimplex}\index{simplex@{simplex}}
+}
+
+
+\-Klasa simplex posiada metody pozwalające na rozwiązywanie zadań metodą \-S\-I\-M\-P\-L\-E\-X.  
+
+
+
+
+{\ttfamily \#include $<$simplex.\-hh$>$}
+
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classsimplex_ae457957b7d98c0255c2c9a1815d0d946}{utworz\-\_\-simplex} ()
+\begin{DoxyCompactList}\small\item\em \-Metoda pozwalająca utworzyć simplex. \end{DoxyCompactList}\item 
+bool \hyperlink{classsimplex_af8b23fa72bedc783683619fd4799ab2f}{oblicz\-\_\-simplex} ()
+\begin{DoxyCompactList}\small\item\em \-Metoda pozwalająca obliczyć simplex. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classsimplex_ab7350fae23b0a0a756c3b2f36d02e0d4}{usun\-\_\-spacje} (std\-::string str)
+\begin{DoxyCompactList}\small\item\em \-Metoda wyszukuje i usuwa spacje w podanym stringu. \end{DoxyCompactList}\item 
+std\-::vector$<$ double $>$ \hyperlink{classsimplex_afd209ac8a4361ad8e137bd8f8dfd76c8}{string\-\_\-do\-\_\-double} (std\-::string str)
+\begin{DoxyCompactList}\small\item\em \-Metoda pobiera dane ze stringa a następnie umieszcza je w wektorze. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ double $>$ \hyperlink{classsimplex_ab1069db3295f5666be2fe5ad64e447f8}{funkcja\-\_\-max}
+\item 
+std\-::vector$<$ std\-::vector\*
+$<$ double $>$ $>$ \hyperlink{classsimplex_a6065ecf2bfe56fd9ea1bf8df71facd19}{sim}
+\item 
+std\-::vector$<$ double $>$ \hyperlink{classsimplex_ab00cd763b725900752b6fe0401115fab}{wynik}
+\item 
+std\-::vector$<$ double $>$ \hyperlink{classsimplex_a6f539b78f5e795a53c436d07e016430d}{wektor\-\_\-ograniczen}
+\item 
+std\-::vector$<$ std\-::vector\*
+$<$ double $>$ $>$ \hyperlink{classsimplex_a0feea936d0817d90c981eef82f5c2fca}{macierz}
+\item 
+double \hyperlink{classsimplex_acffe973c35f3638f901a6c66705ddd9b}{wynik\-\_\-max}
+\end{DoxyCompactItemize}
+\subsection*{\-Przyjaciele}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classsimplex_af04f568bca7d0f0e78b9d1cdd20e7bb2}{operator$<$$<$} (std\-::ostream \&str\-\_\-wy, \hyperlink{classsimplex}{simplex} \&klasa)
+\item 
+std\-::istream \& \hyperlink{classsimplex_aa72dcb13263c424c00f86740d0fd7b13}{operator$>$$>$} (std\-::istream \&str\-\_\-we, \hyperlink{classsimplex}{simplex} \&klasa)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+
+
+\-Definicja w linii 13 pliku simplex.\-hh.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{classsimplex_af8b23fa72bedc783683619fd4799ab2f}{\index{simplex@{simplex}!oblicz\-\_\-simplex@{oblicz\-\_\-simplex}}
+\index{oblicz\-\_\-simplex@{oblicz\-\_\-simplex}!simplex@{simplex}}
+\subsubsection[{oblicz\-\_\-simplex}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf simplex\-::oblicz\-\_\-simplex} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classsimplex_af8b23fa72bedc783683619fd4799ab2f}
+\-Metoda oblicza rozwiązanie oraz uzyskaną wartość maksymalną 
+
+\-Definicja w linii 80 pliku simplex.\-cpp.
+
+\hypertarget{classsimplex_afd209ac8a4361ad8e137bd8f8dfd76c8}{\index{simplex@{simplex}!string\-\_\-do\-\_\-double@{string\-\_\-do\-\_\-double}}
+\index{string\-\_\-do\-\_\-double@{string\-\_\-do\-\_\-double}!simplex@{simplex}}
+\subsubsection[{string\-\_\-do\-\_\-double}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ double $>$ {\bf simplex\-::string\-\_\-do\-\_\-double} (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{str}
+\end{DoxyParamCaption}
+)}}\label{classsimplex_afd209ac8a4361ad8e137bd8f8dfd76c8}
+
+
+\-Definicja w linii 147 pliku simplex.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{classsimplex_ab7350fae23b0a0a756c3b2f36d02e0d4}{\index{simplex@{simplex}!usun\-\_\-spacje@{usun\-\_\-spacje}}
+\index{usun\-\_\-spacje@{usun\-\_\-spacje}!simplex@{simplex}}
+\subsubsection[{usun\-\_\-spacje}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf simplex\-::usun\-\_\-spacje} (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{str}
+\end{DoxyParamCaption}
+)}}\label{classsimplex_ab7350fae23b0a0a756c3b2f36d02e0d4}
+
+
+\-Definicja w linii 175 pliku simplex.\-cpp.
+
+\hypertarget{classsimplex_ae457957b7d98c0255c2c9a1815d0d946}{\index{simplex@{simplex}!utworz\-\_\-simplex@{utworz\-\_\-simplex}}
+\index{utworz\-\_\-simplex@{utworz\-\_\-simplex}!simplex@{simplex}}
+\subsubsection[{utworz\-\_\-simplex}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf simplex\-::utworz\-\_\-simplex} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classsimplex_ae457957b7d98c0255c2c9a1815d0d946}
+\-Metoda tworzy macierz simplex na podstawie otrzymanych danych wejsciowych. 
+
+\-Definicja w linii 50 pliku simplex.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+
+
+\subsection{\-Dokumentacja przyjaciół i funkcji związanych}
+\hypertarget{classsimplex_af04f568bca7d0f0e78b9d1cdd20e7bb2}{\index{simplex@{simplex}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!simplex@{simplex}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{str\-\_\-wy, }
+\item[{{\bf simplex} \&}]{klasa}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}\label{classsimplex_af04f568bca7d0f0e78b9d1cdd20e7bb2}
+\hypertarget{classsimplex_aa72dcb13263c424c00f86740d0fd7b13}{\index{simplex@{simplex}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!simplex@{simplex}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\-::istream \&}]{str\-\_\-we, }
+\item[{{\bf simplex} \&}]{klasa}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}\label{classsimplex_aa72dcb13263c424c00f86740d0fd7b13}
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{classsimplex_ab1069db3295f5666be2fe5ad64e447f8}{\index{simplex@{simplex}!funkcja\-\_\-max@{funkcja\-\_\-max}}
+\index{funkcja\-\_\-max@{funkcja\-\_\-max}!simplex@{simplex}}
+\subsubsection[{funkcja\-\_\-max}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$double$>$ {\bf simplex\-::funkcja\-\_\-max}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classsimplex_ab1069db3295f5666be2fe5ad64e447f8}
+
+
+\-Definicja w linii 15 pliku simplex.\-hh.
+
+\hypertarget{classsimplex_a0feea936d0817d90c981eef82f5c2fca}{\index{simplex@{simplex}!macierz@{macierz}}
+\index{macierz@{macierz}!simplex@{simplex}}
+\subsubsection[{macierz}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::vector$<$double$>$ $>$ {\bf simplex\-::macierz}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classsimplex_a0feea936d0817d90c981eef82f5c2fca}
+
+
+\-Definicja w linii 19 pliku simplex.\-hh.
+
+\hypertarget{classsimplex_a6065ecf2bfe56fd9ea1bf8df71facd19}{\index{simplex@{simplex}!sim@{sim}}
+\index{sim@{sim}!simplex@{simplex}}
+\subsubsection[{sim}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::vector$<$double$>$ $>$ {\bf simplex\-::sim}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classsimplex_a6065ecf2bfe56fd9ea1bf8df71facd19}
+
+
+\-Definicja w linii 16 pliku simplex.\-hh.
+
+\hypertarget{classsimplex_a6f539b78f5e795a53c436d07e016430d}{\index{simplex@{simplex}!wektor\-\_\-ograniczen@{wektor\-\_\-ograniczen}}
+\index{wektor\-\_\-ograniczen@{wektor\-\_\-ograniczen}!simplex@{simplex}}
+\subsubsection[{wektor\-\_\-ograniczen}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$double$>$ {\bf simplex\-::wektor\-\_\-ograniczen}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classsimplex_a6f539b78f5e795a53c436d07e016430d}
+
+
+\-Definicja w linii 18 pliku simplex.\-hh.
+
+\hypertarget{classsimplex_ab00cd763b725900752b6fe0401115fab}{\index{simplex@{simplex}!wynik@{wynik}}
+\index{wynik@{wynik}!simplex@{simplex}}
+\subsubsection[{wynik}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$double$>$ {\bf simplex\-::wynik}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classsimplex_ab00cd763b725900752b6fe0401115fab}
+
+
+\-Definicja w linii 17 pliku simplex.\-hh.
+
+\hypertarget{classsimplex_acffe973c35f3638f901a6c66705ddd9b}{\index{simplex@{simplex}!wynik\-\_\-max@{wynik\-\_\-max}}
+\index{wynik\-\_\-max@{wynik\-\_\-max}!simplex@{simplex}}
+\subsubsection[{wynik\-\_\-max}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf simplex\-::wynik\-\_\-max}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{classsimplex_acffe973c35f3638f901a6c66705ddd9b}
+
+
+\-Definicja w linii 20 pliku simplex.\-hh.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{simplex_8hh}{simplex.\-hh}\item 
+\hyperlink{simplex_8cpp}{simplex.\-cpp}\end{DoxyCompactItemize}

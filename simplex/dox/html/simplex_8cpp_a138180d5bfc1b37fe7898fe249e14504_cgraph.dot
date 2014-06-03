@@ -1,0 +1,11 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="operator\>\>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="simplex::string_do_double",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsimplex.html#afd209ac8a4361ad8e137bd8f8dfd76c8",tooltip="Metoda pobiera dane ze stringa a następnie umieszcza je w wektorze."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="simplex::utworz_simplex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsimplex.html#ae457957b7d98c0255c2c9a1815d0d946",tooltip="Metoda pozwalająca utworzyć simplex."];
+}

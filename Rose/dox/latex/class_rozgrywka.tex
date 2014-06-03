@@ -1,0 +1,557 @@
+\hypertarget{class_rozgrywka}{\section{\-Dokumentacja klasy \-Rozgrywka}
+\label{class_rozgrywka}\index{\-Rozgrywka@{\-Rozgrywka}}
+}
+
+
+{\ttfamily \#include $<$\-Szachy.\-h$>$}
+
+
+
+\-Diagram współpracy dla \-Rozgrywka\-:
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_rozgrywka_af52c70a887231f981d29958a1813bc1b}{\-Rozgrywka} ()
+\item 
+\hyperlink{class_rozgrywka_abc5452fdb9fdc845fab5df0536287133}{\-Rozgrywka} (\hyperlink{class_rozgrywka}{\-Rozgrywka} \&\-R1, \hyperlink{class_pole}{\-Pole} start, \hyperlink{class_pole}{\-Pole} cel)
+\item 
+\hyperlink{class_rozgrywka_a93116ad903e955bc6c7fa76454835608}{$\sim$\-Rozgrywka} ()
+\item 
+std\-::vector$<$ \hyperlink{class_pole}{\-Pole} $>$ \hyperlink{class_rozgrywka_a4ec65bca4344fd3430b20a95b6ae5990}{ruchy} (\hyperlink{class_figura}{\-Figura} \-Fig)
+\item 
+std\-::vector$<$ \hyperlink{class_pole}{\-Pole} $>$ \hyperlink{class_rozgrywka_a645745edda67c70e61ccd6c846ea9548}{ruchy\-\_\-tr} (\hyperlink{class_figura}{\-Figura} \-Fig)
+\item 
+std\-::vector$<$ \hyperlink{class_pole}{\-Pole} $>$ \hyperlink{class_rozgrywka_ac50b0a9d83d128bd38b3f71bd161378c}{ruchybs} (\hyperlink{class_figura}{\-Figura} \-Fig)
+\item 
+void \hyperlink{class_rozgrywka_ad60dd1bcf48315390eda98b52f6691d7}{ruch} (\hyperlink{class_pole}{\-Pole} start, \hyperlink{class_pole}{\-Pole} cel)
+\item 
+void \hyperlink{class_rozgrywka_abfd6a95d3288f6756092a3fd1f48caea}{baza\-\_\-fig} ()
+\item 
+char \hyperlink{class_rozgrywka_a77dd365868aa43addd6b509a1984fa6c}{typ\-\_\-awans} () const 
+\item 
+char \hyperlink{class_rozgrywka_a5b3772697dbb6f97e642107111adb5a9}{zmien\-\_\-awanstyp} (char nowy)
+\item 
+void \hyperlink{class_rozgrywka_af2a4087f0bf9db16750b40e4d3d74d34}{addlog} (\hyperlink{class_pole}{\-Pole} start, \hyperlink{class_pole}{\-Pole} cel)
+\item 
+void \hyperlink{class_rozgrywka_a08d9672c38d5f79af2c36492dce6690f}{addlog} (std\-::string napis)
+\item 
+void \hyperlink{class_rozgrywka_a7958d4c1c224107c0653f7748a479878}{rebulid\-\_\-tree} ()
+\item 
+void \hyperlink{class_rozgrywka_a24317fb3c62860672c260b68d9726cec}{bulid\-\_\-tree} ()
+\item 
+void \hyperlink{class_rozgrywka_a9ce747229d6682ddda26e68046174ed5}{bulid\-\_\-one} ()
+\item 
+int \hyperlink{class_rozgrywka_a2d9e12afa1eefa14db00415fd5e51f0e}{ocen} ()
+\item 
+void \hyperlink{class_rozgrywka_a6ea4f58b867e965675a4a7636e7f3214}{minmax} ()
+\item 
+bool \hyperlink{class_rozgrywka_ac3b8130edcb63f1f828e6e613a2cc05c}{szach} (\hyperlink{class_pole}{\-Pole} spr)
+\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_pole}{\-Pole} \hyperlink{class_rozgrywka_a35556003d852bbed7adfb165a27232f4}{wking}
+\item 
+\hyperlink{class_pole}{\-Pole} \hyperlink{class_rozgrywka_a5d791226219e1d9f6b4d7b4a321a217c}{bking}
+\item 
+\hyperlink{class_rozgrywka}{\-Rozgrywka} $\ast$ \hyperlink{class_rozgrywka_a16162d348a75ac115dbf92f4bd7c4a32}{wyb}
+\item 
+\hyperlink{class_pole}{\-Pole} \hyperlink{class_rozgrywka_ac8e44798bc9896c1bd56f4b07eee07b4}{st}
+\item 
+\hyperlink{class_pole}{\-Pole} \hyperlink{class_rozgrywka_ae5873496f515f96320fa604d23708966}{cl}
+\item 
+int \hyperlink{class_rozgrywka_a066b0f6ea58752342f0b4bf94a2e54ce}{ocena}
+\item 
+bool \hyperlink{class_rozgrywka_a792971709bdb3b8e29b081e7bcf18cc9}{next}
+\item 
+\hyperlink{class_plansza}{\-Plansza} \hyperlink{class_rozgrywka_aeae1debddab56c1028014402f97eebda}{\-P}
+\item 
+char \hyperlink{class_rozgrywka_ab8da8c6df7b1a4673e79af7f09e90f5c}{rekursja}
+\item 
+std\-::string \hyperlink{class_rozgrywka_a2b399aa340778eab619f889c7efed08d}{logtmp}
+\item 
+std\-::string \hyperlink{class_rozgrywka_a5ab94cafc14381b9f8da8a1ddb428f55}{log}
+\item 
+std\-::vector$<$ \hyperlink{class_figura}{\-Figura} $>$ \hyperlink{class_rozgrywka_a7656a966f40560f3b8850cfcbc6d73d7}{\-Biale}
+\item 
+std\-::vector$<$ \hyperlink{class_figura}{\-Figura} $>$ \hyperlink{class_rozgrywka_a36ee2fc7f160a08fd58afd0b8c5c297f}{\-Czarne}
+\item 
+std\-::vector$<$ \hyperlink{class_pole}{\-Pole} $>$ \hyperlink{class_rozgrywka_ac57c5275261e3c1091c6ff0c5dff1bb4}{bicie\-\_\-w\-\_\-przelocie}
+\item 
+std\-::vector$<$ std\-::vector$<$ \hyperlink{class_pole}{\-Pole} $>$ $>$ \hyperlink{class_rozgrywka_a54acd39dc475453661bcf7b8c51b5047}{mozliwe}
+\item 
+std\-::vector$<$ \hyperlink{class_rozgrywka}{\-Rozgrywka} $>$ \hyperlink{class_rozgrywka_a5517c4100004d16c73be0f50a90fa193}{wsk}
+\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{class_rozgrywka_aa6a69bb1eacd482b025053900d319b1c}{awans\-\_\-typ}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+
+
+\-Definicja w linii 75 pliku \-Szachy.\-h.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_rozgrywka_af52c70a887231f981d29958a1813bc1b}{\index{\-Rozgrywka@{\-Rozgrywka}!\-Rozgrywka@{\-Rozgrywka}}
+\index{\-Rozgrywka@{\-Rozgrywka}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{\-Rozgrywka}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Rozgrywka\-::\-Rozgrywka} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rozgrywka_af52c70a887231f981d29958a1813bc1b}
+
+
+\-Definicja w linii 56 pliku \-Szachy.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_rozgrywka_abc5452fdb9fdc845fab5df0536287133}{\index{\-Rozgrywka@{\-Rozgrywka}!\-Rozgrywka@{\-Rozgrywka}}
+\index{\-Rozgrywka@{\-Rozgrywka}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{\-Rozgrywka}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Rozgrywka\-::\-Rozgrywka} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Rozgrywka} \&}]{\-R1, }
+\item[{{\bf \-Pole}}]{start, }
+\item[{{\bf \-Pole}}]{cel}
+\end{DoxyParamCaption}
+)}}\label{class_rozgrywka_abc5452fdb9fdc845fab5df0536287133}
+
+
+\-Definicja w linii 105 pliku \-Szachy.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+\hypertarget{class_rozgrywka_a93116ad903e955bc6c7fa76454835608}{\index{\-Rozgrywka@{\-Rozgrywka}!$\sim$\-Rozgrywka@{$\sim$\-Rozgrywka}}
+\index{$\sim$\-Rozgrywka@{$\sim$\-Rozgrywka}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{$\sim$\-Rozgrywka}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Rozgrywka\-::$\sim$\-Rozgrywka} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rozgrywka_a93116ad903e955bc6c7fa76454835608}
+
+
+\-Definicja w linii 3716 pliku \-Szachy.\-cpp.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_rozgrywka_af2a4087f0bf9db16750b40e4d3d74d34}{\index{\-Rozgrywka@{\-Rozgrywka}!addlog@{addlog}}
+\index{addlog@{addlog}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{addlog}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Rozgrywka\-::addlog} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Pole}}]{start, }
+\item[{{\bf \-Pole}}]{cel}
+\end{DoxyParamCaption}
+)}}\label{class_rozgrywka_af2a4087f0bf9db16750b40e4d3d74d34}
+
+
+\-Definicja w linii 3458 pliku \-Szachy.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_rozgrywka_a08d9672c38d5f79af2c36492dce6690f}{\index{\-Rozgrywka@{\-Rozgrywka}!addlog@{addlog}}
+\index{addlog@{addlog}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{addlog}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Rozgrywka\-::addlog} (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{napis}
+\end{DoxyParamCaption}
+)}}\label{class_rozgrywka_a08d9672c38d5f79af2c36492dce6690f}
+
+
+\-Definicja w linii 3468 pliku \-Szachy.\-cpp.
+
+\hypertarget{class_rozgrywka_abfd6a95d3288f6756092a3fd1f48caea}{\index{\-Rozgrywka@{\-Rozgrywka}!baza\-\_\-fig@{baza\-\_\-fig}}
+\index{baza\-\_\-fig@{baza\-\_\-fig}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{baza\-\_\-fig}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Rozgrywka\-::baza\-\_\-fig} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rozgrywka_abfd6a95d3288f6756092a3fd1f48caea}
+
+
+\-Definicja w linii 3429 pliku \-Szachy.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_rozgrywka_a9ce747229d6682ddda26e68046174ed5}{\index{\-Rozgrywka@{\-Rozgrywka}!bulid\-\_\-one@{bulid\-\_\-one}}
+\index{bulid\-\_\-one@{bulid\-\_\-one}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{bulid\-\_\-one}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Rozgrywka\-::bulid\-\_\-one} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rozgrywka_a9ce747229d6682ddda26e68046174ed5}
+
+
+\-Definicja w linii 3560 pliku \-Szachy.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_rozgrywka_a24317fb3c62860672c260b68d9726cec}{\index{\-Rozgrywka@{\-Rozgrywka}!bulid\-\_\-tree@{bulid\-\_\-tree}}
+\index{bulid\-\_\-tree@{bulid\-\_\-tree}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{bulid\-\_\-tree}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Rozgrywka\-::bulid\-\_\-tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rozgrywka_a24317fb3c62860672c260b68d9726cec}
+
+
+\-Definicja w linii 3590 pliku \-Szachy.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_rozgrywka_a6ea4f58b867e965675a4a7636e7f3214}{\index{\-Rozgrywka@{\-Rozgrywka}!minmax@{minmax}}
+\index{minmax@{minmax}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{minmax}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Rozgrywka\-::minmax} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rozgrywka_a6ea4f58b867e965675a4a7636e7f3214}
+
+
+\-Definicja w linii 3671 pliku \-Szachy.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_rozgrywka_a2d9e12afa1eefa14db00415fd5e51f0e}{\index{\-Rozgrywka@{\-Rozgrywka}!ocen@{ocen}}
+\index{ocen@{ocen}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{ocen}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Rozgrywka\-::ocen} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rozgrywka_a2d9e12afa1eefa14db00415fd5e51f0e}
+
+
+\-Definicja w linii 3475 pliku \-Szachy.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+\hypertarget{class_rozgrywka_a7958d4c1c224107c0653f7748a479878}{\index{\-Rozgrywka@{\-Rozgrywka}!rebulid\-\_\-tree@{rebulid\-\_\-tree}}
+\index{rebulid\-\_\-tree@{rebulid\-\_\-tree}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{rebulid\-\_\-tree}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Rozgrywka\-::rebulid\-\_\-tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rozgrywka_a7958d4c1c224107c0653f7748a479878}
+
+
+\-Definicja w linii 3631 pliku \-Szachy.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+\hypertarget{class_rozgrywka_ad60dd1bcf48315390eda98b52f6691d7}{\index{\-Rozgrywka@{\-Rozgrywka}!ruch@{ruch}}
+\index{ruch@{ruch}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{ruch}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Rozgrywka\-::ruch} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Pole}}]{start, }
+\item[{{\bf \-Pole}}]{cel}
+\end{DoxyParamCaption}
+)}}\label{class_rozgrywka_ad60dd1bcf48315390eda98b52f6691d7}
+
+
+\-Definicja w linii 3381 pliku \-Szachy.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_rozgrywka_a4ec65bca4344fd3430b20a95b6ae5990}{\index{\-Rozgrywka@{\-Rozgrywka}!ruchy@{ruchy}}
+\index{ruchy@{ruchy}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{ruchy}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ {\bf \-Pole} $>$ {\bf \-Rozgrywka\-::ruchy} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Figura}}]{\-Fig}
+\end{DoxyParamCaption}
+)}}\label{class_rozgrywka_a4ec65bca4344fd3430b20a95b6ae5990}
+
+
+\-Definicja w linii 120 pliku \-Szachy.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_rozgrywka_a645745edda67c70e61ccd6c846ea9548}{\index{\-Rozgrywka@{\-Rozgrywka}!ruchy\-\_\-tr@{ruchy\-\_\-tr}}
+\index{ruchy\-\_\-tr@{ruchy\-\_\-tr}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{ruchy\-\_\-tr}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ {\bf \-Pole} $>$ {\bf \-Rozgrywka\-::ruchy\-\_\-tr} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Figura}}]{\-Fig}
+\end{DoxyParamCaption}
+)}}\label{class_rozgrywka_a645745edda67c70e61ccd6c846ea9548}
+
+
+\-Definicja w linii 1451 pliku \-Szachy.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_rozgrywka_ac50b0a9d83d128bd38b3f71bd161378c}{\index{\-Rozgrywka@{\-Rozgrywka}!ruchybs@{ruchybs}}
+\index{ruchybs@{ruchybs}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{ruchybs}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ {\bf \-Pole} $>$ {\bf \-Rozgrywka\-::ruchybs} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Figura}}]{\-Fig}
+\end{DoxyParamCaption}
+)}}\label{class_rozgrywka_ac50b0a9d83d128bd38b3f71bd161378c}
+
+
+\-Definicja w linii 2930 pliku \-Szachy.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_rozgrywka_ac3b8130edcb63f1f828e6e613a2cc05c}{\index{\-Rozgrywka@{\-Rozgrywka}!szach@{szach}}
+\index{szach@{szach}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{szach}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Rozgrywka\-::szach} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Pole}}]{spr}
+\end{DoxyParamCaption}
+)}}\label{class_rozgrywka_ac3b8130edcb63f1f828e6e613a2cc05c}
+
+
+\-Definicja w linii 3689 pliku \-Szachy.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_rozgrywka_a77dd365868aa43addd6b509a1984fa6c}{\index{\-Rozgrywka@{\-Rozgrywka}!typ\-\_\-awans@{typ\-\_\-awans}}
+\index{typ\-\_\-awans@{typ\-\_\-awans}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{typ\-\_\-awans}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf \-Rozgrywka\-::typ\-\_\-awans} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_rozgrywka_a77dd365868aa43addd6b509a1984fa6c}
+
+
+\-Definicja w linii 3446 pliku \-Szachy.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_rozgrywka_a5b3772697dbb6f97e642107111adb5a9}{\index{\-Rozgrywka@{\-Rozgrywka}!zmien\-\_\-awanstyp@{zmien\-\_\-awanstyp}}
+\index{zmien\-\_\-awanstyp@{zmien\-\_\-awanstyp}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{zmien\-\_\-awanstyp}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf \-Rozgrywka\-::zmien\-\_\-awanstyp} (
+\begin{DoxyParamCaption}
+\item[{char}]{nowy}
+\end{DoxyParamCaption}
+)}}\label{class_rozgrywka_a5b3772697dbb6f97e642107111adb5a9}
+
+
+\-Definicja w linii 3450 pliku \-Szachy.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_rozgrywka_aa6a69bb1eacd482b025053900d319b1c}{\index{\-Rozgrywka@{\-Rozgrywka}!awans\-\_\-typ@{awans\-\_\-typ}}
+\index{awans\-\_\-typ@{awans\-\_\-typ}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{awans\-\_\-typ}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf \-Rozgrywka\-::awans\-\_\-typ}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_rozgrywka_aa6a69bb1eacd482b025053900d319b1c}
+
+
+\-Definicja w linii 76 pliku \-Szachy.\-h.
+
+\hypertarget{class_rozgrywka_a7656a966f40560f3b8850cfcbc6d73d7}{\index{\-Rozgrywka@{\-Rozgrywka}!\-Biale@{\-Biale}}
+\index{\-Biale@{\-Biale}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{\-Biale}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf \-Figura}$>$ {\bf \-Rozgrywka\-::\-Biale}}}\label{class_rozgrywka_a7656a966f40560f3b8850cfcbc6d73d7}
+
+
+\-Definicja w linii 89 pliku \-Szachy.\-h.
+
+\hypertarget{class_rozgrywka_ac57c5275261e3c1091c6ff0c5dff1bb4}{\index{\-Rozgrywka@{\-Rozgrywka}!bicie\-\_\-w\-\_\-przelocie@{bicie\-\_\-w\-\_\-przelocie}}
+\index{bicie\-\_\-w\-\_\-przelocie@{bicie\-\_\-w\-\_\-przelocie}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{bicie\-\_\-w\-\_\-przelocie}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf \-Pole}$>$ {\bf \-Rozgrywka\-::bicie\-\_\-w\-\_\-przelocie}}}\label{class_rozgrywka_ac57c5275261e3c1091c6ff0c5dff1bb4}
+
+
+\-Definicja w linii 91 pliku \-Szachy.\-h.
+
+\hypertarget{class_rozgrywka_a5d791226219e1d9f6b4d7b4a321a217c}{\index{\-Rozgrywka@{\-Rozgrywka}!bking@{bking}}
+\index{bking@{bking}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{bking}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Pole} {\bf \-Rozgrywka\-::bking}}}\label{class_rozgrywka_a5d791226219e1d9f6b4d7b4a321a217c}
+
+
+\-Definicja w linii 79 pliku \-Szachy.\-h.
+
+\hypertarget{class_rozgrywka_ae5873496f515f96320fa604d23708966}{\index{\-Rozgrywka@{\-Rozgrywka}!cl@{cl}}
+\index{cl@{cl}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{cl}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Pole} {\bf \-Rozgrywka\-::cl}}}\label{class_rozgrywka_ae5873496f515f96320fa604d23708966}
+
+
+\-Definicja w linii 82 pliku \-Szachy.\-h.
+
+\hypertarget{class_rozgrywka_a36ee2fc7f160a08fd58afd0b8c5c297f}{\index{\-Rozgrywka@{\-Rozgrywka}!\-Czarne@{\-Czarne}}
+\index{\-Czarne@{\-Czarne}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{\-Czarne}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf \-Figura}$>$ {\bf \-Rozgrywka\-::\-Czarne}}}\label{class_rozgrywka_a36ee2fc7f160a08fd58afd0b8c5c297f}
+
+
+\-Definicja w linii 90 pliku \-Szachy.\-h.
+
+\hypertarget{class_rozgrywka_a5ab94cafc14381b9f8da8a1ddb428f55}{\index{\-Rozgrywka@{\-Rozgrywka}!log@{log}}
+\index{log@{log}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-Rozgrywka\-::log}}}\label{class_rozgrywka_a5ab94cafc14381b9f8da8a1ddb428f55}
+
+
+\-Definicja w linii 88 pliku \-Szachy.\-h.
+
+\hypertarget{class_rozgrywka_a2b399aa340778eab619f889c7efed08d}{\index{\-Rozgrywka@{\-Rozgrywka}!logtmp@{logtmp}}
+\index{logtmp@{logtmp}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{logtmp}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-Rozgrywka\-::logtmp}}}\label{class_rozgrywka_a2b399aa340778eab619f889c7efed08d}
+
+
+\-Definicja w linii 87 pliku \-Szachy.\-h.
+
+\hypertarget{class_rozgrywka_a54acd39dc475453661bcf7b8c51b5047}{\index{\-Rozgrywka@{\-Rozgrywka}!mozliwe@{mozliwe}}
+\index{mozliwe@{mozliwe}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{mozliwe}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::vector$<${\bf \-Pole}$>$ $>$ {\bf \-Rozgrywka\-::mozliwe}}}\label{class_rozgrywka_a54acd39dc475453661bcf7b8c51b5047}
+
+
+\-Definicja w linii 104 pliku \-Szachy.\-h.
+
+\hypertarget{class_rozgrywka_a792971709bdb3b8e29b081e7bcf18cc9}{\index{\-Rozgrywka@{\-Rozgrywka}!next@{next}}
+\index{next@{next}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{next}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Rozgrywka\-::next}}}\label{class_rozgrywka_a792971709bdb3b8e29b081e7bcf18cc9}
+
+
+\-Definicja w linii 84 pliku \-Szachy.\-h.
+
+\hypertarget{class_rozgrywka_a066b0f6ea58752342f0b4bf94a2e54ce}{\index{\-Rozgrywka@{\-Rozgrywka}!ocena@{ocena}}
+\index{ocena@{ocena}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{ocena}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Rozgrywka\-::ocena}}}\label{class_rozgrywka_a066b0f6ea58752342f0b4bf94a2e54ce}
+
+
+\-Definicja w linii 83 pliku \-Szachy.\-h.
+
+\hypertarget{class_rozgrywka_aeae1debddab56c1028014402f97eebda}{\index{\-Rozgrywka@{\-Rozgrywka}!\-P@{\-P}}
+\index{\-P@{\-P}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{\-P}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Plansza} {\bf \-Rozgrywka\-::\-P}}}\label{class_rozgrywka_aeae1debddab56c1028014402f97eebda}
+
+
+\-Definicja w linii 85 pliku \-Szachy.\-h.
+
+\hypertarget{class_rozgrywka_ab8da8c6df7b1a4673e79af7f09e90f5c}{\index{\-Rozgrywka@{\-Rozgrywka}!rekursja@{rekursja}}
+\index{rekursja@{rekursja}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{rekursja}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf \-Rozgrywka\-::rekursja}}}\label{class_rozgrywka_ab8da8c6df7b1a4673e79af7f09e90f5c}
+
+
+\-Definicja w linii 86 pliku \-Szachy.\-h.
+
+\hypertarget{class_rozgrywka_ac8e44798bc9896c1bd56f4b07eee07b4}{\index{\-Rozgrywka@{\-Rozgrywka}!st@{st}}
+\index{st@{st}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{st}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Pole} {\bf \-Rozgrywka\-::st}}}\label{class_rozgrywka_ac8e44798bc9896c1bd56f4b07eee07b4}
+
+
+\-Definicja w linii 81 pliku \-Szachy.\-h.
+
+\hypertarget{class_rozgrywka_a35556003d852bbed7adfb165a27232f4}{\index{\-Rozgrywka@{\-Rozgrywka}!wking@{wking}}
+\index{wking@{wking}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{wking}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Pole} {\bf \-Rozgrywka\-::wking}}}\label{class_rozgrywka_a35556003d852bbed7adfb165a27232f4}
+
+
+\-Definicja w linii 78 pliku \-Szachy.\-h.
+
+\hypertarget{class_rozgrywka_a5517c4100004d16c73be0f50a90fa193}{\index{\-Rozgrywka@{\-Rozgrywka}!wsk@{wsk}}
+\index{wsk@{wsk}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{wsk}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf \-Rozgrywka}$>$ {\bf \-Rozgrywka\-::wsk}}}\label{class_rozgrywka_a5517c4100004d16c73be0f50a90fa193}
+
+
+\-Definicja w linii 105 pliku \-Szachy.\-h.
+
+\hypertarget{class_rozgrywka_a16162d348a75ac115dbf92f4bd7c4a32}{\index{\-Rozgrywka@{\-Rozgrywka}!wyb@{wyb}}
+\index{wyb@{wyb}!Rozgrywka@{\-Rozgrywka}}
+\subsubsection[{wyb}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Rozgrywka}$\ast$ {\bf \-Rozgrywka\-::wyb}}}\label{class_rozgrywka_a16162d348a75ac115dbf92f4bd7c4a32}
+
+
+\-Definicja w linii 80 pliku \-Szachy.\-h.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_szachy_8h}{\-Szachy.\-h}\item 
+\hyperlink{_szachy_8cpp}{\-Szachy.\-cpp}\end{DoxyCompactItemize}

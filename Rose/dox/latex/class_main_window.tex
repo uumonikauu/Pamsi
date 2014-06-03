@@ -1,0 +1,278 @@
+\hypertarget{class_main_window}{\section{\-Dokumentacja klasy \-Main\-Window}
+\label{class_main_window}\index{\-Main\-Window@{\-Main\-Window}}
+}
+
+
+{\ttfamily \#include $<$mainwindow.\-h$>$}
+
+
+
+\-Diagram współpracy dla \-Main\-Window\-:
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{\-Main\-Window} (\-Q\-Widget $\ast$parent=0)
+\item 
+\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\-Main\-Window} ()
+\item 
+void \hyperlink{class_main_window_a0083b949c18ccf71dcbe37f4258007c0}{display} ()
+\begin{DoxyCompactList}\small\item\em \-Definicja funkcji reprezentująca ustawienie figur na szachownicy. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a292626aba88863b28c3a44c6f8fff0c8}{szachownica} ()
+\begin{DoxyCompactList}\small\item\em \-Prototyp funkcji odpowiedzialny za wyglad szachownicy. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_af63fa081a58f836dd71406b416e44036}{szachownica} (std\-::vector$<$ \hyperlink{class_pole}{\-Pole} $>$ light)
+\begin{DoxyCompactList}\small\item\em \-Definicja funkcji reprezentująca wygląd szachownicy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Sloty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_ad3e1191b4be0b343cdb2e246c9d11249}{qruch} ()
+\begin{DoxyCompactList}\small\item\em \-Definicja funkcji reprezentująca wykonywane ruchy przez figury. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a4488c49a6f9427c44df99c10e2cbe17f}{tawans} ()
+\begin{DoxyCompactList}\small\item\em \-Definicja funkcji reprezentująca wygląd figur. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a71ddea5cf91abf6aab0fc21170b7baf3}{displog} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_main_window_a24823a731fbd97181b314763bd491e50}{end}
+\item 
+std\-::vector$<$ \hyperlink{class_pole}{\-Pole} $>$ \hyperlink{class_main_window_a9081d2e6cde7089a308fd4c738d722dd}{qmozliwe}
+\item 
+\hyperlink{class_pole}{\-Pole} \hyperlink{class_main_window_aaaecb46583504233ea801b4ec34e9f29}{start}
+\item 
+\hyperlink{class_pole}{\-Pole} \hyperlink{class_main_window_a283ff2015ce02067caf95ef460be3ff9}{cel}
+\item 
+\-Ui\-::\-Main\-Window $\ast$ \hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}
+\item 
+\-Q\-Push\-Button $\ast$$\ast$$\ast$ \hyperlink{class_main_window_a9ef49c25c7693c691076e6b46b45db76}{pole}
+\item 
+\-Q\-Push\-Button $\ast$ \hyperlink{class_main_window_ade2329ceab4efd7401816607726fb57f}{awans}
+\item 
+\-Q\-Text\-Browser $\ast$ \hyperlink{class_main_window_aca8da845b050d554d5e6f335c6f143c7}{log}
+\item 
+\hyperlink{class_rozgrywka}{\-Rozgrywka} \hyperlink{class_main_window_a38c1321667bd8650828922d1c779b6ef}{\-R}
+\end{DoxyCompactItemize}
+\subsection*{\-Statyczne atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{class_main_window_adbea6fe4608b0ced586b96bfcd4456ce}{pole\-\_\-wymiar} = 80
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+
+
+\-Definicja w linii 18 pliku mainwindow.\-h.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{\index{\-Main\-Window@{\-Main\-Window}!\-Main\-Window@{\-Main\-Window}}
+\index{\-Main\-Window@{\-Main\-Window}!MainWindow@{\-Main\-Window}}
+\subsubsection[{\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Main\-Window\-::\-Main\-Window} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}
+
+
+\-Definicja w linii 5 pliku mainwindow.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+\hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\index{\-Main\-Window@{\-Main\-Window}!$\sim$\-Main\-Window@{$\sim$\-Main\-Window}}
+\index{$\sim$\-Main\-Window@{$\sim$\-Main\-Window}!MainWindow@{\-Main\-Window}}
+\subsubsection[{$\sim$\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Main\-Window\-::$\sim$\-Main\-Window} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}
+
+
+\-Definicja w linii 40 pliku mainwindow.\-cpp.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_main_window_a0083b949c18ccf71dcbe37f4258007c0}{\index{\-Main\-Window@{\-Main\-Window}!display@{display}}
+\index{display@{display}!MainWindow@{\-Main\-Window}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::display} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_main_window_a0083b949c18ccf71dcbe37f4258007c0}
+
+
+\-Definicja w linii 202 pliku mainwindow.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_main_window_a71ddea5cf91abf6aab0fc21170b7baf3}{\index{\-Main\-Window@{\-Main\-Window}!displog@{displog}}
+\index{displog@{displog}!MainWindow@{\-Main\-Window}}
+\subsubsection[{displog}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::displog} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}\label{class_main_window_a71ddea5cf91abf6aab0fc21170b7baf3}
+
+
+\-Definicja w linii 240 pliku mainwindow.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_main_window_ad3e1191b4be0b343cdb2e246c9d11249}{\index{\-Main\-Window@{\-Main\-Window}!qruch@{qruch}}
+\index{qruch@{qruch}!MainWindow@{\-Main\-Window}}
+\subsubsection[{qruch}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::qruch} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}\label{class_main_window_ad3e1191b4be0b343cdb2e246c9d11249}
+
+
+\-Definicja w linii 95 pliku mainwindow.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_main_window_a292626aba88863b28c3a44c6f8fff0c8}{\index{\-Main\-Window@{\-Main\-Window}!szachownica@{szachownica}}
+\index{szachownica@{szachownica}!MainWindow@{\-Main\-Window}}
+\subsubsection[{szachownica}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::szachownica} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_main_window_a292626aba88863b28c3a44c6f8fff0c8}
+\-Definicja funkcji reprezentująca wygląd szachownicy. 
+
+\-Definicja w linii 49 pliku mainwindow.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_main_window_af63fa081a58f836dd71406b416e44036}{\index{\-Main\-Window@{\-Main\-Window}!szachownica@{szachownica}}
+\index{szachownica@{szachownica}!MainWindow@{\-Main\-Window}}
+\subsubsection[{szachownica}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::szachownica} (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf \-Pole} $>$}]{light}
+\end{DoxyParamCaption}
+)}}\label{class_main_window_af63fa081a58f836dd71406b416e44036}
+
+
+\-Definicja w linii 66 pliku mainwindow.\-cpp.
+
+\hypertarget{class_main_window_a4488c49a6f9427c44df99c10e2cbe17f}{\index{\-Main\-Window@{\-Main\-Window}!tawans@{tawans}}
+\index{tawans@{tawans}!MainWindow@{\-Main\-Window}}
+\subsubsection[{tawans}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::tawans} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}\label{class_main_window_a4488c49a6f9427c44df99c10e2cbe17f}
+
+
+\-Definicja w linii 77 pliku mainwindow.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_main_window_ade2329ceab4efd7401816607726fb57f}{\index{\-Main\-Window@{\-Main\-Window}!awans@{awans}}
+\index{awans@{awans}!MainWindow@{\-Main\-Window}}
+\subsubsection[{awans}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-Push\-Button$\ast$ {\bf \-Main\-Window\-::awans}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_main_window_ade2329ceab4efd7401816607726fb57f}
+
+
+\-Definicja w linii 45 pliku mainwindow.\-h.
+
+\hypertarget{class_main_window_a283ff2015ce02067caf95ef460be3ff9}{\index{\-Main\-Window@{\-Main\-Window}!cel@{cel}}
+\index{cel@{cel}!MainWindow@{\-Main\-Window}}
+\subsubsection[{cel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Pole} {\bf \-Main\-Window\-::cel}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_main_window_a283ff2015ce02067caf95ef460be3ff9}
+
+
+\-Definicja w linii 42 pliku mainwindow.\-h.
+
+\hypertarget{class_main_window_a24823a731fbd97181b314763bd491e50}{\index{\-Main\-Window@{\-Main\-Window}!end@{end}}
+\index{end@{end}!MainWindow@{\-Main\-Window}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Main\-Window\-::end}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_main_window_a24823a731fbd97181b314763bd491e50}
+
+
+\-Definicja w linii 38 pliku mainwindow.\-h.
+
+\hypertarget{class_main_window_aca8da845b050d554d5e6f335c6f143c7}{\index{\-Main\-Window@{\-Main\-Window}!log@{log}}
+\index{log@{log}!MainWindow@{\-Main\-Window}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-Text\-Browser$\ast$ {\bf \-Main\-Window\-::log}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_main_window_aca8da845b050d554d5e6f335c6f143c7}
+
+
+\-Definicja w linii 46 pliku mainwindow.\-h.
+
+\hypertarget{class_main_window_a9ef49c25c7693c691076e6b46b45db76}{\index{\-Main\-Window@{\-Main\-Window}!pole@{pole}}
+\index{pole@{pole}!MainWindow@{\-Main\-Window}}
+\subsubsection[{pole}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-Push\-Button$\ast$$\ast$$\ast$ {\bf \-Main\-Window\-::pole}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_main_window_a9ef49c25c7693c691076e6b46b45db76}
+
+
+\-Definicja w linii 44 pliku mainwindow.\-h.
+
+\hypertarget{class_main_window_adbea6fe4608b0ced586b96bfcd4456ce}{\index{\-Main\-Window@{\-Main\-Window}!pole\-\_\-wymiar@{pole\-\_\-wymiar}}
+\index{pole\-\_\-wymiar@{pole\-\_\-wymiar}!MainWindow@{\-Main\-Window}}
+\subsubsection[{pole\-\_\-wymiar}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf \-Main\-Window\-::pole\-\_\-wymiar} = 80\hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}\label{class_main_window_adbea6fe4608b0ced586b96bfcd4456ce}
+
+
+\-Definicja w linii 39 pliku mainwindow.\-h.
+
+\hypertarget{class_main_window_a9081d2e6cde7089a308fd4c738d722dd}{\index{\-Main\-Window@{\-Main\-Window}!qmozliwe@{qmozliwe}}
+\index{qmozliwe@{qmozliwe}!MainWindow@{\-Main\-Window}}
+\subsubsection[{qmozliwe}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf \-Pole}$>$ {\bf \-Main\-Window\-::qmozliwe}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_main_window_a9081d2e6cde7089a308fd4c738d722dd}
+
+
+\-Definicja w linii 40 pliku mainwindow.\-h.
+
+\hypertarget{class_main_window_a38c1321667bd8650828922d1c779b6ef}{\index{\-Main\-Window@{\-Main\-Window}!\-R@{\-R}}
+\index{\-R@{\-R}!MainWindow@{\-Main\-Window}}
+\subsubsection[{\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Rozgrywka} {\bf \-Main\-Window\-::\-R}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_main_window_a38c1321667bd8650828922d1c779b6ef}
+
+
+\-Definicja w linii 47 pliku mainwindow.\-h.
+
+\hypertarget{class_main_window_aaaecb46583504233ea801b4ec34e9f29}{\index{\-Main\-Window@{\-Main\-Window}!start@{start}}
+\index{start@{start}!MainWindow@{\-Main\-Window}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Pole} {\bf \-Main\-Window\-::start}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_main_window_aaaecb46583504233ea801b4ec34e9f29}
+
+
+\-Definicja w linii 41 pliku mainwindow.\-h.
+
+\hypertarget{class_main_window_a35466a70ed47252a0191168126a352a5}{\index{\-Main\-Window@{\-Main\-Window}!ui@{ui}}
+\index{ui@{ui}!MainWindow@{\-Main\-Window}}
+\subsubsection[{ui}]{\setlength{\rightskip}{0pt plus 5cm}\-Ui\-::\-Main\-Window$\ast$ {\bf \-Main\-Window\-::ui}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_main_window_a35466a70ed47252a0191168126a352a5}
+
+
+\-Definicja w linii 43 pliku mainwindow.\-h.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mainwindow_8h}{mainwindow.\-h}\item 
+\hyperlink{mainwindow_8cpp}{mainwindow.\-cpp}\end{DoxyCompactItemize}

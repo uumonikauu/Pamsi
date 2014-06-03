@@ -1,0 +1,38 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Rozgrywka::bulid_one",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Rozgrywka::baza_fig",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_rozgrywka.html#abfd6a95d3288f6756092a3fd1f48caea"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Rozgrywka::ruchy_tr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_rozgrywka.html#a645745edda67c70e61ccd6c846ea9548"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Figura::p",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_figura.html#ac5058dfe52b695fffaa14f1321ad94d1"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Pole::x",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pole.html#a98c066edfecd654b32bb8de07ad5e881"];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Pole::y",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pole.html#ae4c64d84a6102c61466f528ba4c23a15"];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Figura::figtype",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_figura.html#ae2e0fe45dd744aa23073ea3435473e6a"];
+  Node3 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Figura::kolor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_figura.html#a27f2e3dea90096db8ae8b9a7bd37373e"];
+  Node3 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Rozgrywka::Rozgrywka",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_rozgrywka.html#af52c70a887231f981d29958a1813bc1b"];
+  Node3 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Rozgrywka::szach",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_rozgrywka.html#ac3b8130edcb63f1f828e6e613a2cc05c"];
+  Node10 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Rozgrywka::ruchybs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_rozgrywka.html#ac50b0a9d83d128bd38b3f71bd161378c"];
+  Node11 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Figura::ruszona",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_figura.html#aaffdaf6aa965b20fab82f76b56e6b339"];
+  Node3 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+}

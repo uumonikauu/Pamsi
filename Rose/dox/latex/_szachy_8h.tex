@@ -1,0 +1,209 @@
+\hypertarget{_szachy_8h}{\section{\-Dokumentacja pliku \-Szachy.\-h}
+\label{_szachy_8h}\index{\-Szachy.\-h@{\-Szachy.\-h}}
+}
+{\ttfamily \#include $<$vector$>$}\*
+{\ttfamily \#include $<$cassert$>$}\*
+{\ttfamily \#include $<$string$>$}\*
+{\ttfamily \#include $<$iostream$>$}\*
+{\ttfamily \#include $<$algorithm$>$}\*
+\-Wykres zależności załączania dla \-Szachy.\-h\-:
+\-Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\-:
+\subsection*{\-Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_pole}{\-Pole}
+\item 
+class \hyperlink{class_figura}{\-Figura}
+\item 
+class \hyperlink{class_wiersz}{\-Wiersz}
+\item 
+class \hyperlink{class_plansza}{\-Plansza}
+\item 
+class \hyperlink{class_rozgrywka}{\-Rozgrywka}
+\end{DoxyCompactItemize}
+\subsection*{\-Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_szachy_8h_a0653389baf2d065f3b297d8189292573}{\-M\-A\-T}~100000
+\item 
+\#define \hyperlink{_szachy_8h_a5720035f44764cb49f7f520887b01224}{\-S\-Z\-A\-C\-H}~0
+\item 
+\#define \hyperlink{_szachy_8h_ac257b1448c6f4ba1ffc7d2c1fd1e5514}{\-P\-A\-T}~0
+\item 
+\#define \hyperlink{_szachy_8h_a87b537f5fa5c109d3c05c13d6b18f382}{\-W\-H\-I\-T\-E}~0
+\item 
+\#define \hyperlink{_szachy_8h_a7b3b25cba33b07c303f3060fe41887f6}{\-B\-L\-A\-C\-K}~1
+\item 
+\#define \hyperlink{_szachy_8h_a87a3bd430069f855dfd7e0c8c9fc3dde}{\-P\-I\-O\-N}~1
+\item 
+\#define \hyperlink{_szachy_8h_a5b323e3387279f91b1679a047677ac4c}{\-W\-I\-E\-Z\-A}~2
+\item 
+\#define \hyperlink{_szachy_8h_a2b688a928c4428f6dd3676dd7dae4086}{\-S\-K\-O\-C\-Z\-E\-K}~3
+\item 
+\#define \hyperlink{_szachy_8h_a86c217348f3777293bc52e974dcb02ec}{\-G\-O\-N\-I\-E\-C}~4
+\item 
+\#define \hyperlink{_szachy_8h_a623a7ea63f668a010b4c082b85c8e5d5}{\-H\-E\-T\-M\-A\-N}~5
+\item 
+\#define \hyperlink{_szachy_8h_a62ed08874dad1b4f75ffcb1e65edb347}{\-K\-R\-O\-L}~6
+\item 
+\#define \hyperlink{_szachy_8h_aeaf6e17bdb3a799dab661aa76168a376}{\-C\-I\-E\-C\-I\-A}~1
+\end{DoxyCompactItemize}
+\subsection*{\-Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{_szachy_8h_ab12213d2f3bc182a53f967a4f5013fbf}{operator==} (\hyperlink{class_pole}{\-Pole} \-P1, \hyperlink{class_pole}{\-Pole} \-P2)
+\item 
+bool \hyperlink{_szachy_8h_a91f58b976d8d7c409c2646afe0546b57}{operator!=} (\hyperlink{class_pole}{\-Pole} \-P1, \hyperlink{class_pole}{\-Pole} \-P2)
+\item 
+int \hyperlink{_szachy_8h_a807d345baae09d7d4960c9f5262753d2}{wmin} (int a, int b)
+\item 
+int \hyperlink{_szachy_8h_af471da711a6efbaaa2eedcda8a4ab407}{wmax} (int a, int b)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Dokumentacja definicji}
+\hypertarget{_szachy_8h_a7b3b25cba33b07c303f3060fe41887f6}{\index{\-Szachy.\-h@{\-Szachy.\-h}!\-B\-L\-A\-C\-K@{\-B\-L\-A\-C\-K}}
+\index{\-B\-L\-A\-C\-K@{\-B\-L\-A\-C\-K}!Szachy.h@{\-Szachy.\-h}}
+\subsubsection[{\-B\-L\-A\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-L\-A\-C\-K}~1}}\label{_szachy_8h_a7b3b25cba33b07c303f3060fe41887f6}
+
+
+\-Definicja w linii 22 pliku \-Szachy.\-h.
+
+\hypertarget{_szachy_8h_aeaf6e17bdb3a799dab661aa76168a376}{\index{\-Szachy.\-h@{\-Szachy.\-h}!\-C\-I\-E\-C\-I\-A@{\-C\-I\-E\-C\-I\-A}}
+\index{\-C\-I\-E\-C\-I\-A@{\-C\-I\-E\-C\-I\-A}!Szachy.h@{\-Szachy.\-h}}
+\subsubsection[{\-C\-I\-E\-C\-I\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-C\-I\-E\-C\-I\-A}~1}}\label{_szachy_8h_aeaf6e17bdb3a799dab661aa76168a376}
+
+
+\-Definicja w linii 29 pliku \-Szachy.\-h.
+
+\hypertarget{_szachy_8h_a86c217348f3777293bc52e974dcb02ec}{\index{\-Szachy.\-h@{\-Szachy.\-h}!\-G\-O\-N\-I\-E\-C@{\-G\-O\-N\-I\-E\-C}}
+\index{\-G\-O\-N\-I\-E\-C@{\-G\-O\-N\-I\-E\-C}!Szachy.h@{\-Szachy.\-h}}
+\subsubsection[{\-G\-O\-N\-I\-E\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-G\-O\-N\-I\-E\-C}~4}}\label{_szachy_8h_a86c217348f3777293bc52e974dcb02ec}
+
+
+\-Definicja w linii 26 pliku \-Szachy.\-h.
+
+\hypertarget{_szachy_8h_a623a7ea63f668a010b4c082b85c8e5d5}{\index{\-Szachy.\-h@{\-Szachy.\-h}!\-H\-E\-T\-M\-A\-N@{\-H\-E\-T\-M\-A\-N}}
+\index{\-H\-E\-T\-M\-A\-N@{\-H\-E\-T\-M\-A\-N}!Szachy.h@{\-Szachy.\-h}}
+\subsubsection[{\-H\-E\-T\-M\-A\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-H\-E\-T\-M\-A\-N}~5}}\label{_szachy_8h_a623a7ea63f668a010b4c082b85c8e5d5}
+
+
+\-Definicja w linii 27 pliku \-Szachy.\-h.
+
+\hypertarget{_szachy_8h_a62ed08874dad1b4f75ffcb1e65edb347}{\index{\-Szachy.\-h@{\-Szachy.\-h}!\-K\-R\-O\-L@{\-K\-R\-O\-L}}
+\index{\-K\-R\-O\-L@{\-K\-R\-O\-L}!Szachy.h@{\-Szachy.\-h}}
+\subsubsection[{\-K\-R\-O\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-K\-R\-O\-L}~6}}\label{_szachy_8h_a62ed08874dad1b4f75ffcb1e65edb347}
+
+
+\-Definicja w linii 28 pliku \-Szachy.\-h.
+
+\hypertarget{_szachy_8h_a0653389baf2d065f3b297d8189292573}{\index{\-Szachy.\-h@{\-Szachy.\-h}!\-M\-A\-T@{\-M\-A\-T}}
+\index{\-M\-A\-T@{\-M\-A\-T}!Szachy.h@{\-Szachy.\-h}}
+\subsubsection[{\-M\-A\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-A\-T}~100000}}\label{_szachy_8h_a0653389baf2d065f3b297d8189292573}
+
+
+\-Definicja w linii 18 pliku \-Szachy.\-h.
+
+\hypertarget{_szachy_8h_ac257b1448c6f4ba1ffc7d2c1fd1e5514}{\index{\-Szachy.\-h@{\-Szachy.\-h}!\-P\-A\-T@{\-P\-A\-T}}
+\index{\-P\-A\-T@{\-P\-A\-T}!Szachy.h@{\-Szachy.\-h}}
+\subsubsection[{\-P\-A\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-P\-A\-T}~0}}\label{_szachy_8h_ac257b1448c6f4ba1ffc7d2c1fd1e5514}
+
+
+\-Definicja w linii 20 pliku \-Szachy.\-h.
+
+\hypertarget{_szachy_8h_a87a3bd430069f855dfd7e0c8c9fc3dde}{\index{\-Szachy.\-h@{\-Szachy.\-h}!\-P\-I\-O\-N@{\-P\-I\-O\-N}}
+\index{\-P\-I\-O\-N@{\-P\-I\-O\-N}!Szachy.h@{\-Szachy.\-h}}
+\subsubsection[{\-P\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-P\-I\-O\-N}~1}}\label{_szachy_8h_a87a3bd430069f855dfd7e0c8c9fc3dde}
+
+
+\-Definicja w linii 23 pliku \-Szachy.\-h.
+
+\hypertarget{_szachy_8h_a2b688a928c4428f6dd3676dd7dae4086}{\index{\-Szachy.\-h@{\-Szachy.\-h}!\-S\-K\-O\-C\-Z\-E\-K@{\-S\-K\-O\-C\-Z\-E\-K}}
+\index{\-S\-K\-O\-C\-Z\-E\-K@{\-S\-K\-O\-C\-Z\-E\-K}!Szachy.h@{\-Szachy.\-h}}
+\subsubsection[{\-S\-K\-O\-C\-Z\-E\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-K\-O\-C\-Z\-E\-K}~3}}\label{_szachy_8h_a2b688a928c4428f6dd3676dd7dae4086}
+
+
+\-Definicja w linii 25 pliku \-Szachy.\-h.
+
+\hypertarget{_szachy_8h_a5720035f44764cb49f7f520887b01224}{\index{\-Szachy.\-h@{\-Szachy.\-h}!\-S\-Z\-A\-C\-H@{\-S\-Z\-A\-C\-H}}
+\index{\-S\-Z\-A\-C\-H@{\-S\-Z\-A\-C\-H}!Szachy.h@{\-Szachy.\-h}}
+\subsubsection[{\-S\-Z\-A\-C\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-Z\-A\-C\-H}~0}}\label{_szachy_8h_a5720035f44764cb49f7f520887b01224}
+
+
+\-Definicja w linii 19 pliku \-Szachy.\-h.
+
+\hypertarget{_szachy_8h_a87b537f5fa5c109d3c05c13d6b18f382}{\index{\-Szachy.\-h@{\-Szachy.\-h}!\-W\-H\-I\-T\-E@{\-W\-H\-I\-T\-E}}
+\index{\-W\-H\-I\-T\-E@{\-W\-H\-I\-T\-E}!Szachy.h@{\-Szachy.\-h}}
+\subsubsection[{\-W\-H\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-W\-H\-I\-T\-E}~0}}\label{_szachy_8h_a87b537f5fa5c109d3c05c13d6b18f382}
+
+
+\-Definicja w linii 21 pliku \-Szachy.\-h.
+
+\hypertarget{_szachy_8h_a5b323e3387279f91b1679a047677ac4c}{\index{\-Szachy.\-h@{\-Szachy.\-h}!\-W\-I\-E\-Z\-A@{\-W\-I\-E\-Z\-A}}
+\index{\-W\-I\-E\-Z\-A@{\-W\-I\-E\-Z\-A}!Szachy.h@{\-Szachy.\-h}}
+\subsubsection[{\-W\-I\-E\-Z\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-W\-I\-E\-Z\-A}~2}}\label{_szachy_8h_a5b323e3387279f91b1679a047677ac4c}
+
+
+\-Definicja w linii 24 pliku \-Szachy.\-h.
+
+
+
+\subsection{\-Dokumentacja funkcji}
+\hypertarget{_szachy_8h_a91f58b976d8d7c409c2646afe0546b57}{\index{\-Szachy.\-h@{\-Szachy.\-h}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Szachy.h@{\-Szachy.\-h}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Pole}}]{\-P1, }
+\item[{{\bf \-Pole}}]{\-P2}
+\end{DoxyParamCaption}
+)}}\label{_szachy_8h_a91f58b976d8d7c409c2646afe0546b57}
+
+
+\-Definicja w linii 17 pliku \-Szachy.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+\hypertarget{_szachy_8h_ab12213d2f3bc182a53f967a4f5013fbf}{\index{\-Szachy.\-h@{\-Szachy.\-h}!operator==@{operator==}}
+\index{operator==@{operator==}!Szachy.h@{\-Szachy.\-h}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Pole}}]{\-P1, }
+\item[{{\bf \-Pole}}]{\-P2}
+\end{DoxyParamCaption}
+)}}\label{_szachy_8h_ab12213d2f3bc182a53f967a4f5013fbf}
+
+
+\-Definicja w linii 13 pliku \-Szachy.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+\hypertarget{_szachy_8h_af471da711a6efbaaa2eedcda8a4ab407}{\index{\-Szachy.\-h@{\-Szachy.\-h}!wmax@{wmax}}
+\index{wmax@{wmax}!Szachy.h@{\-Szachy.\-h}}
+\subsubsection[{wmax}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf wmax} (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)}}\label{_szachy_8h_af471da711a6efbaaa2eedcda8a4ab407}
+
+
+\-Definicja w linii 3730 pliku \-Szachy.\-cpp.
+
+\hypertarget{_szachy_8h_a807d345baae09d7d4960c9f5262753d2}{\index{\-Szachy.\-h@{\-Szachy.\-h}!wmin@{wmin}}
+\index{wmin@{wmin}!Szachy.h@{\-Szachy.\-h}}
+\subsubsection[{wmin}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf wmin} (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)}}\label{_szachy_8h_a807d345baae09d7d4960c9f5262753d2}
+
+
+\-Definicja w linii 3724 pliku \-Szachy.\-cpp.
+
