@@ -1,0 +1,14 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="depth_first",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="depth_first",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$przeszukiwanie_8h.html#adf1676fd94d7e754f7eb562ad1e86edd"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Graf::sasiedztwo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#a7a21743550a1a46b30e462ddccf665c3",tooltip="Metoda pozwalajaca na sprawdzic &quot;sasiedztwo&quot; danego wierzcholka."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Graf::czy_sasiad",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#ac743220324f5dd5340b26571771aab97",tooltip="Metoda pozwalajaca na sprawdzic czy dany wierzcholek jest &quot;sasiadem&quot;."];
+  Node2 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+}

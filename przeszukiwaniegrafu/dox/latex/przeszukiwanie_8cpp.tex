@@ -1,0 +1,158 @@
+\hypertarget{przeszukiwanie_8cpp}{\section{\-Dokumentacja pliku /home/monika/\-Pulpit/kolejne/prj/scr/przeszukiwanie.cpp}
+\label{przeszukiwanie_8cpp}\index{/home/monika/\-Pulpit/kolejne/prj/scr/przeszukiwanie.\-cpp@{/home/monika/\-Pulpit/kolejne/prj/scr/przeszukiwanie.\-cpp}}
+}
+
+
+\-Szukajki \-Zawiera najważniejsze fukcje programu. \-Trzy przeszukiwania grafu -\/ depth first, breadth first, \-A$\ast$.  
+
+
+{\ttfamily \#include \char`\"{}graf.\-h\char`\"{}}\*
+{\ttfamily \#include $<$iostream$>$}\*
+{\ttfamily \#include $<$list$>$}\*
+{\ttfamily \#include $<$algorithm$>$}\*
+{\ttfamily \#include $<$limits$>$}\*
+{\ttfamily \#include $<$set$>$}\*
+\-Wykres zależności załączania dla przeszukiwanie.\-cpp\-:
+\subsection*{\-Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{przeszukiwanie_8cpp_a666d9e148914053f86c5343a0aed4838}{\-W\-A\-L\-L\-Y}~15
+\end{DoxyCompactItemize}
+\subsection*{\-Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+std\-::list$<$ int $>$ \hyperlink{przeszukiwanie_8cpp_a48d4601486fa305e536e43dd8537d710}{breadth\-\_\-first} (\hyperlink{class_graf}{\-Graf} \&cos, const int rozpoczecie, const int zakonczenie)
+\item 
+double \hyperlink{przeszukiwanie_8cpp_a020c61195a8975d1449ea395a81aba30}{licz\-Koszt} (\hyperlink{class_graf}{\-Graf} \&cos, std\-::list$<$ int $>$ droga)
+\begin{DoxyCompactList}\small\item\em \-Metoda pozwalajaca na policzenie kosztu drogi czy ona sie oplaca. \end{DoxyCompactList}\item 
+std\-::list$<$ int $>$ \hyperlink{przeszukiwanie_8cpp_adf1676fd94d7e754f7eb562ad1e86edd}{depth\-\_\-first} (\hyperlink{class_graf}{\-Graf} \&cos, int rozpoczecie, int zakonczenie, std\-::list$<$ int $>$ historia)
+\item 
+std\-::list$<$ int $>$ \hyperlink{przeszukiwanie_8cpp_a62905943556aa0caa373328b10ac1fd7}{depth\-\_\-first} (\hyperlink{class_graf}{\-Graf} \&cos, int rozpoczecie, int zakonczenie)
+\item 
+std\-::list$<$ int $>$ \hyperlink{przeszukiwanie_8cpp_a136bc0fc8736b62810b7eff9278ef0c3}{a\-\_\-star} (\hyperlink{class_graf}{\-Graf} \&cos, int rozpoczecie, int zakonczenie)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+
+
+\-Definicja w pliku \hyperlink{przeszukiwanie_8cpp_source}{przeszukiwanie.\-cpp}.
+
+
+
+\subsection{\-Dokumentacja definicji}
+\hypertarget{przeszukiwanie_8cpp_a666d9e148914053f86c5343a0aed4838}{\index{przeszukiwanie.\-cpp@{przeszukiwanie.\-cpp}!\-W\-A\-L\-L\-Y@{\-W\-A\-L\-L\-Y}}
+\index{\-W\-A\-L\-L\-Y@{\-W\-A\-L\-L\-Y}!przeszukiwanie.cpp@{przeszukiwanie.\-cpp}}
+\subsubsection[{\-W\-A\-L\-L\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-W\-A\-L\-L\-Y}~15}}\label{przeszukiwanie_8cpp_a666d9e148914053f86c5343a0aed4838}
+
+
+\-Definicja w linii 16 pliku przeszukiwanie.\-cpp.
+
+
+
+\subsection{\-Dokumentacja funkcji}
+\hypertarget{przeszukiwanie_8cpp_a136bc0fc8736b62810b7eff9278ef0c3}{\index{przeszukiwanie.\-cpp@{przeszukiwanie.\-cpp}!a\-\_\-star@{a\-\_\-star}}
+\index{a\-\_\-star@{a\-\_\-star}!przeszukiwanie.cpp@{przeszukiwanie.\-cpp}}
+\subsubsection[{a\-\_\-star}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$int$>$ {\bf a\-\_\-star} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Graf} \&}]{cos, }
+\item[{int}]{rozpoczecie, }
+\item[{int}]{zakonczenie}
+\end{DoxyParamCaption}
+)}}\label{przeszukiwanie_8cpp_a136bc0fc8736b62810b7eff9278ef0c3}
+
+
+\-Definicja w linii 73 pliku przeszukiwanie.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{przeszukiwanie_8cpp_a48d4601486fa305e536e43dd8537d710}{\index{przeszukiwanie.\-cpp@{przeszukiwanie.\-cpp}!breadth\-\_\-first@{breadth\-\_\-first}}
+\index{breadth\-\_\-first@{breadth\-\_\-first}!przeszukiwanie.cpp@{przeszukiwanie.\-cpp}}
+\subsubsection[{breadth\-\_\-first}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$int$>$ {\bf breadth\-\_\-first} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Graf} \&}]{cos, }
+\item[{const int}]{rozpoczecie, }
+\item[{const int}]{zakonczenie}
+\end{DoxyParamCaption}
+)}}\label{przeszukiwanie_8cpp_a48d4601486fa305e536e43dd8537d710}
+
+
+\-Definicja w linii 19 pliku przeszukiwanie.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{przeszukiwanie_8cpp_adf1676fd94d7e754f7eb562ad1e86edd}{\index{przeszukiwanie.\-cpp@{przeszukiwanie.\-cpp}!depth\-\_\-first@{depth\-\_\-first}}
+\index{depth\-\_\-first@{depth\-\_\-first}!przeszukiwanie.cpp@{przeszukiwanie.\-cpp}}
+\subsubsection[{depth\-\_\-first}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$int$>$ {\bf depth\-\_\-first} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Graf} \&}]{cos, }
+\item[{int}]{rozpoczecie, }
+\item[{int}]{zakonczenie, }
+\item[{std\-::list$<$ int $>$}]{historia}
+\end{DoxyParamCaption}
+)}}\label{przeszukiwanie_8cpp_adf1676fd94d7e754f7eb562ad1e86edd}
+
+
+\-Definicja w linii 58 pliku przeszukiwanie.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{przeszukiwanie_8cpp_a62905943556aa0caa373328b10ac1fd7}{\index{przeszukiwanie.\-cpp@{przeszukiwanie.\-cpp}!depth\-\_\-first@{depth\-\_\-first}}
+\index{depth\-\_\-first@{depth\-\_\-first}!przeszukiwanie.cpp@{przeszukiwanie.\-cpp}}
+\subsubsection[{depth\-\_\-first}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$int$>$ {\bf depth\-\_\-first} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Graf} \&}]{cos, }
+\item[{int}]{rozpoczecie, }
+\item[{int}]{zakonczenie}
+\end{DoxyParamCaption}
+)}}\label{przeszukiwanie_8cpp_a62905943556aa0caa373328b10ac1fd7}
+
+
+\-Definicja w linii 68 pliku przeszukiwanie.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+\hypertarget{przeszukiwanie_8cpp_a020c61195a8975d1449ea395a81aba30}{\index{przeszukiwanie.\-cpp@{przeszukiwanie.\-cpp}!licz\-Koszt@{licz\-Koszt}}
+\index{licz\-Koszt@{licz\-Koszt}!przeszukiwanie.cpp@{przeszukiwanie.\-cpp}}
+\subsubsection[{licz\-Koszt}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf licz\-Koszt} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Graf} \&}]{cos, }
+\item[{std\-::list$<$ int $>$}]{droga}
+\end{DoxyParamCaption}
+)}}\label{przeszukiwanie_8cpp_a020c61195a8975d1449ea395a81aba30}
+
+
+\-Definicja w linii 50 pliku przeszukiwanie.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+

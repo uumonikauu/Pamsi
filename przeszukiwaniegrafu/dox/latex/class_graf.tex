@@ -1,0 +1,204 @@
+\hypertarget{class_graf}{\section{\-Dokumentacja klasy \-Graf}
+\label{class_graf}\index{\-Graf@{\-Graf}}
+}
+
+
+\-Deklaracje klasy \hyperlink{class_graf}{\-Graf}.  
+
+
+
+
+{\ttfamily \#include $<$graf.\-h$>$}
+
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_graf_a697a2852c7f65779f23e30fd0e8dd081}{\-Graf} (int \hyperlink{class_graf_aac4d211e752539963f002d255991f5b4}{rozm})
+\item 
+\hyperlink{class_graf_a4ff3904fd04f367ac0219b52719c567e}{$\sim$\-Graf} ()
+\item 
+bool \hyperlink{class_graf_abffb5a92e6eeb623fb319a1cd9f6de62}{dodaj\-\_\-wierzcholek} (int \-V)
+\begin{DoxyCompactList}\small\item\em \-Metoda pozwalajaca na dodawanie nowego wierzcholka. \end{DoxyCompactList}\item 
+bool \hyperlink{class_graf_a3e263338d6b137fd9e1b0b47a741a03f}{usun\-\_\-wierzcholek} (int \-V)
+\begin{DoxyCompactList}\small\item\em \-Metoda pozwalajaca na usuwanie danego wierzcholka. \end{DoxyCompactList}\item 
+bool \hyperlink{class_graf_a0024231b77bddd7298a66e0b753b5d6b}{dodaj\-\_\-krawedz} (int \-V1, int \-V2, double c)
+\begin{DoxyCompactList}\small\item\em \-Metoda pozwalajaca na dodawanie nowej krawedzi. \end{DoxyCompactList}\item 
+bool \hyperlink{class_graf_a8db1f54a88cbb1ec04a2337a59c864e8}{usun\-\_\-krawedz} (int \-V1, int \-V2)
+\begin{DoxyCompactList}\small\item\em \-Metoda pozwalajaca na usuwanie danej krawedzi. \end{DoxyCompactList}\item 
+double \hyperlink{class_graf_ac743220324f5dd5340b26571771aab97}{czy\-\_\-sasiad} (int \-V1, int \-V2)
+\begin{DoxyCompactList}\small\item\em \-Metoda pozwalajaca na sprawdzic czy dany wierzcholek jest \char`\"{}sasiadem\char`\"{}. \end{DoxyCompactList}\item 
+std\-::list$<$ int $>$ \hyperlink{class_graf_a7a21743550a1a46b30e462ddccf665c3}{sasiedztwo} (int \-V)
+\begin{DoxyCompactList}\small\item\em \-Metoda pozwalajaca na sprawdzic \char`\"{}sasiedztwo\char`\"{} danego wierzcholka. \end{DoxyCompactList}\item 
+const int \hyperlink{class_graf_ab452377f7bf7a7034057c9b1c1f2c4fb}{rozmiar} () const 
+\begin{DoxyCompactList}\small\item\em \-Metoda pozwalajaca na sprawdzenie rozmiaru. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_graf_aa9bee9eccd66c284e079ba25d7519dcb}{dane} \mbox{[}1000\mbox{]}\mbox{[}1000\mbox{]}
+\item 
+int \hyperlink{class_graf_aac4d211e752539963f002d255991f5b4}{rozm}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+
+
+\-Definicja w linii 15 pliku graf.\-h.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_graf_a697a2852c7f65779f23e30fd0e8dd081}{\index{\-Graf@{\-Graf}!\-Graf@{\-Graf}}
+\index{\-Graf@{\-Graf}!Graf@{\-Graf}}
+\subsubsection[{\-Graf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Graf\-::\-Graf} (
+\begin{DoxyParamCaption}
+\item[{int}]{rozm}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a697a2852c7f65779f23e30fd0e8dd081}
+
+
+\-Definicja w linii 9 pliku graf.\-cpp.
+
+\hypertarget{class_graf_a4ff3904fd04f367ac0219b52719c567e}{\index{\-Graf@{\-Graf}!$\sim$\-Graf@{$\sim$\-Graf}}
+\index{$\sim$\-Graf@{$\sim$\-Graf}!Graf@{\-Graf}}
+\subsubsection[{$\sim$\-Graf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Graf\-::$\sim$\-Graf} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a4ff3904fd04f367ac0219b52719c567e}
+
+
+\-Definicja w linii 11 pliku graf.\-cpp.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_graf_ac743220324f5dd5340b26571771aab97}{\index{\-Graf@{\-Graf}!czy\-\_\-sasiad@{czy\-\_\-sasiad}}
+\index{czy\-\_\-sasiad@{czy\-\_\-sasiad}!Graf@{\-Graf}}
+\subsubsection[{czy\-\_\-sasiad}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Graf\-::czy\-\_\-sasiad} (
+\begin{DoxyParamCaption}
+\item[{int}]{\-V1, }
+\item[{int}]{\-V2}
+\end{DoxyParamCaption}
+)}}\label{class_graf_ac743220324f5dd5340b26571771aab97}
+\-Opis metody pozwalajacej sprawdzic czy dany wierzcholek jest \char`\"{}sasiadem\char`\"{}. 
+
+\-Definicja w linii 48 pliku graf.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_graf_a0024231b77bddd7298a66e0b753b5d6b}{\index{\-Graf@{\-Graf}!dodaj\-\_\-krawedz@{dodaj\-\_\-krawedz}}
+\index{dodaj\-\_\-krawedz@{dodaj\-\_\-krawedz}!Graf@{\-Graf}}
+\subsubsection[{dodaj\-\_\-krawedz}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Graf\-::dodaj\-\_\-krawedz} (
+\begin{DoxyParamCaption}
+\item[{int}]{\-V1, }
+\item[{int}]{\-V2, }
+\item[{double}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a0024231b77bddd7298a66e0b753b5d6b}
+\-Opis metody pozwalajacej na dodanie nowej krawedzi. 
+
+\-Definicja w linii 30 pliku graf.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_graf_abffb5a92e6eeb623fb319a1cd9f6de62}{\index{\-Graf@{\-Graf}!dodaj\-\_\-wierzcholek@{dodaj\-\_\-wierzcholek}}
+\index{dodaj\-\_\-wierzcholek@{dodaj\-\_\-wierzcholek}!Graf@{\-Graf}}
+\subsubsection[{dodaj\-\_\-wierzcholek}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Graf\-::dodaj\-\_\-wierzcholek} (
+\begin{DoxyParamCaption}
+\item[{int}]{\-V}
+\end{DoxyParamCaption}
+)}}\label{class_graf_abffb5a92e6eeb623fb319a1cd9f6de62}
+\-Opis metody pozwalajacej na dodanie nowego wierzcholka. 
+
+\-Definicja w linii 16 pliku graf.\-cpp.
+
+\hypertarget{class_graf_ab452377f7bf7a7034057c9b1c1f2c4fb}{\index{\-Graf@{\-Graf}!rozmiar@{rozmiar}}
+\index{rozmiar@{rozmiar}!Graf@{\-Graf}}
+\subsubsection[{rozmiar}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf \-Graf\-::rozmiar} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_graf_ab452377f7bf7a7034057c9b1c1f2c4fb}
+\-Opis metody pozwalajacej sprawdzic rozmiar grafu. 
+
+\-Definicja w linii 67 pliku graf.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_graf_a7a21743550a1a46b30e462ddccf665c3}{\index{\-Graf@{\-Graf}!sasiedztwo@{sasiedztwo}}
+\index{sasiedztwo@{sasiedztwo}!Graf@{\-Graf}}
+\subsubsection[{sasiedztwo}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$ int $>$ {\bf \-Graf\-::sasiedztwo} (
+\begin{DoxyParamCaption}
+\item[{int}]{\-V}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a7a21743550a1a46b30e462ddccf665c3}
+\-Opis metody pozwalajacej na sprawdzic sasiedztwo danego wierzcholka. 
+
+\-Definicja w linii 55 pliku graf.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{class_graf_a8db1f54a88cbb1ec04a2337a59c864e8}{\index{\-Graf@{\-Graf}!usun\-\_\-krawedz@{usun\-\_\-krawedz}}
+\index{usun\-\_\-krawedz@{usun\-\_\-krawedz}!Graf@{\-Graf}}
+\subsubsection[{usun\-\_\-krawedz}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Graf\-::usun\-\_\-krawedz} (
+\begin{DoxyParamCaption}
+\item[{int}]{\-V1, }
+\item[{int}]{\-V2}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a8db1f54a88cbb1ec04a2337a59c864e8}
+\-Opis metody pozwalajacej na usunięcie danej krawedzi. 
+
+\-Definicja w linii 39 pliku graf.\-cpp.
+
+\hypertarget{class_graf_a3e263338d6b137fd9e1b0b47a741a03f}{\index{\-Graf@{\-Graf}!usun\-\_\-wierzcholek@{usun\-\_\-wierzcholek}}
+\index{usun\-\_\-wierzcholek@{usun\-\_\-wierzcholek}!Graf@{\-Graf}}
+\subsubsection[{usun\-\_\-wierzcholek}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Graf\-::usun\-\_\-wierzcholek} (
+\begin{DoxyParamCaption}
+\item[{int}]{\-V}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a3e263338d6b137fd9e1b0b47a741a03f}
+\-Opis metody pozwalajacej na usunięcie danego wierzcholka. 
+
+\-Definicja w linii 23 pliku graf.\-cpp.
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_graf_aa9bee9eccd66c284e079ba25d7519dcb}{\index{\-Graf@{\-Graf}!dane@{dane}}
+\index{dane@{dane}!Graf@{\-Graf}}
+\subsubsection[{dane}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Graf\-::dane}\mbox{[}1000\mbox{]}\mbox{[}1000\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_graf_aa9bee9eccd66c284e079ba25d7519dcb}
+
+
+\-Definicja w linii 16 pliku graf.\-h.
+
+\hypertarget{class_graf_aac4d211e752539963f002d255991f5b4}{\index{\-Graf@{\-Graf}!rozm@{rozm}}
+\index{rozm@{rozm}!Graf@{\-Graf}}
+\subsubsection[{rozm}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Graf\-::rozm}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_graf_aac4d211e752539963f002d255991f5b4}
+
+
+\-Definicja w linii 17 pliku graf.\-h.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+/home/monika/\-Pulpit/kolejne/prj/inc/\hyperlink{graf_8h}{graf.\-h}\item 
+/home/monika/\-Pulpit/kolejne/prj/scr/\hyperlink{graf_8cpp}{graf.\-cpp}\end{DoxyCompactItemize}

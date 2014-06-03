@@ -1,0 +1,16 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Graf::rozmiar",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="breadth_first",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$przeszukiwanie_8cpp.html#a48d4601486fa305e536e43dd8537d710"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$timer_8cpp.html#a29d90bc26000d502cdee91c591dd2370"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="a_star",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$przeszukiwanie_8cpp.html#a136bc0fc8736b62810b7eff9278ef0c3"];
+  Node5 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

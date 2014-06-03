@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Przeszukiwanie Grafu: Plik źródłowy /home/monika/Pulpit/kolejne/prj/scr/main.cpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="gfggg.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Przeszukiwanie Grafu
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('main_8cpp.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#include &quot;<a class="code" href="graf_8h.html" title="Definicja modułu odpowiedzialnego za implementacje Grafu.">graf.h</a>&quot;</span>
+<a name="l00002"></a>00002 <span class="preprocessor">#include &quot;<a class="code" href="przeszukiwanie_8h.html" title="Definicja modułu odpowiedzialnego za implementacje przeszukiwania.">przeszukiwanie.h</a>&quot;</span>
+<a name="l00003"></a>00003 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;<a class="code" href="timer_8h.html" title="Plik naglowkowy timer.">timer.h</a>&quot;</span>
+<a name="l00005"></a>00005 
+<a name="l00011"></a><a class="code" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">00011</a> <span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv) {
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013         <a class="code" href="class_graf.html" title="Deklaracje klasy Graf.">Graf</a> cos(16);
+<a name="l00014"></a>00014         cos.<a class="code" href="class_graf.html#a0024231b77bddd7298a66e0b753b5d6b" title="Metoda pozwalajaca na dodawanie nowej krawedzi.">dodaj_krawedz</a>(0, 1, 1);
+<a name="l00015"></a>00015         cos.<a class="code" href="class_graf.html#a0024231b77bddd7298a66e0b753b5d6b" title="Metoda pozwalajaca na dodawanie nowej krawedzi.">dodaj_krawedz</a>(1, 4, 4);
+<a name="l00016"></a>00016         cos.<a class="code" href="class_graf.html#a0024231b77bddd7298a66e0b753b5d6b" title="Metoda pozwalajaca na dodawanie nowej krawedzi.">dodaj_krawedz</a>(4, 5, 5);
+<a name="l00017"></a>00017         cos.<a class="code" href="class_graf.html#a0024231b77bddd7298a66e0b753b5d6b" title="Metoda pozwalajaca na dodawanie nowej krawedzi.">dodaj_krawedz</a>(4, 6, 6);
+<a name="l00018"></a>00018         cos.<a class="code" href="class_graf.html#a0024231b77bddd7298a66e0b753b5d6b" title="Metoda pozwalajaca na dodawanie nowej krawedzi.">dodaj_krawedz</a>(4, 7, 7);
+<a name="l00019"></a>00019         cos.<a class="code" href="class_graf.html#a0024231b77bddd7298a66e0b753b5d6b" title="Metoda pozwalajaca na dodawanie nowej krawedzi.">dodaj_krawedz</a>(6, 8, 8);
+<a name="l00020"></a>00020         cos.<a class="code" href="class_graf.html#a0024231b77bddd7298a66e0b753b5d6b" title="Metoda pozwalajaca na dodawanie nowej krawedzi.">dodaj_krawedz</a>(7, 2, 9);
+<a name="l00021"></a>00021         cos.<a class="code" href="class_graf.html#a0024231b77bddd7298a66e0b753b5d6b" title="Metoda pozwalajaca na dodawanie nowej krawedzi.">dodaj_krawedz</a>(2, 15, 10);
+<a name="l00022"></a>00022         cos.<a class="code" href="class_graf.html#a0024231b77bddd7298a66e0b753b5d6b" title="Metoda pozwalajaca na dodawanie nowej krawedzi.">dodaj_krawedz</a>(2, 9, 11);
+<a name="l00023"></a>00023         cos.<a class="code" href="class_graf.html#a0024231b77bddd7298a66e0b753b5d6b" title="Metoda pozwalajaca na dodawanie nowej krawedzi.">dodaj_krawedz</a>(2, 10, 12);
+<a name="l00024"></a>00024         cos.<a class="code" href="class_graf.html#a0024231b77bddd7298a66e0b753b5d6b" title="Metoda pozwalajaca na dodawanie nowej krawedzi.">dodaj_krawedz</a>(0, 2, 2);
+<a name="l00025"></a>00025         cos.<a class="code" href="class_graf.html#a0024231b77bddd7298a66e0b753b5d6b" title="Metoda pozwalajaca na dodawanie nowej krawedzi.">dodaj_krawedz</a>(0, 3, 3);
+<a name="l00026"></a>00026         cos.<a class="code" href="class_graf.html#a0024231b77bddd7298a66e0b753b5d6b" title="Metoda pozwalajaca na dodawanie nowej krawedzi.">dodaj_krawedz</a>(3, 11, 13);
+<a name="l00027"></a>00027         cos.<a class="code" href="class_graf.html#a0024231b77bddd7298a66e0b753b5d6b" title="Metoda pozwalajaca na dodawanie nowej krawedzi.">dodaj_krawedz</a>(11, 13, 14);
+<a name="l00028"></a>00028         cos.<a class="code" href="class_graf.html#a0024231b77bddd7298a66e0b753b5d6b" title="Metoda pozwalajaca na dodawanie nowej krawedzi.">dodaj_krawedz</a>(11, 14, 15);
+<a name="l00029"></a>00029         cos.<a class="code" href="class_graf.html#a0024231b77bddd7298a66e0b753b5d6b" title="Metoda pozwalajaca na dodawanie nowej krawedzi.">dodaj_krawedz</a>(3, 12, 16);
+<a name="l00030"></a>00030         cos.<a class="code" href="class_graf.html#a0024231b77bddd7298a66e0b753b5d6b" title="Metoda pozwalajaca na dodawanie nowej krawedzi.">dodaj_krawedz</a>(12, 1, 17);
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032         <a class="code" href="timer_8h.html#a29d90bc26000d502cdee91c591dd2370">timer</a>(cos, 0, 15, std::cout);
+<a name="l00033"></a>00033         <span class="keywordflow">return</span> 0;
+<a name="l00034"></a>00034 }
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a>      </li>
+
+    <li class="footer">Wygenerowano Thu May 29 2014 20:56:10 dla Przeszukiwanie Grafu programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

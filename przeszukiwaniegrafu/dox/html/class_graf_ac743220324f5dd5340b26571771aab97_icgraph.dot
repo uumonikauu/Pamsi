@@ -1,0 +1,25 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Graf::czy_sasiad",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Graf::sasiedztwo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#a7a21743550a1a46b30e462ddccf665c3",tooltip="Metoda pozwalajaca na sprawdzic &quot;sasiedztwo&quot; danego wierzcholka."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="breadth_first",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$przeszukiwanie_8cpp.html#a48d4601486fa305e536e43dd8537d710"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$timer_8cpp.html#a29d90bc26000d502cdee91c591dd2370"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="depth_first",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$przeszukiwanie_8cpp.html#adf1676fd94d7e754f7eb562ad1e86edd"];
+  Node6 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="a_star",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$przeszukiwanie_8cpp.html#a136bc0fc8736b62810b7eff9278ef0c3"];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="liczKoszt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$przeszukiwanie_8cpp.html#a020c61195a8975d1449ea395a81aba30",tooltip="Metoda pozwalajaca na policzenie kosztu drogi czy ona sie oplaca."];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}
